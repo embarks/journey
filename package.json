@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "chalk": "^3.0.0",
     "cheerio": "^1.0.0-rc.3",
     "request": "^2.88.0",
     "standard": "^14.3.1"
@@ -17,7 +18,8 @@
     "eslint-plugin-standard": "^4.0.1"
   },
   "scripts": {
-    "test": "echo \\\"TEST\\\""
+    "test": "echo \\\"TEST\\\"",
+    "hello": "node index.js"
   },
   "repository": {
     "type": "git",

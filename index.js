@@ -1,10 +1,29 @@
-const $ = require('cheerio')
-const r = require('request')
+'use strict'
+const cheerio = require('cheerio')
+const rn = require('request')
+const chalk = require('chalk')
+
+const log = console.log
+const error = console.error
 
 const BASE_URL = 'https://www.erowid.org/'
 
-r.get(BASE_URL, function (err, res, body) {
-  console.log('error:', err) // Print the error if one occurred
-  console.log('statusCode:', res && res.statusCode) // Print the response status code if a response was received
-  console.log('body:', body) // Print the HTML for the Google homepage.
+process.on('exit', function (code) {
+  return console.log(`exiting with code ${code}`)
+})
+
+function handlePreloadError (err) {
+  error(err)
+  process.exit(err.code)
+}
+
+rn.get(BASE_URL, function (err, res, body) {
+  if (err) handlePreloadError(err)
+
+  try {
+    const $ = cheerio.load(body)
+    log(chalk`Hello, {blue.bold ${$('title').text()}}`)
+  } catch (err) {
+    handlePreloadError(err)
+  }
 })
