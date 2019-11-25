@@ -1,0 +1,35 @@
+{
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "request": "^2.88.0",
+    "standard": "^14.3.1"
+  },
+  "name": "journey",
+  "description": "experiences from the vault",
+  "version": "0.1.0",
+  "main": "index.js",
+  "devDependencies": {
+    "eslint": "^6.7.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  },
+  "scripts": {
+    "test": "echo \\\"TEST\\\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/embarks/journey.git"
+  },
+  "keywords": [
+    "scraper"
+  ],
+  "author": "Joan Marlboro",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/embarks/journey/issues"
+  },
+  "homepage": "https://github.com/embarks/journey#readme"
+}
