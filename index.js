@@ -17,13 +17,18 @@ function handlePreloadError (err) {
   process.exit(err.code)
 }
 
-rn.get(BASE_URL, function (err, res, body) {
-  if (err) handlePreloadError(err)
+function hello () {
+  rn.get(BASE_URL, function (err, res, body) {
+    if (err) handlePreloadError(err)
 
-  try {
-    const $ = cheerio.load(body)
-    log(chalk`Hello, {blue.bold ${$('title').text()}}`)
-  } catch (err) {
-    handlePreloadError(err)
-  }
-})
+    log(chalk.bold.blue('Preloading...\n'))
+    try {
+      const $ = cheerio.load(body)
+      log(chalk`Hello, {blue.bold ${$('title').text()}}`)
+    } catch (err) {
+      handlePreloadError(err)
+    }
+  })
+}
+
+hello()
