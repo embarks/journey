@@ -1,37 +1,37 @@
 #!/usr/bin/env node
 'use strict'
-const rn = require('request')
 const chalk = require('chalk')
-const cheerio = require('cheerio')
-const qs = require('qs')
-const { BASE_URL } = require('./config')
-const u = require('url')
-const { log, handleError } = require('./util')
+// var qs = require('qs')
+const { URL } = require('url')
+const { BASE_URL, XP_BASE_PATH } = require('./config')
+const { log, oaty } = require('./util')
+const fs = require('fs')
 
-module.exports = (function scraper () {
-  return {
-    get: url => {
-      const route = new u.URL(url, 'https://localhost').pathname
+module.exports = function scraper (path) {
+  const url = new URL(path, 'foo://emwaves.org')
+  const route = url.pathname
+  // const options = qs.parse(url.search.slice(1, url.search.length))
 
-      const resolver = {
-        '/ping': () => {
-          rn.get(BASE_URL, function callback (err, res, body) {
-            if (err) handleError(err)
-
-            log(chalk.bold.blue('Beginning scrape...\n'))
-
-            try {
-              const $ = cheerio.load(body)
-              log(chalk`Hello, {blue ${$('title').text()}}`)
-            } catch (err) {
-              handleError(err)
-            }
-          })
-        }
-
+  const resolver = {
+    '/ping': () => {
+      function sayHello ($) {
+        log(chalk.bold.blue('Knock knock...\n'))
+        log(chalk`Hello, {blue ${$('title').text()}}`)
       }
-
-      return resolver[route]
+      oaty(BASE_URL, sayHello)
+    },
+    '/substances': () => {
+      function listSubstances ($) {
+        const w = fs.createWriteStream(`${__dirname}/datfiles/substances`)
+        const substances = $('select[name="S1"]').children('option')
+        substances.each(function (i, e) {
+          w.write(`${$(e).val()},${$(e).text()}${i + 1 < substances.length ? '\n' : ''}`)
+        })
+        w.end('\n%')
+      }
+      oaty(`${BASE_URL}/${XP_BASE_PATH}`, listSubstances)
     }
   }
-})()
+
+  return resolver[route]
+}

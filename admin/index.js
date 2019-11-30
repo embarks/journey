@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 'use strict'
 
-const args = require('yargs').argv
-const { BASE_URL } = require('./config')
+// const args = require('yargs').argv
 const { log } = require('./util')
 
 process.on('exit', function (code) {
@@ -11,10 +10,11 @@ process.on('exit', function (code) {
 
 async function helloScraper () {
   // is admin tool
-  const scraper = require('./scraper')
-  const ping = scraper.get('/ping')
+  const sx = require('./scraper')
+  const ping = sx('/ping')
   ping()
-  // scraper.get('/substances')
+  const substances = sx('/substances')
+  substances()
 }
 
 helloScraper()

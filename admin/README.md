@@ -1,9 +1,18 @@
 # journey
 - experiences from the vault
 
-- [ ] inc 1: (poc) list all available substances (manual scrape | log | datfile)
-- [ ] inc 2: (poc) list all experiences for a substance key (manual scrape | log | datfile)
-- [ ] inc 3: (poc) list all experiences (manual scrape | log | datfile)
+- [x] inc 1: (poc) list all available substances
+  - [x] manual scrape
+  - [x] log
+  - [x] datfile
+- [ ] inc 2: (poc) list all experiences for a substance key
+  - [ ] manual scrape
+  - [ ] log
+  - [ ] datfile
+- [ ] inc 3: (poc) list all experiences
+  - [ ] manual scrape
+  - [ ] log
+  - [ ] datfile
   - [ ] inc 3.1: urls to reports
   - [ ] inc 3.2: title / key / selector 
   - [ ] inc 3.3.0: calculate size required to store reports in datfiles
