@@ -22,6 +22,7 @@ function listSubstances ($) {
 }
 
 function listReportLocs (substance) {
+  console.log('substance loaded', substance)
   return () => {
   }
 }
