@@ -32,4 +32,4 @@ async function helloScraper () {
 }
 
 initScraper()
-// helloScraper()
+helloScraper()

@@ -5,10 +5,10 @@
   - [x] manual scrape
   - [x] log
   - [x] datfile
-- [ ] inc 2: (poc) list all experiences for a substance key
-  - [ ] manual scrape
-  - [ ] log
-  - [ ] datfile
+- [x] inc 2: (poc) list all experiences for a substance key
+  - [x] manual scrape
+  - [x] log
+  - [x] datfile
 - [ ] inc 3: (poc) list all experiences
   - [ ] manual scrape
   - [ ] log

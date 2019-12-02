@@ -33,31 +33,31 @@ function init () {
   initCache['/datfiles'] = true
 }
 
-const oaty = (function (url, consumer) {
-  function cheerioify (err, res, body) {
-    handleError(err)
-    try {
-      const $ = cheerio.load(body)
-      consumer($)
-    } catch (err) {
+const oaty = (function () {
+  function cheerioify (consumer) {
+    return (err, res, body) => {
       handleError(err)
-    }
-  }
-
-  const oaty = function () {
-    if (isInitialized('/datfiles/substances')) {
-      rn.get(url, cheerioify)
+      try {
+        const $ = cheerio.load(body)
+        consumer($)
+      } catch (err) {
+        handleError(err)
+      }
     }
   }
 
   return {
-    get: oaty
+    get: function (url, consumer) {
+      if (isInitialized('/datfiles/substances')) {
+        rn.get(url, cheerioify(consumer))
+      }
+    }
   }
 })()
 
 function handleError (err) {
   if (err) {
-    error('{bold.red ERR!} Scrape precondition failed')
+    error(chalk`{bold.red ERR!} Scrape precondition failed`)
     error(err)
     process.exit(err.code)
   }
