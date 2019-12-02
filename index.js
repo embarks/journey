@@ -11,7 +11,7 @@ process.on('exit', function (code) {
 
 async function initScraper () {
   // const init = sx('/initialize')
-  // const init = sx('/listup')
+  // const init = sx('/cat')
   const ping = sx('/ping')
   // init()
   ping()
@@ -20,15 +20,15 @@ async function initScraper () {
 async function helloScraper () {
   // list report urls
   // and calculate report stats
-  let substance = 'cannabis'
+  const substance = 'cannabis'
   const cannabisSettings = sx(`/substances/${substance}`)
-  substance = 'LSD'
-  const lsdSettings = sx(`/substances/${substance}`)
-  substance = 'all'
-  const allSettings = sx(`/substances/${substance}`)
+  // substance = 'LSD'
+  // const lsdSettings = sx(`/substances/${substance}`)
+  // substance = 'all'
+  // const allSettings = sx(`/substances/${substance}`)
   cannabisSettings()
-  lsdSettings()
-  allSettings()
+  // lsdSettings()
+  // allSettings()
 }
 
 initScraper()

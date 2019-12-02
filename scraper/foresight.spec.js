@@ -11,10 +11,10 @@ test('foresight', () => {
         return {
           toString: () => {
             return '0,--- Nonce ---\n' +
-            '2,LSD\n' +
-            '1,Cannabis\n' +
-            '3,Opioids\n' +
-            '%'
+            'Yes.,LSD\n' +
+            'Yes!,Cannabis\n' +
+            'YES!,Opioids\n' +
+            'TEST,1-, 3-, or 4-Drugs\n' + '%'
           }
         }
       }
@@ -24,16 +24,15 @@ test('foresight', () => {
   const foresight = require('./foresight')
 
   expect(foresight.wisdom()).toEqual({})
-
-  foresight()
-
+  foresight('DAMN')
   expect(foresight.wisdom(
-    key => {
-      if (key === 'LSD') return 'YES!'
-      if (key === 'Cannabis') return 'Yes!'
-      if (key === 'Opioids') return 'Yes.'
-    }
+    ({ sval }) => sval
   )).toEqual(
-    { LSD: 'YES!', Cannabis: 'Yes!', Opioids: 'Yes.' }
+    {
+      '/DAMN/lsd': 'Yes.',
+      '/DAMN/cannabis': 'Yes!',
+      '/DAMN/opioids': 'YES!',
+      '/DAMN/1-, 3-, or 4-drugs': 'TEST'
+    }
   )
 })

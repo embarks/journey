@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-
+'use strict'
 const fs = require('fs')
 const rn = require('request')
 const cheerio = require('cheerio')
@@ -33,24 +33,34 @@ function init () {
   initCache['/datfiles'] = true
 }
 
-function oaty (url, consumer) {
-  if (isInitialized('/datfiles/substances')) {
-    rn.get(url, (err, res, body) => {
-      if (err) handleError(err)
-      try {
-        const $ = cheerio.load(body)
-        consumer($)
-      } catch (err) {
-        handleError(err)
-      }
-    })
+const oaty = (function (url, consumer) {
+  function cheerioify (err, res, body) {
+    handleError(err)
+    try {
+      const $ = cheerio.load(body)
+      consumer($)
+    } catch (err) {
+      handleError(err)
+    }
   }
-}
+
+  const oaty = function () {
+    if (isInitialized('/datfiles/substances')) {
+      rn.get(url, cheerioify)
+    }
+  }
+
+  return {
+    get: oaty
+  }
+})()
 
 function handleError (err) {
-  error(chalk`{bold.red ERR!} Scrape precondition failed`)
-  error(err)
-  process.exit(err.code)
+  if (err) {
+    error('{bold.red ERR!} Scrape precondition failed')
+    error(err)
+    process.exit(err.code)
+  }
 }
 
 module.exports = {

@@ -7,29 +7,34 @@ const { handleError } = require('./util')
 
 module.exports = (function () {
   let keys = []
-  const foresight = function () {
+  let prefix = ''
+  const foresight = function (parg) {
+    prefix = parg
     try {
       const [, ...optionList] =
-        fs.readFileSync(`${process.cwd()}/datfiles/substances`)
+        fs.readFileSync(`${process.cwd()}/datfiles/${prefix}`)
           .toString()
           .split('%')[0]
-          .split('\n')
-
+          .split(/\r?\n/)
+      optionList.pop()
       keys = optionList.map(option => {
-        const [, ...rest] = option.split(',')
+        const [sval, ...rest] = option.split(/,(.+)/)
         const key = rest.join('')
-        return key
-      }).filter(Boolean)
+
+        return { key, sval }
+      })
     } catch (e) {
       error('ERR! Do not call on foresight unless scraper is initialized')
       handleError(e)
     }
   }
 
-  foresight.wisdom = function (resolve) {
+  foresight.wisdom = function (makePath) {
     const wisdom = {}
-    keys.forEach(key => {
-      wisdom[key] = resolve(key)
+    keys.forEach(pair => {
+      const { key: uKey, sval } = pair
+      const key = uKey.toLowerCase()
+      wisdom[`/${prefix}/${key}`] = makePath({ key, sval })
     })
     return wisdom
   }
