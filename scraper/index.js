@@ -25,7 +25,7 @@ function createResolverFromWisdom ({ key, sval }) {
       if (hasNext) {
         start = start + max
         max = max + (total - start)
-        pageInfo = { start, max, total }
+        pageInfo = { start, max, total, hasNext: false }
         consume = reportListConsumer({
           substance: key,
           pageInfo
