@@ -36,18 +36,8 @@ function createResolverFromWisdom ({ key, sval }) {
   }
 }
 
-module.exports = function scraper (path) {
-  const url = new URL(path, 'foo://emwaves.org')
-  const route = url.pathname
-  // const options = qs.parse(url.search.slice(1, url.search.length))
-
+module.exports = (function scraper () {
   const foresight = require('./foresight')
-  if (![
-    '/initialize',
-    '/cat',
-    '/ping'
-  ].includes(path)) foresight('substances')
-
   const resolver = {
     '/initialize': () => {
       init()
@@ -61,9 +51,29 @@ module.exports = function scraper (path) {
     },
     '/substances': () => {
       // get all substances
-    },
-    ...foresight.wisdom(createResolverFromWisdom)
+    }
   }
 
-  return resolver[route]
-}
+  let adultResolver = { ...resolver }
+
+  return (path) => {
+    const url = new URL(path, 'foo://emwaves.org')
+    const route = url.pathname
+
+    if (![
+      '/initialize',
+      '/cat',
+      '/ping'
+    ].includes(route) &&
+    !(typeof adultResolver[route] === 'function')
+    ) {
+      foresight('substances')
+      adultResolver = {
+        ...resolver,
+        ...foresight.wisdom(createResolverFromWisdom)
+      }
+    }
+
+    return adultResolver[route]
+  }
+})()

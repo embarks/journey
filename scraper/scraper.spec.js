@@ -83,13 +83,13 @@ describe('scraper', () => {
     const { oaty } = require('./util')
     const { BASE_URL, XP_BASE_PATH } = require('./config')
     const { createWriteStream } = require('fs')
-    const scraper = require('.')
+    const sx = require('.')
     const write = jest.fn()
     const end = jest.fn()
     createWriteStream.mockReturnValue({ write, end })
 
-    const initialize = scraper('/initialize')
-    initialize()
+    const init = sx('/initialize')
+    init()
     expect(write.mock.calls[0][0]).toEqual('2,LSD\n')
     expect(write.mock.calls[1][0]).toEqual('1,Cannabis\n')
     expect(end).toHaveBeenCalledWith('%')
@@ -107,5 +107,20 @@ describe('scraper', () => {
     const func420 = sx('/substances/cannabis')
     expect(func).toBeInstanceOf(Function)
     expect(func420).toBeInstanceOf(Function)
+  })
+  test('substance', () => {
+    jest.doMock('fs', () => ({
+      readFileSync: jest.fn(() => {
+        return '0,--nonce--\n1,Cannabis\n2,LSD\n%'
+      })
+    }))
+    const foresight = require('./foresight')
+    const spy = jest.spyOn(foresight, 'wisdom')
+    const sx = require('.')
+    const func = sx('/substances/lsd')
+    const func420 = sx('/substances/cannabis')
+    expect(func).toBeInstanceOf(Function)
+    expect(func420).toBeInstanceOf(Function)
+    expect(spy).toHaveBeenCalledTimes(1)
   })
 })

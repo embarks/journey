@@ -12,8 +12,8 @@ process.on('exit', function (code) {
 async function initScraper () {
   // const init = sx('/initialize')
   // const init = sx('/cat')
-  const ping = sx('/ping')
   // init()
+  const ping = sx('/ping')
   ping()
 }
 

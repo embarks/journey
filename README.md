@@ -13,8 +13,8 @@
   - [ ] manual scrape
   - [ ] log
   - [ ] datfile
-  - [ ] inc 3.1: urls to reports
-  - [ ] inc 3.2: title / key / selector 
+  - [x] inc 3.1: urls to reports
+  - [x] inc 3.2: title / key / selector 
   - [ ] inc 3.3.0: calculate size required to store reports in datfiles
   - [ ] inc 3.3.1: store reports (?)
 - [ ] inc 4: (admin) scrape command to update datfiles
