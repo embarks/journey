@@ -6,41 +6,44 @@ const { BASE_URL, XP_BASE_PATH, XP_VAULT_PATH } = require('./config')
 const { oaty, init } = require('./util')
 const { sayHello, listSubstances, getTotal, reportListConsumer } = require('./consumers')
 
-function fromWisdom ({ key, sval }) {
-  return () => {
-    const url = ({ start, max }) => `${BASE_URL}/${XP_BASE_PATH}/${XP_VAULT_PATH}?S1=${sval}&Max=${max}&Start=${start}`
-
-    let start = 0
-    let max = 100
-
-    oaty.get(url({ start, max }), $ => {
-      const total = getTotal($)
-      const hasNext = total > (start + max)
-      let pageInfo = { total, start, max, hasNext }
-      // 1: list first page of urls
-      let consume = reportListConsumer({ substance: key, pageInfo })
-      // always consume the first page
-      consume($)
-      // 2: consume the remaining reports efficiently
-      if (hasNext) {
-        start = start + max
-        max = max + (total - start)
-        pageInfo = { start, max, total, hasNext: false }
-        consume = reportListConsumer({
-          substance: key,
-          pageInfo
-        })
-        oaty.get(url({ start, max }), consume)
-      }
-    })
-  }
-}
-
-function recordExperiences (ids) {
-  console.log(ids)
-}
-
 module.exports = (function scraper () {
+  function fromWisdom ({ key, sval }) {
+    return () => {
+      const url = ({ start, max }) => `${BASE_URL}/${XP_BASE_PATH}/${XP_VAULT_PATH}?S1=${sval}&Max=${max}&Start=${start}`
+
+      let start = 0
+      let max = 100
+
+      oaty.get(url({ start, max }), $ => {
+        const total = getTotal($)
+        const hasNext = total > (start + max)
+        let pageInfo = { total, start, max, hasNext }
+        // 1: list first page of urls
+        let consume = reportListConsumer({ substance: key, pageInfo })
+        // always consume the first page
+        consume($)
+        // 2: consume the remaining reports efficiently
+        if (hasNext) {
+          start = start + max
+          max = max + (total - start)
+          pageInfo = { start, max, total, hasNext: false }
+          consume = reportListConsumer({
+            substance: key,
+            pageInfo
+          })
+          oaty.get(url({ start, max }), consume)
+        }
+      })
+    }
+  }
+
+  function recordExperiences (ids) {
+    console.log(ids)
+  }
+
+  scraper.getResolveFromWisdom = fromWisdom
+  scraper.scrapeFromExperience = recordExperiences
+
   const foresight = require('./foresight')
 
   const resolver = {

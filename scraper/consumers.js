@@ -51,14 +51,20 @@ const reportListConsumer = (function () {
     const OP = isFirstPage ? 'writeFile' : 'appendFile'
     const SF = `${DATFILES}/${substance}`
     return ($) => {
-      function write (data) { fs[OP](SF, data, handleError) }
+      function write (data, done) {
+        fs[OP](SF, data, (err) => {
+          handleError(err)
+          done()
+        })
+      }
       const data = consumeList($)
       log(chalk`{bold.bgBlack.white ${substance}} Collecting experiences... {yellow ${pageInfo.start}} to {yellow ${pageInfo.max}}`)
-      write(`${data}\n`)
-      if (isFinalPage) {
-        log(chalk`{bold.bgBlack.white ${substance}} Appending final page of experiences...`)
-        fs.appendFile(SF, '%', handleError)
-      }
+      write(`${data}\n`, () => {
+        if (isFinalPage) {
+          log(chalk`{bold.bgBlack.white ${substance}} Appending final page of experiences...`)
+          fs.appendFile(SF, '%', handleError)
+        }
+      })
     }
   }
 
