@@ -48,7 +48,7 @@ module.exports = (function scraper () {
       init()
       oaty.get(`${BASE_URL}/${XP_BASE_PATH}`, (...res) => {
         listSubstances(...res)
-        next()
+        if (next) next()
       })
     },
     '/cat': () => {
