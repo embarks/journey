@@ -9,27 +9,30 @@ process.on('exit', function (code) {
   return log(`exiting with code ${code}`)
 })
 
-async function initScraper () {
-  // const init = sx('/initialize')
+function initScraper (hello) {
+  const init = sx('/initialize')
   // const init = sx('/cat')
-  // init()
+  init(hello)
   const ping = sx('/ping')
   ping()
 }
 
-async function helloScraper () {
+function helloScraper () {
   // list report urls
   // and calculate report stats
-  const substance = 'cannabis'
+  let substance = 'cannabis'
   const cannabisSettings = sx(`/substances/${substance}`)
-  // substance = 'LSD'
-  // const lsdSettings = sx(`/substances/${substance}`)
-  // substance = 'all'
-  // const allSettings = sx(`/substances/${substance}`)
+  substance = 'lsd'
+  const lsdSettings = sx(`/substances/${substance}`)
+  substance = 'toad-venom'
+  const toadVenomSettings = sx(`/substances/${substance}`)
+  substance = 'bad-test'
+  const badSettings = sx(`/substances/${substance}`)
+  // const allSettings = sx('/substances')
   cannabisSettings()
-  // lsdSettings()
+  lsdSettings()
+  toadVenomSettings()
   // allSettings()
 }
 
-initScraper()
-helloScraper()
+initScraper(helloScraper)

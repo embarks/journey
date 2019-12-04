@@ -6,7 +6,7 @@ const { BASE_URL, XP_BASE_PATH, XP_VAULT_PATH } = require('./config')
 const { oaty, init } = require('./util')
 const { sayHello, listSubstances, getTotal, reportListConsumer } = require('./consumers')
 
-function createResolverFromWisdom ({ key, sval }) {
+function fromWisdom ({ key, sval }) {
   return () => {
     const url = ({ start, max }) => `${BASE_URL}/${XP_BASE_PATH}/${XP_VAULT_PATH}?S1=${sval}&Max=${max}&Start=${start}`
 
@@ -21,7 +21,7 @@ function createResolverFromWisdom ({ key, sval }) {
       let consume = reportListConsumer({ substance: key, pageInfo })
       // always consume the first page
       consume($)
-      // 2: consume the remaining reports
+      // 2: consume the remaining reports efficiently
       if (hasNext) {
         start = start + max
         max = max + (total - start)
@@ -36,41 +36,79 @@ function createResolverFromWisdom ({ key, sval }) {
   }
 }
 
+function recordExperiences (ids) {
+  console.log(ids)
+}
+
 module.exports = (function scraper () {
   const foresight = require('./foresight')
+
   const resolver = {
-    '/initialize': () => {
+    '/initialize': (next) => {
       init()
-      oaty.get(`${BASE_URL}/${XP_BASE_PATH}`, listSubstances)
+      oaty.get(`${BASE_URL}/${XP_BASE_PATH}`, (...res) => {
+        listSubstances(...res)
+        next()
+      })
     },
     '/cat': () => {
       oaty.get(`${BASE_URL}/${XP_BASE_PATH}`, listSubstances)
     },
     '/ping': () => {
       oaty.get(BASE_URL, sayHello)
-    },
-    '/substances': () => {
-      // get all substances
     }
   }
 
   let adultResolver = { ...resolver }
+  let sitter // the experience report scraper prepper!
 
   return (path) => {
+    if (!path) throw Error('You must provide a path to the scraper')
     const url = new URL(path, 'foo://emwaves.org')
     const route = url.pathname
 
-    if (![
-      '/initialize',
-      '/cat',
-      '/ping'
-    ].includes(route) &&
-    !(typeof adultResolver[route] === 'function')
-    ) {
-      foresight('substances')
-      adultResolver = {
-        ...resolver,
-        ...foresight.wisdom(createResolverFromWisdom)
+    if (!(typeof adultResolver[route] === 'function')) {
+      if (route.startsWith('/substances')) {
+        // synchronously read from files scraped by initialization
+        // provide the previously scraped information required for the process
+        if (
+          typeof sitter === 'undefined' ||
+          typeof foresight.settings[route] === 'undefined'
+        ) {
+          sitter = foresight('substances') // -> experiences
+        }
+        // only have to call on wisdom once because all the substances are
+        // scraped at the same time
+        if (typeof foresight.settings[route] !== 'undefined') {
+          const scrapeSettings = foresight.wisdom(fromWisdom)
+          adultResolver = Object.assign(adultResolver,
+            // provide all the substance route resolvers to collect report urls
+            scrapeSettings
+          )
+        } else console.warn(`You can't smokem ${route}!`)
+      }
+
+      if (route.startsWith('/experiences/')) {
+        if (typeof sitter === 'undefined') {
+          // you don't need to run substance in the same command chain
+          // as long as the substance files are there, can get experiences
+          // so still need to conduct foresight maneuver
+          // which in this case reads from the substance settings file
+          // file access is synchronous
+          sitter = substance => foresight.experiences(substance)
+        }
+        // only run the readfile for a substance when asked
+        const substance = route.split('/').pop()
+        // call this for every substance and allow kick off for the scrape
+        const setting = sitter(substance)
+        if (typeof setting === 'function') {
+          adultResolver = Object.assign(adultResolver,
+            {
+              // provide that experience as a route
+              [`/experiences/${substance}`]: setting(recordExperiences)
+            }
+          )
+        }
       }
     }
 

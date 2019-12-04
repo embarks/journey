@@ -9,6 +9,7 @@ describe('scraper', () => {
     jest.unmock('../logs')
     jest.unmock('./foresight')
     jest.unmock('./util')
+    jest.unmock('fs')
   })
 
   test('say hello', () => {
@@ -74,25 +75,17 @@ describe('scraper', () => {
         W_OK: true
       },
       mkdirSync: jest.fn(),
-      createWriteStream: jest.fn(() => ({
-        write: jest.fn(),
-        end: jest.fn()
-      }))
+      writeFileSync: jest.fn()
     }))
 
     const { oaty } = require('./util')
     const { BASE_URL, XP_BASE_PATH } = require('./config')
-    const { createWriteStream } = require('fs')
+    const { writeFileSync } = require('fs')
     const sx = require('.')
-    const write = jest.fn()
-    const end = jest.fn()
-    createWriteStream.mockReturnValue({ write, end })
 
     const init = sx('/initialize')
     init()
-    expect(write.mock.calls[0][0]).toEqual('2,LSD\n')
-    expect(write.mock.calls[1][0]).toEqual('1,Cannabis\n')
-    expect(end).toHaveBeenCalledWith('%')
+    expect(writeFileSync).toHaveBeenCalledWith(`${process.cwd()}/datfiles/substances`, '2,LSD\n' + '1,Cannabis\n' + '%')
     expect(oaty.get.mock.calls[0][0]).toEqual(`${BASE_URL}/${XP_BASE_PATH}`)
   })
 
@@ -122,5 +115,90 @@ describe('scraper', () => {
     expect(func).toBeInstanceOf(Function)
     expect(func420).toBeInstanceOf(Function)
     expect(spy).toHaveBeenCalledTimes(1)
+  })
+  test('experience', (done) => {
+    jest.doMock('fs', () => {
+      const rest = jest.requireActual('fs')
+      return {
+        ...rest,
+        readFile: jest.fn((url, cb) => {
+          cb(undefined, Buffer.from('100\n102\n%'))
+        }),
+        accessSync: jest.fn(() => {
+        })
+      }
+    })
+    const fs = require('fs')
+    const sx = require('.')
+    const doScrape = sx('/experiences/lsd')
+    expect(doScrape).toBeInstanceOf(Function)
+    expect(fs.readFile).not.toHaveBeenCalled()
+    doScrape()
+    expect(fs.readFile).toHaveBeenCalled()
+    done()
+  })
+  test('order of operations', () => {
+    jest.doMock('fs', () => ({
+      constants: {
+        R_OK: true
+      },
+      accessSync: jest.fn((...args) => {
+        console.log(`[test] fs.accessSync(${[...args].join(', ')})`)
+        if ([
+          `${process.cwd()}/datfiles/lsd`,
+          `${process.cwd()}/datfiles/cannabis`,
+          `${process.cwd()}/datfiles/toad-venom`
+        ].includes(args[0])) {
+        } else {
+          throw Error(`[test] ERR accessSync(${[...args]})`)
+        }
+      }),
+      readFileSync: jest.fn((...args) => {
+        console.log(`[test] fs.readFileSync(${[...args].join(', ')}) -> '0,--nonce--\n1,Cannabis\n2,LSD\n3,Toad Venom\n%'`)
+        return '0,--nonce--\n1,Cannabis\n2,LSD\n3,Toad Venom\n%'
+      }),
+      readFile: jest.fn((...args) => {
+        console.log(`[test] fs.readFile(${[...args].join(', ')})`)
+        if ([
+          `${process.cwd()}/datfiles/lsd`,
+          `${process.cwd()}/datfiles/cannabis`
+        ].includes(args[0])) {
+          args[1](undefined, Buffer.from('100\n102\n%'))
+        } else {
+          throw Error(`[test] ERR readFile(${[...args]})`)
+        }
+      })
+    }))
+    const foresight = require('./foresight')
+    jest.spyOn(foresight, 'wisdom')
+    jest.spyOn(foresight, 'experiences')
+    const sx = require('.')
+    expect(() => sx()).toThrow()
+    expect(sx('/substances')).not.toBeInstanceOf(Function)
+    expect(foresight.wisdom).toHaveBeenCalledTimes(0)
+
+    expect(sx('/experiences/please-do-not-make-this-file')).toBeUndefined()
+    expect(sx('/substances/please-do-not-make-this-route')).toBeUndefined()
+
+    expect(sx('/experiences/lsd')).toBeInstanceOf(Function)
+    expect(sx('/substances/lsd')).toBeInstanceOf(Function)
+    expect(foresight.wisdom).toHaveBeenCalledTimes(1)
+
+    expect(sx('/substances/cannabis')).toBeInstanceOf(Function)
+    expect(foresight.wisdom).toHaveBeenCalledTimes(1)
+
+    expect(sx('/experiences/cannabis')).toBeInstanceOf(Function)
+    expect(sx('/substances/toad-venom')).toBeInstanceOf(Function)
+    expect(foresight.wisdom).toHaveBeenCalledTimes(1)
+
+    const sx2 = require('.')
+    const foresight2 = require('./foresight')
+    expect(sx2('/substances/lsd')).toBeInstanceOf(Function)
+    expect(sx2('/substances/cannabis')).toBeInstanceOf(Function)
+    expect(sx2('/experiences/toad-venom')).toBeInstanceOf(Function)
+
+    // it should have only read the substances file once
+    expect(foresight.wisdom).toHaveBeenCalledTimes(1)
+    expect(foresight2.wisdom).toHaveBeenCalledTimes(1)
   })
 })
