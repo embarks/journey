@@ -21,7 +21,11 @@ test('get total number of reports', () => {
 
 test('consume a page of urls', (done) => {
   jest.doMock('fs', () => ({
-    writeFile: jest.fn(),
+    writeFile: jest.fn((file, data, uDone) => {
+      console.log(`[test] writeFile(${[file, '{data}', 'fn done()'].join(', ')})`)
+      uDone()
+      done()
+    }),
     appendFile: jest.fn()
   }))
 
@@ -37,5 +41,4 @@ test('consume a page of urls', (done) => {
   consume($)
   expect(typeof writeFile.mock.calls[0][1]).toBe('string')
   expect(appendFile.mock.calls[0][1]).toBe('%')
-  done()
 })
