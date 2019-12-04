@@ -59,7 +59,7 @@ function handleError (err) {
   if (err) {
     error(chalk`{bold.red ERR!} Scrape precondition failed`)
     error(err)
-    process.exit(err.code)
+    process.exit(1)
   }
 }
 

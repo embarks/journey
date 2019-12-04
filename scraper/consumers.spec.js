@@ -36,6 +36,6 @@ test('consume a page of urls', (done) => {
   const $ = cheerio.load(ReportListBody100)
   consume($)
   expect(typeof writeFile.mock.calls[0][1]).toBe('string')
-  expect(appendFile.mock.calls[0][1]).toBe('\n%')
+  expect(appendFile.mock.calls[0][1]).toBe('%')
   done()
 })

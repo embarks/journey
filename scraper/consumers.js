@@ -14,14 +14,15 @@ function sayHello ($) {
 
 function listSubstances ($) {
   log('Listing substances...')
-  const w = fs.createWriteStream(`${DATFILES}/substances`)
   const substances = $('select[name="S1"]').children('option')
+  const data = []
   substances.each(function (i, e) {
     const sval = $(e).val()
     const name = $(e).text()
-    w.write(`${sval},${name}\n`)
+    data.push(`${sval},${name}`)
   })
-  w.end('%')
+  data.push('%')
+  fs.writeFileSync(`${DATFILES}/substances`, data.join('\n'))
   log(chalk`{bold.green Success}`)
 }
 
