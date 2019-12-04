@@ -35,4 +35,5 @@ function helloScraper () {
   // allSettings()
 }
 
-initScraper(helloScraper)
+// initScraper(helloScraper)
+helloScraper()
