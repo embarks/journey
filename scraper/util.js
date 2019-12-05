@@ -4,7 +4,7 @@ const fs = require('fs')
 const rn = require('request')
 const cheerio = require('cheerio')
 const chalk = require('chalk')
-const { error } = require('../logs')
+const { error, log } = require('../logs')
 
 const initCache = {}
 
@@ -25,12 +25,32 @@ function isInitialized (key) {
 }
 
 function init () {
-  fs.mkdirSync(`${process.cwd()}/datfiles`)
-  fs.mkdirSync(`${process.cwd()}/datfiles/reports`)
-  fs.closeSync(fs.openSync(`${process.cwd()}/datfiles/substances`, 'w'))
+  // TODO existsSync
+  if (
+    !fs.existsSync(`${process.cwd()}/datfiles`) ||
+    !fs.existsSync(`${process.cwd()}/datfiles/reports`)
+  ) {
+    fs.mkdirSync(`${process.cwd()}/datfiles`)
+    fs.mkdirSync(`${process.cwd()}/datfiles/reports`)
+  } else log(chalk`{bold.yellow WARN!} DIRs already initialized`)
+  if (!fs.existsSync(`${process.cwd()}/datfiles/substances`)) {
+    fs.closeSync(fs.openSync(`${process.cwd()}/datfiles/substances`, 'w'))
+  } else log(chalk`{bold.yellow WARN!} substances file already initialized`)
   initCache['/datfiles/substances'] = true
   initCache['/datfiles/reports'] = true
   initCache['/datfiles'] = true
+}
+
+function initSettings (key) {
+  try {
+    if (!fs.existsSync(`${process.cwd()}${key}`)) {
+      fs.mkdirSync(`${process.cwd()}${key}`)
+      log(chalk`{yellow.bgBlack mkdir} ${key}`)
+    }
+  } catch (e) {
+    // silently fail
+    error(e)
+  }
 }
 
 const oaty = (function () {
@@ -48,7 +68,10 @@ const oaty = (function () {
 
   return {
     get: function (url, consumer) {
-      if (isInitialized('/datfiles/substances')) {
+      if (
+        isInitialized('/datfiles/substances') &&
+        isInitialized('/datfiles/reports')
+      ) {
         rn.get(url, cheerioify(consumer))
       }
     }
@@ -66,5 +89,6 @@ function handleError (err) {
 module.exports = {
   handleError,
   oaty,
-  init
+  init,
+  initSettings
 }

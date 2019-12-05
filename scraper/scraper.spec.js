@@ -91,6 +91,7 @@ describe('scraper', () => {
 
   test('substance', () => {
     jest.doMock('fs', () => ({
+      mkdirSync: jest.fn(),
       readFileSync: jest.fn(() => {
         return '0,--nonce--\n1,Cannabis\n2,LSD\n%'
       })
@@ -105,7 +106,8 @@ describe('scraper', () => {
     jest.doMock('fs', () => ({
       readFileSync: jest.fn(() => {
         return '0,--nonce--\n1,Cannabis\n2,LSD\n%'
-      })
+      }),
+      mkdirSync: jest.fn()
     }))
     const foresight = require('./foresight')
     const spy = jest.spyOn(foresight, 'wisdom')
@@ -142,6 +144,7 @@ describe('scraper', () => {
       constants: {
         R_OK: true
       },
+      mkdirSync: jest.fn(),
       accessSync: jest.fn((...args) => {
         console.log(`[test] fs.accessSync(${[...args].join(', ')})`)
         if ([
@@ -200,5 +203,9 @@ describe('scraper', () => {
     // it should have only read the substances file once
     expect(foresight.wisdom).toHaveBeenCalledTimes(1)
     expect(foresight2.wisdom).toHaveBeenCalledTimes(1)
+  })
+
+  test('', () => {
+
   })
 })

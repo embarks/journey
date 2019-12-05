@@ -3,7 +3,7 @@ const qs = require('qs')
 const fs = require('fs')
 const chalk = require('chalk')
 const { log } = require('../logs')
-const { handleError } = require('./util')
+const { handleError, initSettings } = require('./util')
 
 const DATFILES = `${process.cwd()}/datfiles`
 
@@ -20,6 +20,11 @@ function listSubstances ($) {
     const sval = $(e).val()
     const name = $(e).text()
     data.push(`${sval},${name}`)
+    if (i !== 0) {
+      initSettings(`/datfiles/reports/${name.toLowerCase().trim()
+      .replace(/-|\s-\s/g, ' ')
+      .replace(/(\s|\/)/g, '-')}`)
+    }
   })
   data.push('%')
   fs.writeFileSync(`${DATFILES}/substances`, data.join('\n'))
@@ -73,9 +78,26 @@ const reportListConsumer = (function () {
   return ListConsumer
 })()
 
+function experienceConsumer (substance) {
+  log(chalk`{bold.bgBlack.white ${substance}} Initializing experience consumer`)
+  // this will happen async
+  return ($) => {
+    const title = $('.title').text().trim()
+    const datfile = `${DATFILES}/reports/${substance}/${title}`
+    log(chalk`{bold.bgBlack.white ${substance}} {bold.blue Scraping} ${substance}/${title}`)
+    $('.report-text-surround').find('table').remove()
+    const data = $('.report-text-surround').text().trim()
+    fs.writeFile(datfile, data, (err) => {
+      log(chalk`{bold.bgBlack.white ${substance}} {bold.green Scraped} ${substance}/${title}`)
+      handleError(err)
+    })
+  }
+}
+
 module.exports = {
   sayHello,
   listSubstances,
   getTotal,
-  reportListConsumer
+  reportListConsumer,
+  experienceConsumer
 }

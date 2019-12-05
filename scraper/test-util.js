@@ -77,7 +77,7 @@ const ReportListBody100 = `<html><body vlink="#999999" text="#999977" link="#777
    
    
    </tr>
-   <tr height="8"><th colspan="5"></th></tr>	
+   <tr height="8"><th colspan="5"></th></tr>  
   <tr class=""><td> <img src="images/exp_star_1.gif" alt="Recommended" border="0" align="right"></td><td><a href="exp.php?ID=109504">Before and After</a></td><td>Lady</td><td>LSD &amp; Escitalopram (Lexapro)</td><td align="right">Nov 18 2016</td>
   </tr>
   <tr class=""><td> <img src="images/exp_star_1.gif" alt="Recommended" border="0" align="right"></td><td><a href="exp.php?ID=106589">Insight</a></td><td>Logan MacIntyre</td><td>LSD</td><td align="right">Nov 5 2016</td>
@@ -352,7 +352,7 @@ const ReportListBody100 = `<html><body vlink="#999999" text="#999977" link="#777
   <map name="exp_header">
    <area shape="rect" coords="37,51,112,76" href="/experiences/exp_front.shtml" alt="Experience Vaults Index">
    <area shape="rect" coords="122,51,205,76" href="/experiences/exp_list.shtml" alt="Full List of Substances">
-    <area shape="rect" coords="215,51,297,76" href="/experiences/exp_search.cgi" alt="Search">	
+    <area shape="rect" coords="215,51,297,76" href="/experiences/exp_search.cgi" alt="Search">  
     <area shape="rect" coords="307,51,390,76" href="/experiences/exp_submit.cgi" alt="Submit Report">
     <area shape="rect" coords="400,51,478,76" href="/experiences/change_settings.php3" alt="User Settings">
     <area shape="rect" coords="488,51,560,76" href="/experiences/exp_about.cgi" alt="About">
@@ -362,6 +362,147 @@ const ReportListBody100 = `<html><body vlink="#999999" text="#999977" link="#777
   
   </body></html>`
 
+const ReportBody = `<body onload="expSetColors();">
+
+<table cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td>
+<img src="/experiences/images/exp_header_blk.gif" usemap="#exp_header" width="707" height="75" border="0">
+</td></tr><tr height="3"><td></td></tr>
+<tr><td align="center">
+<div id="content-messpath-frame">
+<div id="message">
+<!--googleoff: index-->
+<!-- Sperowider <exclude> -->
+
+
+<style>
+#message { background: #2233cc; border: 1px solid #000000; border-radius: 8px; }
+#message-inner-lg { font: 500 14pt georgia,"times new roman",serif; color: #ffffff; padding-top: 3px; }
+  #message-inner-lg a:visited { color: #ffffff;}
+  #message-inner-lg a:link { color: #ffffff;}
+#message-inner-md { font: 500 11pt arial,sans-serif; color: #ffee77; padding-top: 5px; padding-bottom: 4px; letter-spacing: .018em; }
+  #message-inner-md a:visited { color: #ffee77;}
+  #message-inner-md a:link { color: #ffee77;}
+</style>
+<a href="/cgi-bin/r.php?message_id=219&amp;url=/cgi-bin/exturl.php&amp;Q&amp;f=ms219&amp;u=http://greatnonprofits.org/org/erowid-center&amp;E&amp;"><div id="message-inner-lg">Review Erowid at GreatNonprofits.org</div>
+<div id="message-inner-md">Help us get 10 more reviews! And spread the word that accurate info about
+psychedelics and other drugs improves health, culture, and policies.</div></a>
+<script src="/includes/javascript/erowid_message_lib.js" type="text/javascript"></script>
+<script type="text/javascript">
+  var mTimeExpired = 1575524775000;
+  var mDate = new Date();
+  if (mDate.getDate() < mTimeExpired) {  
+     SendQuietRequest("https://erowid.org/cgi-bin/messages/message_view_record.php?message_id=219&page_url=/experiences/exp.php&Q&ID=1&E&");
+  }
+</script>
+<!-- Sperowider </exclude> -->
+<!--googleon: index-->
+</div>
+</div><!-- end content-messpath-frame -->
+<!-- - - - end message - - - -->
+</td></tr></tbody></table>
+
+
+    
+<div class="title">An Unforgettable Ride!</div>
+<div class="substance">Ecstasy</div>
+<div class="author">by <a href="/experiences/exp.cgi?A=Search&amp;AuthorSearch=Johnny+Blaze&amp;Exact=1">Johnny Blaze</a></div>
+
+
+<div class="ts-citation">Citation:&nbsp;&nbsp; Johnny Blaze. "An Unforgettable Ride!: An Experience with Ecstasy (exp1)". <u>Erowid.org</u>. May 30, 2000. erowid.org/exp/1</div>
+
+<br>
+
+
+
+<div class="report-text-surround">
+<table cellspacing="0" cellpadding="0" border="0" align="right">
+<tbody><tr><td></td><td width="15">&nbsp;</td></tr>
+</tbody></table>
+
+<!-- DoseChart -->
+  <table class="dosechart" cellspacing="0" cellpadding="4" bordercolor="#224422" border="2">
+    <tbody><tr>
+     <td width="90" align="right">DOSE:<br> T+ 0:00</td>
+     <td class="dosechart-amount" width="90" align="center">0.5 tablets</td>
+     <td class="dosechart-method" align="center">oral</td>
+     <td class="dosechart-substance"><a href="/chemicals/mdma/">MDMA</a></td>
+     <td class="dosechart-form"><b>(pill / tablet)</b></td>
+    </tr>
+    <tr>
+     <td width="90" align="right">&nbsp; T+ 0:45</td>
+     <td class="dosechart-amount" width="90" align="center">0.5 tablets</td>
+     <td class="dosechart-method" align="center">oral</td>
+     <td class="dosechart-substance"><a href="/chemicals/mdma/">MDMA</a></td>
+     <td class="dosechart-form"><b>(pill / tablet)</b></td>
+    </tr>
+</tbody></table>
+<br><br>
+<!-- End DoseChart  -->
+<!-- Start Body -->
+Finally friday arrives, i bought my 30$ mercedes xtc pill. I've been so psyched for this. I decided to take the pill at my friends house. I was nervous so i took half a pill and plenty of water so i did not overheat. Walked to his house which was about 20 minute walk. I got to his house, i was still not feeling it, i was very upset because i thought it was a dud. After 45 minutes from takin the first half, i took the second and boy was that a good idea! 15 minutes after the second half was ingested, the first effects hit me lightly. I began to feel relaxed all over, slight numbness, no mental effects yet. 10 minutes after that i got a rush of energy and began to get up run around and just shooting hoops. I tell my friend i need a cigarette, so we go outside to smoke one. after smoking my cigarette, we begin to walk down the street for some fresh air, thats when i knew i was in for the best time of my life. The grass beneath my feet on his yard felt like a pillow and cushioned my walking. Then we began to walk down the road, and as we are walking i just stop sit down in the sunlight. I needed to go into the sunlight, he tried to make me go further down and i had a temper tantrum. so we sat, and i began to go on and on about what a nice day it was, the sun was out, blue sky, birds chirping, 45 degrees and was just enjoying life. 
+<br>
+
+<br>
+30 min after the second half... Physical effects by this time are complete relaxness, it was hard to walk! No metal effets. Some visual distortion such as my friend bouncing around when he actually just stood there. we walk back into the house then i was real mentally and physically fucked up. I sat down and was falling and swaying left and right, my mind was running in all directions shooting out questions like. ' why am i here?' why did i do this? does my friend hate me? do my parents hate me? and whole body was completely light feeling. i almost had to throw up it was so intense and scary. 
+<br>
+
+<br>
+15 minutes after this scary ordeal i begin to settle down, i layed down inside his warm house on the rug, touching and rubbing my hands like everywhere, everything was orgasmic feeling. I took a look at my eyes, i look like satan! it was so cool! Then after about and hour laying on the floor, other people come to his house who i dont even really know, but i just conversed with them with no feeling of stupidity, embarresment or consequences, very cool, i loved it, an hour later my eyes still were dialated but effects were over, it was fantastic<!-- End Body -->
+<br><br style="clear:both;">
+
+
+<table class="footdata" cellspacing="0" cellpadding="5" border="0">
+<tbody><tr><td width="700">Exp Year: 2000</td><td width="90">ExpID: 1</td></tr>
+<tr><td>Gender: Not Specified</td><td>&nbsp;</td></tr>
+<tr><td>Age at time of experience: Not Given</td><td>&nbsp;</td></tr>
+<tr><td>Published: May 30, 2000</td><td>Views: 76,391</td></tr>
+<tr><td colspan="2" align="center">[ <a href="exp.php?ID=1&amp;format=pdf" type="text/pdf">View as PDF (for printing)</a> ] [ <a href="exp_pdf.php?ID=1&amp;format=latex">View as LaTeX (for geeks)</a> ]
+[ <a href="#" onclick="expChangeColors(); return false;">Switch Colors</a> ]
+</td></tr>
+<tr><td colspan="2">MDMA (3) : Small Group (2-9) (17), First Times (2)</td></tr>
+<!--  <img src="/images/new.gif" alt="May"> -->
+</tbody></table>
+
+</div> <!-- end report-text-surround -->
+<!-- c4ca4238a0b923820dcc509a6f75849b -->
+
+
+<hr>
+<div class="disclaimer">
+COPYRIGHTS: All reports are copyright Erowid and you agree not to download or analyze the report data without contacting Erowid Center and receiving permission first.<br>
+
+Experience Reports are the writings and opinions of the individual authors who submit them.<br>
+Some of the activities described are dangerous and/or illegal and none are recommended by Erowid Center.
+</div>
+
+<hr>
+<table class="footer" width="100%"><tbody><tr>
+<td width="35%">Erowid Experience Vault</td>
+<td width="35%" align="right"><a href="/general/about/about_copyrights.shtml">© 1995-2017 Erowid</a></td>
+</tr></tbody></table>
+<hr>
+
+<map name="exp_header">
+  <area shape="rect" coords="37,51,112,76" href="/experiences/exp_front.shtml" alt="Experience Vaults Index">
+  <area shape="rect" coords="122,51,205,76" href="/experiences/exp_list.shtml" alt="Full List of Substances">
+  <area shape="rect" coords="215,51,297,76" href="/experiences/exp_search.cgi" alt="Search">  
+  <area shape="rect" coords="307,51,390,76" href="/experiences/exp_submit.cgi" alt="Submit Report">
+  <area shape="rect" coords="400,51,478,76" href="/experiences/change_settings.php" alt="User Settings">
+  <area shape="rect" coords="488,51,560,76" href="/experiences/exp_about.cgi" alt="About">
+  <area shape="rect" coords="570,51,670,76" href="/psychoactives/psychoactives.shtml" alt="Main Psychoactive Vaults">
+</map>
+
+<div id="admin-controls"></div>
+
+
+
+
+ 
+
+
+</body>`
+
 module.exports = {
-  ReportListBody100
+  ReportListBody100,
+  ReportBody
 }

@@ -24,7 +24,7 @@ module.exports = (function () {
               .split('%')[0]
               .split(/\r?\n/)
             urls.pop()
-            scrape(urls)
+            scrape(substance, urls)
           })
         }
       }
@@ -46,9 +46,9 @@ module.exports = (function () {
       keys = optionList.map(option => {
         const [sval, ...rest] = option.split(/,(.+)/)
         const key = rest.join('')
-          .toLowerCase()
+          .toLowerCase().trim()
           .replace(/-|\s-\s/g, ' ')
-          .replace(/\s/g, '-')
+          .replace(/(\s|\/)/g, '-')
         const path = `/${prefix}/${key}`
         wisdom[path] = null
         return { key, sval }

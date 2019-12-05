@@ -11,8 +11,9 @@ process.on('exit', function (code) {
 
 function initScraper (hello) {
   const init = sx('/initialize')
-  // const init = sx('/cat')
+  const initList = sx('/cat')
   init(hello)
+  initList()
   const ping = sx('/ping')
   ping()
 }
@@ -35,5 +36,13 @@ function helloScraper () {
   // allSettings()
 }
 
-// initScraper(helloScraper)
-helloScraper()
+function scrapeToadVenomExperiences () {
+  // const toadVenomSettings = sx('/substances/toad-venom')
+  // toadVenomSettings()
+  const toadVenomExps = sx('/experiences/toad-venom')
+  toadVenomExps()
+}
+
+// initScraper()
+// helloScraper()
+scrapeToadVenomExperiences()

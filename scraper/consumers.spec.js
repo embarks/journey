@@ -42,3 +42,18 @@ test('consume a page of urls', (done) => {
   expect(typeof writeFile.mock.calls[0][1]).toBe('string')
   expect(appendFile.mock.calls[0][1]).toBe('%')
 })
+
+test('consume an experience report', (done) => {
+  const { ReportBody } = require('./test-util')
+  // jest.doMock('fs', () => ({
+  //   writeFile: jest.fn((file, data, callback) => {
+  //     console.log(`[test] writeFile(${[file, '{data}', 'fn done()'].join(', ')})`)
+  //     callback(undefined)
+  //     done()
+  //   })
+  // }))
+  const { experienceConsumer } = require('./consumers')
+  const $ = cheerio.load(ReportBody)
+  experienceConsumer('mdma')($)
+  done()
+})

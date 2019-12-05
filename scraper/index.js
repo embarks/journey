@@ -2,11 +2,19 @@
 'use strict'
 // var qs = require('qs')
 const { URL } = require('url')
-const { BASE_URL, XP_BASE_PATH, XP_VAULT_PATH } = require('./config')
+const { BASE_URL, XP_BASE_PATH, XP_VAULT_PATH, REPORT_PATH } = require('./config')
 const { oaty, init } = require('./util')
-const { sayHello, listSubstances, getTotal, reportListConsumer } = require('./consumers')
+const {
+  sayHello,
+  listSubstances,
+  getTotal,
+  reportListConsumer,
+  experienceConsumer
+} = require('./consumers')
 
 module.exports = (function scraper () {
+  const foresight = require('./foresight')
+
   function fromWisdom ({ key, sval }) {
     return () => {
       const url = ({ start, max }) => `${BASE_URL}/${XP_BASE_PATH}/${XP_VAULT_PATH}?S1=${sval}&Max=${max}&Start=${start}`
@@ -37,14 +45,15 @@ module.exports = (function scraper () {
     }
   }
 
-  function recordExperiences (ids) {
-    console.log(ids)
+  function recordExperiences (substance, ids) {
+    const consumeSubstance = function (id, idx) {
+      oaty.get(`${BASE_URL}/${XP_BASE_PATH}/${REPORT_PATH}?id=${id}`, experienceConsumer(substance))
+    }
+    ids.forEach(consumeSubstance)
   }
 
   scraper.getResolveFromWisdom = fromWisdom
   scraper.scrapeFromExperience = recordExperiences
-
-  const foresight = require('./foresight')
 
   const resolver = {
     '/initialize': (next) => {

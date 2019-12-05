@@ -8,6 +8,7 @@ test('foresight.wisdom', () => {
     const fs = jest.requireActual('fs')
     return {
       ...fs,
+      mkdirSync: jest.fn(),
       readFileSync: () => {
         return {
           toString: () => {
@@ -43,6 +44,7 @@ describe('foresight.experiences', () => {
       const fs = jest.requireActual('fs')
       return {
         ...fs,
+        mkdirSync: jest.fn(),
         accessSync: () => {
         }
       }
@@ -71,7 +73,7 @@ describe('foresight.experiences', () => {
     expect(fs.readFile).not.toHaveBeenCalled()
     readThenScrape()
     expect(fs.readFile).toHaveBeenCalled()
-    expect(consumer).toHaveBeenCalledWith([
+    expect(consumer).toHaveBeenCalledWith('cannabis', [
       '113127', '97282,',
       '112686,', '83852,',
       '103280,', '101131,',
