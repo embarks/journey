@@ -45,13 +45,13 @@ test('consume a page of urls', (done) => {
 
 test('consume an experience report', (done) => {
   const { ReportBody } = require('./test-util')
-  // jest.doMock('fs', () => ({
-  //   writeFile: jest.fn((file, data, callback) => {
-  //     console.log(`[test] writeFile(${[file, '{data}', 'fn done()'].join(', ')})`)
-  //     callback(undefined)
-  //     done()
-  //   })
-  // }))
+  jest.doMock('fs', () => ({
+    writeFile: jest.fn((file, data, callback) => {
+      console.log(`[test] writeFile(${[file, '{data}', 'fn done()'].join(', ')})`)
+      callback(undefined)
+      done()
+    })
+  }))
   const { experienceConsumer } = require('./consumers')
   const $ = cheerio.load(ReportBody)
   experienceConsumer('mdma')($)

@@ -67,6 +67,7 @@ describe('scraper', () => {
       }
     })
     jest.doMock('fs', () => ({
+      existsSync: jest.fn(),
       openSync: jest.fn(),
       closeSync: jest.fn(),
       accessSync: jest.fn(),
@@ -177,8 +178,10 @@ describe('scraper', () => {
     jest.spyOn(foresight, 'experiences')
     const sx = require('.')
     expect(() => sx()).toThrow()
-    expect(sx('/substances')).not.toBeInstanceOf(Function)
     expect(foresight.wisdom).toHaveBeenCalledTimes(0)
+
+    expect(sx('/substances')).toBeInstanceOf(Function)
+    expect(foresight.wisdom).toHaveBeenCalledTimes(1)
 
     expect(sx('/experiences/please-do-not-make-this-file')).toBeUndefined()
     expect(sx('/substances/please-do-not-make-this-route')).toBeUndefined()
@@ -203,9 +206,5 @@ describe('scraper', () => {
     // it should have only read the substances file once
     expect(foresight.wisdom).toHaveBeenCalledTimes(1)
     expect(foresight2.wisdom).toHaveBeenCalledTimes(1)
-  })
-
-  test('', () => {
-
   })
 })

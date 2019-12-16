@@ -3,7 +3,7 @@ const qs = require('qs')
 const fs = require('fs')
 const chalk = require('chalk')
 const { log } = require('../logs')
-const { handleError, initSettings } = require('./util')
+const { handleError, initSettings, isAllOption } = require('./util')
 
 const DATFILES = `${process.cwd()}/datfiles`
 
@@ -18,7 +18,7 @@ function listSubstances ($) {
   const data = []
   substances.each(function (i, e) {
     const sval = $(e).val()
-    const name = $(e).text()
+    const name = isAllOption(sval) ? 'all' : $(e).text()
     data.push(`${sval},${name}`)
     if (i !== 0) {
       initSettings(`/datfiles/reports/${name.toLowerCase().trim()

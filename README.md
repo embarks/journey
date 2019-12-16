@@ -9,16 +9,21 @@
   - [x] manual scrape
   - [x] log
   - [x] datfile
-- [ ] inc 3: (poc) list all experiences
-  - [ ] manual scrape
-  - [ ] log
-  - [ ] datfile
+- [x] inc 3: (poc) list all experiences
+  - [x] manual scrape
+  - [x] log
+  - [x] datfile
   - [x] inc 3.1: urls to reports
   - [x] inc 3.2: title / key / selector 
   - [ ] inc 3.3.0: calculate size required to store reports in datfiles
-  - [ ] inc 3.3.1: store reports (?)
-- [ ] inc 4: (admin) scrape command to update datfiles
+  - [x] inc 3.3.1: store reports (?)
+- [x] inc 4: (admin) scrape command to update datfiles
 - [ ] inc 5: distribute *
+  - [ ] inc 5.0: (admin) get cli to work with basic commands
+    - [ ] `smokem up` - initialize!
+    - [ ] `smokem ?` - show available substances
+    - [ ] `smokem SUBSTANCE` - get substance settings and prompt for report download
+    - [ ] `smokem SUBSTANCE browse`
   - [ ] inc 5.1: (admin) publish command to update npm package
   - [ ] inc 5.2: (cli) make browsable
 - [ ] inc 6: word frequency by substance analysis
@@ -39,5 +44,5 @@ SUBSTANCE    name of the substance to get experiences
 
 ## options
 ```
---urls       list all urls for the SUBSTANCE
+-b  --browse       all urls for the SUBSTANCE in a browsable list
 ```

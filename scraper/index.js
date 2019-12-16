@@ -3,7 +3,7 @@
 // var qs = require('qs')
 const { URL } = require('url')
 const { BASE_URL, XP_BASE_PATH, XP_VAULT_PATH, REPORT_PATH } = require('./config')
-const { oaty, init } = require('./util')
+const { oaty, init, isAllOption } = require('./util')
 const {
   sayHello,
   listSubstances,
@@ -16,6 +16,9 @@ module.exports = (function scraper () {
   const foresight = require('./foresight')
 
   function fromWisdom ({ key, sval }) {
+    if (isAllOption(sval)) {
+
+    }
     return () => {
       const url = ({ start, max }) => `${BASE_URL}/${XP_BASE_PATH}/${XP_VAULT_PATH}?S1=${sval}&Max=${max}&Start=${start}`
 
@@ -78,8 +81,8 @@ module.exports = (function scraper () {
     if (!path) throw Error('You must provide a path to the scraper')
     const url = new URL(path, 'foo://emwaves.org')
     const route = url.pathname
-
-    if (!(typeof adultResolver[route] === 'function')) {
+    const routeExists = typeof adultResolver[route] === 'function'
+    if (!routeExists) {
       if (route.startsWith('/substances')) {
         // synchronously read from files scraped by initialization
         // provide the previously scraped information required for the process

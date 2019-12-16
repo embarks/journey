@@ -12,7 +12,7 @@ test('foresight.wisdom', () => {
       readFileSync: () => {
         return {
           toString: () => {
-            return '0,--- Nonce ---\n' +
+            return '0,-all-\n' +
             'Yes.,LSD\n' +
             'Yes!,Cannabis\n' +
             'YES!,Opioids\n' +
@@ -30,6 +30,8 @@ test('foresight.wisdom', () => {
     ({ sval }) => sval
   )).toEqual(
     {
+      '/substances': '0',
+      '/substances/-all-': '0',
       '/substances/lsd': 'Yes.',
       '/substances/cannabis': 'Yes!',
       '/substances/opioids': 'YES!',

@@ -86,7 +86,12 @@ function handleError (err) {
   }
 }
 
+function isAllOption (sval) {
+  return parseInt(sval) === 0
+}
+
 module.exports = {
+  isAllOption,
   handleError,
   oaty,
   init,

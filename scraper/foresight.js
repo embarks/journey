@@ -2,7 +2,7 @@
 // it should try to read the lists and create routes
 const fs = require('fs')
 const { error } = require('../logs')
-const { handleError } = require('./util')
+const { handleError, isAllOption } = require('./util')
 
 module.exports = (function () {
   let keys = []
@@ -36,8 +36,7 @@ module.exports = (function () {
 
   function substances () {
     try {
-      // TODO get all
-      const [, ...optionList] =
+      const optionList =
       fs.readFileSync(`${process.cwd()}/datfiles/substances`)
         .toString()
         .split('%')[0]
@@ -49,7 +48,11 @@ module.exports = (function () {
           .toLowerCase().trim()
           .replace(/-|\s-\s/g, ' ')
           .replace(/(\s|\/)/g, '-')
-        const path = `/${prefix}/${key}`
+        let path = `/${prefix}/${key}`
+        if (isAllOption(sval)) {
+          wisdom[path] = null
+          path = `/${prefix}`
+        }
         wisdom[path] = null
         return { key, sval }
       })
@@ -84,6 +87,7 @@ foresight(arg) must be one of foresight(${Object.keys(foresight).join(' | ')})`)
       const { key, sval } = pair
       const path = `/${prefix}/${key}`
       wisdom[path] = makePath({ key, sval })
+      if (isAllOption(sval)) { wisdom[`/${prefix}`] = makePath({ key, sval }) }
     })
     foresight.settings = wisdom
     return foresight.settings
