@@ -1,3 +1,4 @@
+
 jest.mock('./config', () => ({
   BASE_URL: 'https://bobloblaw.law.blog',
   XP_BASE_PATH: 'blogs',
@@ -9,6 +10,7 @@ describe('scraper', () => {
     jest.unmock('../logs')
     jest.unmock('./foresight')
     jest.unmock('./util')
+    jest.unmock('./consumers')
     jest.unmock('fs')
   })
 
@@ -120,6 +122,15 @@ describe('scraper', () => {
     expect(spy).toHaveBeenCalledTimes(1)
   })
   test('experience', (done) => {
+    jest.doMock('./consumers', () => {
+      return {
+        experienceConsumer: jest.fn(() => {
+          return jest.fn(() => {
+            done()
+          })
+        })
+      }
+    })
     jest.doMock('fs', () => {
       const rest = jest.requireActual('fs')
       return {
@@ -132,15 +143,16 @@ describe('scraper', () => {
       }
     })
     const fs = require('fs')
+    const consumers = require('./consumers')
     const sx = require('.')
     const doScrape = sx('/experiences/lsd')
     expect(doScrape).toBeInstanceOf(Function)
     expect(fs.readFile).not.toHaveBeenCalled()
     doScrape()
     expect(fs.readFile).toHaveBeenCalled()
-    done()
+    expect(consumers.experienceConsumer).toHaveBeenCalled()
   })
-  test('order of operations', () => {
+  xtest('order of operations', () => {
     jest.doMock('fs', () => ({
       constants: {
         R_OK: true
@@ -187,6 +199,7 @@ describe('scraper', () => {
     expect(sx('/substances/please-do-not-make-this-route')).toBeUndefined()
 
     expect(sx('/experiences/lsd')).toBeInstanceOf(Function)
+    expect(sx('/substances/lsd')).toBeInstanceOf(Function)
     expect(sx('/substances/lsd')).toBeInstanceOf(Function)
     expect(foresight.wisdom).toHaveBeenCalledTimes(1)
 

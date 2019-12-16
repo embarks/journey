@@ -26,13 +26,12 @@ function isInitialized (key) {
 
 function init () {
   // TODO existsSync
-  if (
-    !fs.existsSync(`${process.cwd()}/datfiles`) ||
-    !fs.existsSync(`${process.cwd()}/datfiles/reports`)
-  ) {
+  if (!fs.existsSync(`${process.cwd()}/datfiles`)) {
     fs.mkdirSync(`${process.cwd()}/datfiles`)
+  } else log(chalk`{bold.yellow WARN!} DATFILES already initialized`)
+  if (!fs.existsSync(`${process.cwd()}/datfiles/reports`)) {
     fs.mkdirSync(`${process.cwd()}/datfiles/reports`)
-  } else log(chalk`{bold.yellow WARN!} DIRs already initialized`)
+  } else log(chalk`{bold.yellow WARN!} REPORTS already initialized`)
   if (!fs.existsSync(`${process.cwd()}/datfiles/substances`)) {
     fs.closeSync(fs.openSync(`${process.cwd()}/datfiles/substances`, 'w'))
   } else log(chalk`{bold.yellow WARN!} substances file already initialized`)
@@ -68,9 +67,8 @@ const oaty = (function () {
 
 function handleError (err) {
   if (err) {
-    error(chalk`{bold.red ERR!} Scrape precondition failed`)
-    error(err)
-    process.exit(1)
+    error(chalk`{bold.red ERR!} Scrape precondition failed:`, err)
+    throw new Error('An erowid scraper precondition failed')
   }
 }
 

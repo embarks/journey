@@ -19,7 +19,7 @@ module.exports = (function scraper () {
     return () => {
       if (isAllOption(sval)) {
         return () => {
-          throw new Error('Not ready!')
+          console.warn('nothing to see here')
         }
       }
       // constrcut the url
