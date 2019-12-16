@@ -3,7 +3,7 @@ const qs = require('qs')
 const fs = require('fs')
 const chalk = require('chalk')
 const { log } = require('../logs')
-const { handleError, initSettings, isAllOption } = require('./util')
+const { handleError, isAllOption } = require('./util')
 
 const DATFILES = `${process.cwd()}/datfiles`
 
@@ -20,11 +20,6 @@ function listSubstances ($) {
     const sval = $(e).val()
     const name = isAllOption(sval) ? 'all' : $(e).text()
     data.push(`${sval},${name}`)
-    if (i !== 0) {
-      initSettings(`/datfiles/reports/${name.toLowerCase().trim()
-      .replace(/-|\s-\s/g, ' ')
-      .replace(/(\s|\/)/g, '-')}`)
-    }
   })
   data.push('%')
   fs.writeFileSync(`${DATFILES}/substances`, data.join('\n'))
@@ -82,6 +77,7 @@ function experienceConsumer (substance) {
   log(chalk`{bold.bgBlack.white ${substance}} Initializing experience consumer`)
   // this will happen async
   return ($) => {
+    // TODO deal with pulled quotes
     const title = $('.title').text().trim()
     const datfile = `${DATFILES}/reports/${substance}/${title}`
     log(chalk`{bold.bgBlack.white ${substance}} {bold.blue Scraping} ${substance}/${title}`)

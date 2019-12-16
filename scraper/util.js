@@ -41,18 +41,6 @@ function init () {
   initCache['/datfiles'] = true
 }
 
-function initSettings (key) {
-  try {
-    if (!fs.existsSync(`${process.cwd()}${key}`)) {
-      fs.mkdirSync(`${process.cwd()}${key}`)
-      log(chalk`{yellow.bgBlack mkdir} ${key}`)
-    }
-  } catch (e) {
-    // silently fail
-    error(e)
-  }
-}
-
 const oaty = (function () {
   function cheerioify (consumer) {
     return (err, res, body) => {
@@ -94,6 +82,5 @@ module.exports = {
   isAllOption,
   handleError,
   oaty,
-  init,
-  initSettings
+  init
 }

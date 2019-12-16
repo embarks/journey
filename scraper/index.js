@@ -16,10 +16,13 @@ module.exports = (function scraper () {
   const foresight = require('./foresight')
 
   function fromWisdom ({ key, sval }) {
-    if (isAllOption(sval)) {
-
-    }
     return () => {
+      if (isAllOption(sval)) {
+        return () => {
+          throw new Error('Not ready!')
+        }
+      }
+      // constrcut the url
       const url = ({ start, max }) => `${BASE_URL}/${XP_BASE_PATH}/${XP_VAULT_PATH}?S1=${sval}&Max=${max}&Start=${start}`
 
       let start = 0
