@@ -12,16 +12,16 @@ const {
   experienceConsumer
 } = require('./consumers')
 
+var http = require('http')
+var https = require('https')
+http.globalAgent.maxSockets = 3
+https.globalAgent.maxSockets = 3
+
 module.exports = (function scraper () {
   const foresight = require('./foresight')
 
-  function fromWisdom ({ key, sval }) {
-    return () => {
-      if (isAllOption(sval)) {
-        return () => {
-          console.warn('nothing to see here')
-        }
-      }
+  function fromWisdom ({ key: oKey, sval: oSval, keys }) {
+    const collectBySubstance = ({ key, sval }) => {
       // constrcut the url
       const url = ({ start, max }) => `${BASE_URL}/${XP_BASE_PATH}/${XP_VAULT_PATH}?S1=${sval}&Max=${max}&Start=${start}`
 
@@ -49,11 +49,20 @@ module.exports = (function scraper () {
         }
       })
     }
+
+    if (isAllOption(oSval)) {
+      return () => {
+        keys.filter(({ sval }) => !isAllOption(sval)).forEach((substance) => {
+          collectBySubstance(substance)
+        })
+      }
+    }
+    return collectBySubstance
   }
 
-  function recordExperiences (substance, ids) {
-    const consumeSubstance = function (id, idx) {
-      oaty.get(`${BASE_URL}/${XP_BASE_PATH}/${REPORT_PATH}?id=${id}`, experienceConsumer(substance))
+  function recordExperiences (ids) {
+    const consumeSubstance = function (id) {
+      oaty.get(`${BASE_URL}/${XP_BASE_PATH}/${REPORT_PATH}?id=${id}`, experienceConsumer(id))
     }
     ids.forEach(consumeSubstance)
   }

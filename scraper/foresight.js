@@ -16,15 +16,21 @@ module.exports = (function () {
       fs.accessSync(`${process.cwd()}/datfiles/${substance}`, fs.constants.R_OK)
       // return a function to take in the scraper function
       return function setting (scrape) {
-        return function readUrlsThenScrape () {
+        return function parseRowsThenScrape () {
           fs.readFile(`${process.cwd()}/datfiles/${substance}`, (err, data) => {
             handleError(err)
-            const urls = data
+            const rows = data
               .toString()
               .split('%')[0]
               .split(/\r?\n/)
-            urls.pop()
-            scrape(substance, urls)
+            rows.pop()
+            const experiences = rows.map((experience) => {
+              const [id, oTitle, oSubstanceList] = experience.split(',"')
+              const title = oTitle.replace('"', '')
+              const substanceList = oSubstanceList.replace(/("|\[|\])/, '')
+              return Object.freeze({ id, title, substanceList })
+            })
+            scrape(experiences)
           })
         }
       }
@@ -86,8 +92,8 @@ foresight(arg) must be one of foresight(${Object.keys(foresight).join(' | ')})`)
     keys.forEach(pair => {
       const { key, sval } = pair
       const path = `/${prefix}/${key}`
-      wisdom[path] = makePath({ key, sval })
-      if (isAllOption(sval)) { wisdom[`/${prefix}`] = makePath({ key, sval }) }
+      wisdom[path] = makePath({ key, sval, keys })
+      if (isAllOption(sval)) { wisdom[`/${prefix}`] = makePath({ key, sval, keys }) }
     })
     foresight.settings = wisdom
     return foresight.settings

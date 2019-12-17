@@ -30,7 +30,7 @@ test('consume a page of urls', (done) => {
   }))
 
   const { reportListConsumer } = require('./consumers')
-  const { ReportListBody100 } = require('./test-util')
+  const { ReportListBody100, ReportListBody100Result } = require('./test-util')
   const { writeFile, appendFile } = require('fs')
   const consume = reportListConsumer({
     substance: 'lsd',
@@ -39,6 +39,7 @@ test('consume a page of urls', (done) => {
 
   const $ = cheerio.load(ReportListBody100)
   consume($)
+  expect(writeFile.mock.calls[0][1]).toEqual(ReportListBody100Result)
   expect(typeof writeFile.mock.calls[0][1]).toBe('string')
   expect(appendFile.mock.calls[0][1]).toBe('%')
 })
@@ -54,6 +55,11 @@ test('consume an experience report', (done) => {
   }))
   const { experienceConsumer } = require('./consumers')
   const $ = cheerio.load(ReportBody)
-  experienceConsumer('mdma')($)
-  done()
+  const fs = require('fs')
+  experienceConsumer({
+    id: '1',
+    substanceList: 'Ecstacy',
+    title: 'An Unforgettable Ride!'
+  })($)
+  expect(fs.writeFile.mock.calls[0][0]).toEqual(`${process.cwd()}/datfiles/#1: [Ecstacy] An Unforgettable Ride!`)
 })

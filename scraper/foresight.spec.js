@@ -54,7 +54,7 @@ describe('foresight.experiences', () => {
     const foresight = require('./foresight')
     expect(foresight.experiences()).toBeInstanceOf(Function)
   })
-  test('reads a file', async (done) => {
+  test('reads a file', (done) => {
     jest.doMock('fs', () => {
       const fs = jest.requireActual('fs')
       return {
@@ -62,7 +62,7 @@ describe('foresight.experiences', () => {
         accessSync: () => {
         },
         readFile: jest.fn((url, cb) => {
-          cb(undefined, '113127\n97282,\n112686,\n83852,\n103280,\n101131,\n93660,\n96838,\n94784,\n94222\n%')
+          cb(undefined, '109504,"Before and After","LSD & Escitalopram (Lexapro)"\n106589,"Insight","LSD"\n108950,"Anxiety Nothingness and the Logic-Machine","LSD"\n108676,"Tripp on the Hill","MDMA, 1P-LSD & LSD"\n102840,"Colors of an LSD Sunrise","LSD"\n89368,"Kundalini and the Power of Love","LSD & Cannabis"\n103265,"A Very Psychedelic Vacation","LSD, Nitrous Oxide, 4-HO-DiPT & Cannabis"\n69875,"Tripping on the Paradisiac Brazilian Coast","LSD"\n107585,"At Last A Psychedelic Hike and More","LSD"\n98139,"Self-Deception Induced Nightmare","Suspected DOB (sold as LSD), Cannabis & Synthetic Cannabinoids"')
         })
       }
     })
@@ -75,12 +75,50 @@ describe('foresight.experiences', () => {
     expect(fs.readFile).not.toHaveBeenCalled()
     readThenScrape()
     expect(fs.readFile).toHaveBeenCalled()
-    expect(consumer).toHaveBeenCalledWith('cannabis', [
-      '113127', '97282,',
-      '112686,', '83852,',
-      '103280,', '101131,',
-      '93660,', '96838,',
-      '94784,', '94222'
-    ])
+    expect(consumer).toHaveBeenCalledWith([{
+      id: '109504',
+      substanceList: 'LSD & Escitalopram (Lexapro)',
+      title: 'Before and After'
+    },
+    {
+      id: '106589',
+      substanceList: 'LSD',
+      title: 'Insight'
+    },
+    {
+      id: '108950',
+      substanceList: 'LSD',
+      title: 'Anxiety Nothingness and the Logic-Machine'
+    },
+    {
+      id: '108676',
+      substanceList: 'MDMA, 1P-LSD & LSD',
+      title: 'Tripp on the Hill'
+    },
+    {
+      id: '102840',
+      substanceList: 'LSD',
+      title: 'Colors of an LSD Sunrise'
+    },
+    {
+      id: '89368',
+      substanceList: 'LSD & Cannabis',
+      title: 'Kundalini and the Power of Love'
+    },
+    {
+      id: '103265',
+      substanceList: 'LSD, Nitrous Oxide, 4-HO-DiPT & Cannabis',
+      title: 'A Very Psychedelic Vacation'
+    },
+    {
+      id: '69875',
+      substanceList: 'LSD',
+      title: 'Tripping on the Paradisiac Brazilian Coast'
+    },
+    {
+      id: '107585',
+      substanceList: 'LSD',
+      title: 'At Last A Psychedelic Hike and More'
+    }])
   })
 })

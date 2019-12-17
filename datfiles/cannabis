@@ -1,2450 +1,2459 @@
-113283
-87624
-101088
-89042
-48983
-15999
-113127
-97282
-112686
-83852
-103280
-101131
-93660
-96838
-94784
-94222
-86934
-91993
-92318
-76658
-57989
-52875
-35827
-55163
-54051
-24176
-32155
-47209
-46856
-19741
-19472
-41802
-14584
-41750
-17033
-8300
-15293
-29727
-23437
-28270
-13619
-10725
-108100
-113617
-109870
-112930
-100032
-111216
-111844
-111584
-111302
-111198
-102123
-70409
-70622
-81778
-84321
-78331
-109008
-70162
-108574
-101469
-85662
-107823
-74570
-97116
-102835
-101991
-95802
-103010
-102804
-102742
-98816
-87742
-86291
-92059
-96351
-86671
-67343
-75491
-93217
-71764
-99572
-95880
-100840
-92866
-69715
-100740
-93952
-94073
-86357
-95953
-83354
-84422
-70489
-68855
-92628
-71918
-93063
-89351
-98101
-76166
-89695
-96729
-92178
-93987
-92625
-97684
-96466
-97541
-96360
-94944
-92874
-66795
-95598
-76238
-92522
-95087
-68803
-68354
-94297
-91377
-90477
-94759
-87497
-72928
-94130
-89195
-66372
-88724
-85666
-93644
-93462
-93205
-89132
-91745
-90857
-75339
-76972
-92013
-91177
-83216
-90027
-67027
-81732
-64204
-63796
-63754
-85051
-65200
-65118
-64114
-64364
-78904
-72673
-62658
-58136
-58538
-71476
-69891
-56558
-53405
-66337
-67872
-50235
-48632
-63456
-55513
-46429
-45711
-63062
-61835
-45092
-44961
-13428
-63212
-53092
-53633
-60953
-45939
-52096
-61636
-54761
-42680
-64914
-42168
-55586
-44730
-62729
-62283
-34165
-57654
-49697
-58364
-42987
-38821
-26496
-60371
-58443
-36571
-49119
-36678
-56319
-55099
-36476
-31105
-26333
-51669
-35795
-20864
-34531
-24584
-34521
-49320
-56494
-43284
-28638
-49929
-44769
-35836
-51618
-46757
-52288
-50382
-30693
-33811
-25680
-48846
-27424
-27251
-28195
-23227
-28619
-25373
-26113
-34454
-32403
-46009
-51644
-51233
-48444
-43664
-24521
-50352
-45464
-22405
-20629
-46850
-46849
-19046
-31931
-18240
-44849
-18032
-42167
-17028
-16055
-15164
-13419
-13255
-12586
-19759
-34328
-37418
-34928
-37542
-37341
-33101
-34991
-34888
-9108
-30930
-17206
-28318
-7873
-26083
-24310
-14057
-19781
-7304
-14007
-9857
-11273
-4556
-3980
-11244
-4246
-3361
-3038
-10884
-9916
-9038
-6577
-5215
-3821
-1113
-3243
-2699
-2379
-2239
-113829
-105436
-100066
-113216
-111191
-91780
-113317
-113277
-105277
-111241
-71875
-113048
-112993
-101734
-66688
-112770
-112823
-112813
-112774
-112651
-112621
-98880
-112443
-77874
-112393
-82764
-112247
-98817
-71698
-81941
-69054
-98859
-33053
-70068
-111810
-111840
-111720
-111588
-68514
-78544
-69285
-68960
-70710
-103764
-56706
-71365
-111303
-81763
-111079
-110982
-97539
-111289
-58734
-110913
-74768
-110025
-90125
-100193
-70884
-83309
-110341
-95950
-107830
-98018
-105176
-98832
-107273
-96626
-87053
-104894
-68369
-80830
-88873
-107047
-103800
-86913
-103255
-103352
-101823
-66717
-102370
-89173
-87500
-83142
-102075
-82964
-67516
-101986
-85673
-83238
-81810
-101895
-76433
-74736
-74478
-81399
-96384
-80451
-79132
-76532
-75699
-70992
-95593
-100106
-101026
-95148
-97670
-100952
-89644
-100894
-92249
-99980
-97817
-98835
-95056
-72501
-99251
-92647
-100507
-93439
-67023
-66299
-95785
-98522
-96450
-68179
-94150
-83203
-73627
-70770
-96712
-98534
-87035
-91065
-87427
-95751
-97819
-97837
-69429
-67875
-66827
-94062
-62415
-67450
-68928
-92341
-89581
-92082
-93034
-90990
-94675
-93806
-94200
-66125
-68052
-68314
-76047
-68695
-29330
-91279
-93274
-87055
-88995
-79035
-90792
-89544
-81915
-56251
-88849
-64720
-81008
-64474
-57349
-84907
-65440
-65332
-69926
-82103
-60705
-73305
-56554
-56220
-55726
-61453
-61127
-60420
-62143
-61345
-60209
-58682
-54223
-56870
-57445
-57875
-57427
-67567
-57929
-61718
-67519
-58025
-57819
-57909
-41189
-57690
-73726
-56845
-57400
-55332
-55384
-55209
-56236
-54760
-55378
-72873
-63333
-46344
-54318
-45377
-45085
-54295
-53877
-54907
-69182
-53916
-53696
-53595
-53933
-74623
-53398
-53536
-53258
-53030
-44758
-50185
-16739
-44688
-52893
-48462
-44398
-52759
-49481
-55762
-52366
-64283
-42842
-42478
-42276
-50920
-51940
-61413
-57476
-51577
-50504
-49968
-49949
-70509
-40093
-39629
-49047
-37505
-37556
-38090
-49363
-37874
-49091
-49008
-47721
-47241
-37028
-46934
-16695
-47306
-39335
-66061
-54769
-33651
-67144
-45885
-25029
-33473
-65084
-60201
-42038
-37208
-61600
-44888
-61175
-60718
-25089
-24624
-24477
-56814
-56677
-56442
-44155
-55620
-54378
-53304
-23223
-52224
-47303
-51558
-20664
-51198
-43230
-54939
-20191
-54132
-36484
-63924
-18213
-42395
-42363
-41327
-42453
-18010
-37697
-35234
-36410
-35676
-39271
-39385
-34098
-55751
-63513
-34789
-35373
-58103
-23265
-30811
-31537
-21649
-30370
-55882
-31194
-29610
-38917
-49643
-30164
-28385
-33661
-56818
-28596
-40662
-27808
-26512
-35761
-43956
-41977
-19429
-21935
-38867
-37693
-25085
-37725
-28957
-40766
-51531
-60827
-50686
-42609
-34533
-56322
-36391
-11402
-23330
-24315
-34709
-48191
-25118
-37410
-25880
-10851
-35962
-21957
-22765
-31291
-58905
-35784
-32042
-31957
-30890
-32677
-29601
-29050
-29286
-59794
-38639
-35430
-30332
-34644
-41766
-34960
-27397
-34663
-34579
-26812
-24853
-58608
-58599
-58006
-33376
-23052
-22939
-21623
-33637
-56613
-25547
-50453
-29945
-54577
-35409
-31388
-31869
-52494
-50990
-42705
-30054
-27648
-28021
-14529
-52862
-53383
-46599
-28865
-46852
-29766
-45074
-45597
-42346
-24543
-23274
-48728
-21809
-33308
-48103
-20591
-20478
-19983
-20221
-19732
-19783
-19501
-19543
-18895
-29556
-43030
-13929
-26971
-12911
-43997
-18852
-29110
-18149
-14892
-41360
-20631
-14405
-14052
-14008
-13850
-17826
-16337
-15216
-29453
-13280
-16664
-15225
-35510
-13246
-15326
-14393
-40167
-14603
-17685
-38978
-13713
-14146
-13360
-13239
-13065
-13954
-12839
-12148
-10105
-24957
-38550
-27815
-16686
-38231
-34933
-37521
-10768
-35449
-29389
-10454
-10326
-9557
-9711
-9216
-9231
-8201
-29873
-30458
-30114
-7958
-28315
-27470
-16727
-24650
-24204
-18342
-8877
-22992
-7417
-7268
-21215
-12676
-20755
-7156
-14381
-19390
-18460
-18192
-16620
-17205
-7079
-10676
-15179
-15509
-6838
-14638
-13665
-13984
-8742
-6620
-6452
-6426
-6248
-8485
-6208
-12627
-12578
-8368
-5510
-5144
-5101
-11707
-11465
-4086
-3707
-3071
-11335
-11242
-11236
-11214
-2719
-7047
-5120
-9552
-69165
-96622
-94006
-95550
-11645
-11227
-97888
-104562
-113616
-105021
-106830
-60409
-41819
-113428
-81434
-113512
-99673
-87248
-74960
-106987
-82357
-101202
-74450
-95560
-107587
-103350
-99512
-84409
-101659
-93615
-93722
-93668
-96206
-100265
-80486
-113264
-113303
-111335
-76297
-27053
-50514
-113209
-113186
-103283
-107132
-74101
-100053
-103839
-103029
-88168
-72083
-112990
-112947
-103016
-71791
-112896
-16877
-112927
-105095
-88169
-91049
-110060
-112816
-112802
-112270
-112753
-64349
-112055
-82585
-55433
-63486
-112687
-112527
-12260
-28659
-112337
-54202
-66805
-24995
-78921
-97519
-112268
-112250
-33296
-90004
-19887
-89113
-19596
-22953
-69483
-20444
-90980
-111975
-65450
-68326
-71388
-86320
-12735
-107208
-109291
-111386
-54031
-61082
-67319
-41437
-21078
-83809
-111725
-24127
-110814
-53323
-24301
-111445
-69771
-87811
-69678
-77263
-103602
-111390
-69740
-95486
-108610
-93730
-62144
-65505
-65948
-26797
-67324
-73429
-62128
-85566
-107179
-110366
-46904
-95985
-110340
-110581
-89949
-110335
-110154
-107645
-80782
-64712
-66556
-106471
-81648
-109569
-73594
-109211
-109463
-77175
-108361
-109158
-109191
-67999
-76656
-83323
-70529
-108829
-108684
-107386
-108153
-108020
-92123
-79360
-11449
-102133
-103824
-43574
-75306
-67683
-84945
-88323
-90589
-99616
-87863
-83307
-83305
-82694
-100405
-100512
-91156
-100744
-77155
-96091
-68307
-34425
-98695
-16396
-98908
-100453
-93800
-67089
-94859
-97453
-98247
-77941
-75135
-96910
-91229
-97876
-69368
-95385
-97643
-97767
-66166
-47841
-94167
-94747
-76852
-83926
-84611
-39965
-83873
-47321
-92750
-40130
-86985
-89536
-92835
-78469
-92015
-67772
-75961
-31784
-89297
-66684
-87180
-65579
-82094
-81544
-76749
-27214
-31520
-45664
-76169
-64766
-64538
-51568
-74529
-76703
-78651
-78918
-60743
-74413
-77186
-74746
-35329
-53177
-55020
-46542
-45723
-29536
-62585
-61159
-53382
-16008
-67594
-64322
-56366
-58559
-60755
-57888
-54266
-56041
-69656
-62717
-80200
-70174
-50044
-58644
-63458
-52583
-69526
-63923
-79361
-66858
-45592
-69103
-58902
-54950
-45571
-45285
-54572
-75517
-46160
-45970
-53931
-53446
-74609
-19975
-20081
-52710
-70126
-44738
-13420
-13873
-44367
-43930
-43769
-52419
-43531
-28966
-43205
-42872
-42723
-42682
-42677
-72906
-72845
-42335
-42334
-42042
-41824
-41448
-67246
-63980
-51261
-51254
-54098
-55698
-55599
-57513
-52017
-54252
-51427
-53651
-40404
-50414
-70740
-49931
-10736
-39688
-39558
-53850
-39448
-39431
-21301
-23418
-37724
-38975
-38926
-37380
-37823
-66560
-11445
-50537
-20612
-31320
-56214
-57313
-24964
-36158
-52367
-37196
-35888
-35794
-52016
-35669
-52655
-35064
-35025
-34993
-67707
-34988
-34924
-34330
-34259
-34247
-39405
-64001
-33884
-33846
-33725
-33343
-33281
-32830
-21099
-32039
-31412
-31169
-30796
-30567
-30223
-29983
-29852
-32591
-27651
-45196
-29435
-29206
-45247
-56403
-28314
-27224
-25386
-65411
-23446
-22733
-22064
-66068
-47936
-21913
-11624
-48056
-48560
-43233
-19992
-58012
-35338
-41854
-33772
-41767
-42404
-16613
-35691
-41639
-23909
-55077
-42107
-64293
-34324
-34283
-57755
-41224
-62874
-11367
-15148
-21552
-48766
-12113
-25603
-45176
-60835
-47726
-37323
-21174
-15113
-36622
-63300
-30599
-27147
-29637
-62402
-13483
-13342
-46453
-31992
-30085
-29996
-10764
-30011
-22454
-48762
-26997
-35018
-40995
-24470
-13138
-36534
-24975
-52047
-27379
-28732
-29008
-29149
-51165
-29461
-12879
-24369
-24264
-11294
-22728
-17100
-35637
-10660
-26900
-38468
-24496
-16471
-31133
-27774
-25235
-10362
-42032
-47123
-39461
-55710
-33646
-33316
-22263
-45804
-22148
-20107
-47142
-24930
-25805
-50031
-40743
-21423
-21169
-34583
-24685
-11453
-22884
-22844
-21224
-20668
-22466
-18654
-19228
-33739
-18919
-22026
-38991
-45153
-15848
-39994
-34420
-11105
-10187
-10108
-10031
-9940
-9932
-9923
-9786
-9725
-9666
-9569
-9548
-9536
-9512
-9502
-9392
-9298
-15291
-13266
-13178
-13120
-8423
-17605
-17386
-15467
-14979
-24518
-19569
-14589
-13845
-13127
-11802
-13227
-12763
-12840
-12086
-13411
-12272
-12275
-27264
-28387
-11804
-11794
-17510
-30944
-30402
-12239
-37376
-27600
-12374
-8411
-11604
-21851
-11374
-37444
-10722
-36930
-26820
-36763
-10531
-12643
-10321
-8390
-8255
-29990
-9372
-34742
-34200
-8237
-8697
-15141
-32505
-32225
-31239
-31389
-13013
-30917
-31074
-8075
-20227
-7997
-29831
-30078
-29606
-25698
-18620
-8130
-29281
-10283
-21484
-18753
-15183
-29219
-29141
-16519
-13604
-20973
-28664
-26779
-28002
-14080
-27672
-27623
-21881
-26560
-7844
-7795
-7769
-25477
-25331
-25164
-7612
-7588
-7485
-7495
-23989
-23746
-9833
-15491
-12264
-11524
-9132
-7466
-22671
-7568
-7557
-7551
-22297
-22265
-14319
-20971
-21997
-7368
-7250
-19116
-9993
-21245
-7200
-12130
-20150
-19626
-19542
-19341
-19218
-18652
-18395
-18205
-18162
-17992
-7597
-7660
-7114
-7153
-7144
-16094
-15178
-12238
-6910
-6900
-6821
-6799
-6810
-6696
-6642
-12784
-12861
-6544
-6531
-6476
-9820
-6727
-12521
-11900
-6840
-6310
-7827
-6071
-5786
-5742
-5570
-5532
-5415
-5100
-4866
-4843
-4793
-4695
-4678
-4622
-4532
-3805
-4294
-4197
-4188
-4269
-3169
-3415
-3125
-3135
-2928
-2677
-9623
-5870
-9497
-2381
-2416
-9726
-9641
-9599
-289
-8869
-8857
-3797
-8587
-3001
-157
-8709
-8532
-8477
-6870
-100
-86
-8352
-8357
-7355
-1638
-7668
-6118
-4809
-6825
-1488
-6723
-6589
-1220
-1186
-6093
-5432
-5426
-3558
-3002
-1330
-4141
-4779
-4672
-5476
-2313
-81
-3136
-4994
-4404
-4016
-4510
-4956
-5342
-2651
-4332
-1070
-1010
-617
-3827
-3966
-3992
-4072
-2823
-3927
-3660
-976
-839
-3550
-3102
-1058
-2903
-3426
-3047
-827
-747
-2892
-745
-741
-2867
-932
-2851
-589
-1045
-645
-2826
-2326
-2535
-722
-719
-494
-490
-440
-1004
-1082
-311
-414
-1830
-1791
-1790
-1789
-1788
-1787
-384
-25104
-56060
-55734
-91908
-90693
-103792
-37917
-10692
-11437
-101794
-82284
-74633
-51670
-62755
-11457
-110623
-86789
-77130
-11124
-14318
-30150
-106713
-10674
-86917
-74620
-74141
-88913
-73208
-84344
-86627
-104998
-92758
-95586
-78492
-79965
-77127
-83502
-92342
-90506
-101084
-113233
-98848
-113068
-113174
-113240
-11426
-113017
-90531
-36308
-109271
-63291
-33849
-100585
-105106
-113121
-102290
-111220
-97955
-98228
-108696
-66458
-40635
-40769
-61249
-43076
-32218
-93330
-102519
-86277
-109500
-95513
-71502
-69083
-14706
-32217
-87463
-112762
-74389
-112703
-68692
-88052
-38612
-29356
-112353
-32952
-17355
-71158
-96001
-30155
-112017
-100790
-112289
-108313
-76049
-112287
-112265
-112264
-112220
-11299
-91002
-111125
-52468
-66796
-104634
-60690
-109607
-50341
-37224
-96714
-11014
-108928
-109890
-65376
-35640
-109164
-110694
-15774
-109552
-110568
-52552
-32878
-31960
-25744
-41755
-28761
-25777
-104599
-111717
-70490
-23415
-57554
-52620
-66184
-53499
-89833
-81299
-39554
-51732
-34426
-111609
-24971
-29303
-47758
-49066
-19008
-92642
-45982
-82101
-42801
-28935
-36555
-60551
-110964
-68335
-111347
-62328
-21856
-50056
-104922
-66150
-69806
-77814
-110663
-69310
-89864
-63113
-42252
-97568
-110428
-50626
-71373
-63886
-110445
-110282
-80855
-109701
-94289
-108691
-108527
-108426
-108217
-69777
-107506
-105798
-107404
-97254
-10536
-107101
-21491
-102749
-103561
-88633
-81907
-100255
-100493
-100526
-100599
-91322
-99989
-98941
-29408
-94135
-98499
-98459
-76148
-92325
-10432
-11022
-69175
-36056
-95587
-87203
-94991
-80412
-92130
-91608
-68206
-88971
-91458
-25096
-88583
-57891
-88344
-86816
-86712
-85087
-75596
-57348
-84217
-70327
-83347
-82360
-24768
-65016
-49940
-79189
-55281
-16851
-53943
-19157
-28953
-27829
-73717
-73143
-73196
-71518
-70190
-70822
-16736
-49937
-10598
-52350
-43784
-60867
-21555
-36613
-67914
-43601
-53609
-46131
-56440
-10918
-67414
-45255
-23412
-26649
-63069
-13770
-56249
-64765
-29052
-40641
-55183
-49441
-13522
-61806
-52465
-58531
-58125
-12606
-12543
-46254
-40694
-53153
-29188
-12523
-39454
-15843
-25014
-21148
-43309
-47901
-45408
-13904
-10019
-9868
-9709
-9659
-9504
-9432
-9358
-9352
-9280
-9248
-9045
-8921
-8796
-8645
-8444
-17570
-17451
-16978
-16095
-39223
-14518
-10742
-26261
-11832
-27061
-16199
-19807
-20989
-11539
-33001
-10260
-35892
-35666
-8137
-35549
-8227
-8374
-8284
-8133
-8542
-8039
-31602
-7989
-29412
-29539
-7884
-9138
-9124
-14371
-23877
-12420
-8126
-28311
-7871
-7864
-7771
-25059
-11143
-24724
-24726
-24708
-24722
-7484
-19099
-21764
-7519
-22220
-22021
-21827
-8607
-15798
-19175
-18762
-18716
-16121
-10586
-6899
-6856
-14255
-12984
-13736
-13482
-6678
-6632
-6617
-6427
-6415
-6691
-6384
-6283
-6219
-6261
-6199
-5887
-5774
-5740
-10293
-5599
-11068
-4770
-4623
-3791
-3962
-3675
-3152
-4419
-4451
-3005
-2766
-11307
-2749
-2672
-2702
-4090
-9449
-9687
-10096
-9134
-3950
-2707
-5413
-113797
-58430
-72279
-11420
-11813
-11384
-11326
-11393
-10824
-52781
-72341
-96230
-110615
-107147
-72120
-72784
-11332
-11400
-10940
-105932
-104354
-10650
-106356
-93156
-111022
-108980
-10983
-109173
-108158
-78101
-82384
-85819
-92147
-11418
-34662
-113291
-31587
-18607
-53936
-93930
-48783
-110157
-84524
-111283
-110116
-108595
-52360
-112794
-103184
-84113
-91472
-112518
-97289
-25864
-63403
-75609
-108794
-94961
-54902
-45444
-55622
-34074
-99286
-87334
-94986
-112508
-112652
-112588
-16225
-29418
-112497
-42710
-42739
-31002
-16622
-86431
-77044
-96167
-105606
-70451
-15305
-11350
-76920
-93689
-29066
-43608
-112332
-14947
-109267
-102237
-39720
-112256
-87923
-67536
-21446
-63533
-75790
-16049
-91636
-19463
-83019
-63975
-96023
-61502
-112019
-47539
-74594
-65798
-86319
-111269
-37878
-111888
-83624
-91200
-15052
-19291
-57555
-13782
-23774
-24734
-31409
-111141
-101400
-27099
-30498
-26322
-93464
-93587
-101711
-24609
-36611
-53752
-57384
-29531
-27139
-30998
-44353
-105523
-82603
-13642
-57225
-65853
-45133
-91230
-49699
-111404
-24081
-101363
-73900
-44161
-66119
-70963
-79239
-66408
-43480
-57159
-75717
-57407
-72351
-41550
-14777
-44408
-104387
-14643
-43609
-57031
-30953
-44124
-52852
-53896
-27326
-46553
-43224
-35511
-90645
-103096
-74865
-69339
-55790
-106211
-90643
-102697
-34277
-32882
-111041
-69970
-66521
-53553
-54349
-47431
-98087
-52283
-39427
-75116
-86596
-68398
-109630
-107106
-73218
-108391
-92374
-70296
-105705
-107344
-107102
-96570
-80056
-69130
-99627
-99704
-95472
-85961
-92364
-88109
-41844
-82030
-86256
-51017
-76965
-64489
-39740
-21226
-68825
-68383
-68226
-19416
-53166
-26952
-24736
-13277
-19173
-19172
-67001
-66722
-24587
-65415
-41557
-38863
-21961
-57112
-12102
-23837
-14737
-10392
-56482
-32008
-15443
-22374
-21115
-19509
-16828
-9605
-17490
-17358
-17202
-19351
-11736
-37270
-10358
-10466
-8422
-8415
-9223
-8961
-34079
-31306
-29719
-29079
-29403
-28007
-17527
-13894
-27457
-7856
-21062
-7673
-24744
-7545
-24455
-7407
-21871
-7971
-22074
-13605
-21608
-21863
-7281
-7138
-7502
-9144
-16266
-7092
-15617
-15290
-6915
-14195
-6510
-6355
-6041
-5445
-5669
-5074
-3873
-3782
-3726
-4289
-3556
-4311
-8122
-10380
-7843
-2762
-9863
-6942
-9415
-9264
-8957
-8871
-8500
-5981
-8319
-98
-8054
-1599
-6365
-6672
-1167
-6010
-3766
-3879
-4304
-4683
-3911
-4030
-1140
-3806
-1256
-1032
-1038
-3713
-1588
-1029
-854
-1176
-1130
-601
-484
-2290
-2163
-426
-9
+113283,"Just Relax","DOB, Nitrous Oxide & Cannabis"
+87624,"Nostalgic Panic on Bong Hits","Cannabis"
+101088,"Simplexity - Unfolding the Fold","4-AcO-DMT & Cannabis"
+89042,"Some Growing Up to Do","MDMA, LSD & Cannabis"
+48983,"The End of the Rabbit Hole - Beauty and Terror","2C-E, Cannabis, Choline, DMAE, Kratom & Piracetam"
+15999,"Panic Rebirth, then Curious Exploration","Cannabis"
+113127,"Mental Molasses Swirl","GHB & Cannabis"
+97282,"First Time With Powerful Effect","Cannabis"
+112686,"Unexpected Effects, Edible vs. Mushrooms","Cannabis (edible) & Mushrooms - P. cyanescens"
+83852,"Encounter With A Fiery Celestial Being","Nitrous Oxide & Cannabis"
+103280,"Peeking Into Insanity and Infinity","LSD & Cannabis"
+101131,"I Became the Universe.","4-AcO-DMT & Cannabis"
+93660,"Best Dance Party Ever Leads to Being Reborn","LSD, Ketamine & Cannabis"
+96838,"How Can One Live With Such Knowledge?","Methoxetamine & Cannabis"
+94784,"Two Experiments","2C-T-2 & Cannabis"
+94222,"Dynamic Duo","Kratom & Cannabis"
+86934,"Hang On to your Ego","Cacti - T. pachanoi & Cannabis"
+91993,"Joyous Union","LSD, Nitrous Oxide, Cannabis & Diazepam"
+92318,"The I of the Storm","Mushrooms & Cannabis"
+76658,"Toking Again After 25 Years","Cannabis"
+57989,"Set and Setting Mean Everything","LSD & Cannabis"
+52875,"Lifes a Journey, Not a Destination","Cannabis"
+35827,"Eyes and Cubes","Cannabis"
+55163,"The Experience","Cannabis"
+54051,"An Amazing Night of Connections","2C-B-Fly, Cocaine & Cannabis"
+24176,"Turtle in My Mouth","Cannabis"
+32155,"Trippin too Hard","Cannabis"
+47209,"Profoundly Altered","2C-E & Cannabis"
+46856,"I Got It Figured Out","DMT & Cannabis"
+19741,"Dimensional Sight Seeing","Mushrooms & Cannabis"
+19472,"Images Outside Dreams","Cannabis"
+41802,"Sublingual THC Tincture","Hash (oil)"
+14584,"'Just Weed?'","Cannabis"
+41750,"My Journey To Insanity","Mushrooms - P. cubensis"
+17033,"We Are Eternal, All This Pain Is an Illusion","Cannabis"
+8300,"Mild Organic/Spiritual Trip","Cannabis"
+15293,"Peripheral Visions and Synthetic Meaning","Cannabis"
+29727,"Unique, Interesting Experiences","2C-I & Cannabis"
+23437,"Panic and Amnesia","Mushrooms - P. cubensis & Cannabis"
+28270,"Finding Beauty in a Sea of Masks","2C-I, MDMA/MDA, Cannabis, Selegeline, Piracetam, Alcohol & Alprazolam"
+13619,"LSAyahusca","Morning Glory (LSA Extract), Syrian Rue & Cannabis"
+10725,"We Grow Together","Cannabis, Mushrooms"
+18851,"First Time, Afraid of Dying, Now I Love It","Cannabis"
+108100,"Float 8","Floatation Tank, Cannabis & Hyperventilation"
+113617,"Ten Milligram Time Tunnel","Cannabis (edibles)"
+109870,"Like I'd Imagined a Psychedelic Drug Would Be","Cannabis (edible)"
+112930,"Budder Recipe Verification via HPLC","Cannabis"
+100032,"Not for Human Consumption","Mephedrone & Cannabis"
+111216,"Hashish near the Pillars of Hercules","Hashish"
+111844,"The Spiritual Matrix","Mushrooms & Cannabis"
+111584,"Our Adventurous Binge Pt. 1","Amphetamines & Cannabis"
+111302,"Disbelief About the Effects Vanished Forever","Cannabis"
+111198,"The Spirit of Cannabis","Cannabis & Meditation"
+102123,"Everything Feels Extremely Soft","Gabapentin, Cannabis, 5-HTP & Melatonin"
+70409,"Relaxation Followed by Fear and Trepidation","Cannabis"
+70622,"Spinning While High May Cause Fun","Cannabis"
+81778,"So Terribly Fucking Disorientating!","Beer & Cannabis"
+84321,"I Was Curious","Fluoxetine & Cannabis"
+78331,"Fly Away","Cannabis"
+109008,"Let Me Out of This Spaceship So I Can Puke","Cannabis Tincture"
+70162,"Unexpected with Amazing Results","Cannabis"
+108574,"A Whole New World","Cannabis"
+101469,"Short Life's Retrospective","Cannabis"
+85662,"Chronophotography and the Obvious Silence","Cannabis"
+107823,"The Peppermint Fiasco","1P-LSD, Amyl Nitrate & Cannabis"
+74570,"Personal Discoveries : People are Really Invisible","LSD & Cannabis"
+97116,"Extreme Amplified Worry at Anime Convention","Oral Cannabis"
+102835,"Worrisome Side Effects","4-Fluoroamphetamine, Methoxetamine,  2C-T-21, Cannabis & Etizolam"
+101991,"A Peculiar Little World","25C-NBOMe & Cannabis"
+95802,"Disconnected From My Physical Body","LSD & Cannabis"
+103010,"Reversible MAOI Interactions","Moclobemide, MDMA, Amphetamines, NBOmes, 2C-B, Cannabis, et al."
+102804,"Ups Downs  AH Town","AH-7921, Alcohol & Cannabis"
+102742,"Cosmic Singularity","Methoxetamine & Cannabis"
+98816,"Neon Fractal Rocks With Algae and Aliens","2C-I, Mushrooms - P. cubensis, & Cannabis"
+87742,"Vaccumed Out of Reality","Cannabis"
+86291,"Seeking Normality","LSD, Cannabis & Alcohol"
+92059,"Hellishly Fantastical","Datura & Cannabis"
+96351,"First Encounter With Mescalito","Mescaline & Cannabis"
+86671,"Path to Enlightenment","Cannabis"
+67343,"Laced Weed Yields Profundity","Cannabis"
+75491,"Instant Overdrive, Big Responsibility","Dexmethylphenidate & Cannabis"
+93217,"World of Love","Gabapentin, Codeine, Oxycodone, Tobacco & Cannabis"
+71764,"3 Whole Nutmeg","Nutmeg & Cannabis"
+99572,"Introspective Efflorescence","25I-NBOMe & Cannabis"
+95880,"A Night I Will Never Forget","25I-NBOMe, Alcohol, Cannabis & Tobacco"
+100840,"Trials From a Psych Novice","Escaline, UR-144 & Cannabis"
+92866,"Good Day Sunshine","Promethazine, Codeine & Cannabis"
+69715,"A Most Exciting Night on Ecstasy","Ecstasy & Cannabis"
+100740,"Relaxing but Powerful Psychedelia","LSZ"
+93952,"Parade Of Lights","LSD, Mushrooms & Hash Oil"
+94073,"Universal Flight Tools","DMT, Mushrooms & Cannabis"
+86357,"Disassembled Into Atoms","PCP & Cannabis"
+95953,"Fantastic Surrealism","Psilocin & Cannabis"
+83354,"Lost in Space and Time","Lorazepam & Cannabis"
+84422,"The Velvet Lined Brick","Syrian Rue & Cannabis"
+70489,"A Spiritual Chill and an Invasion","LSD & Cannabis"
+68855,"Im a Poolside Accordion Smothered Face Down!","Salvia Divinorum & Cannabis"
+92628,"THC as a Psychedelic","Cannabis"
+71918,"A Mind-Fuck for the Ages","LSD & Cannabis"
+93063,"The Stars and Stripes Are Big and Bright","Mushrooms, Cannabis & Zolpidem"
+89351,"Flipping Through Realities","MDMA, LSD, DMT & Cannabis"
+98101,"Ego Death Through LSD","LSD, MDMA, Cannabis & Alcohol"
+76166,"Thought Loop and Social Signals","Cannabis"
+89695,"62 Hrs & 2 Very Different Experiences","2C-E, Cannabis & Sertraline"
+96729,"The Dance of Psychedelic Hedonism","25I-NBOMe, Cannabis & Methylphenidate"
+92178,"Journey to the Bush With Aztecs","Cacti - T. pachanoi & Cannabis"
+93987,"Slapping the Bird","DOI, Methoxetamine, Cannabis, Zolpidem & Alcohol"
+92625,"Touched by the God Particle","DMT & Cannabis"
+97684,"Brigids Magic Bullet","TMA-2 &  Cannabis"
+96466,"A Totally Innocent View of the World","AMT & Cannabis"
+97541,"I Did It For Science: Sex on Drugs","Viagra, Ecstasy, Mushrooms, Cocaine, Cannabis, Sex"
+96360,"Pain, Arrhythmias, Hospital Stay","Cannabis, Methylone & Amphetamines (Dexedrine)"
+94944,"Collective Venting","4-Acetoxy-MiPT & Cannabis"
+92874,"A Nightmare with No Escape","2C-I & Cannabis"
+66795,"Musical Impact on the Psychedelic Phenomenon","Cannabis"
+95598,"Like an Itching in My Heart","BOD  & Cannabis"
+76238,"Tripping from THC","Cannabis"
+92522,"A New World, A New Outlook on Life","2C-E & Cannabis"
+95087,"Non-Critical Mass","Pharmahuasca (B. caapi & DMT) & Cannabis"
+68803,"Leaves Many More Questions Than Answers","Salvia divinorum & Cannabis"
+68354,"Holy Cat & Wall People","LSD & Cannabis"
+94297,"4th Dimension and Time Dilation","2C-P,  Nitrous Oxide & Cannabis"
+91377,"Wonderful Day of Euphoria and Fun","4-AcO-DMT & Cannabis"
+90477,"Sporadic Impulses","LSD & Cannabis"
+94759,"Artistic but not Introspective","2C-T-2 & Cannabis"
+87497,"Latent Anxiety Trigger","Cannabis"
+72928,"Ingesting Hash - A Perspective","Cannabis"
+94130,"Overwhelming but Fantastic","2C-T-2 & Cannabis"
+89195,"Accidental Double Dose","LSD & Cannabis"
+66372,"Darkness","Cannabis & Alcohol"
+88724,"The Godvision","LSD & Cannabis"
+85666,"Imp's Mischief","Magic Mushrooms & Cannabis"
+93644,"i-LoVE-NBOMe","25I-NBOMe & Cannabis"
+93462,"Shortcut to Happiness","25C-NBOMe & Cannabis"
+93205,"An Intense First Time","Cannabis (edible)"
+89132,"Happy, Euphoric, Energetic High","Cannabis & Caffeine (brownie)"
+91745,"First Time Trial","2C-TFM"
+90857,"Unplanned Trip","Cannabis & 4-AcO-DMT"
+75339,"Brownies","Cannabis"
+76972,"Kundalini Awakening","Meditation & Cannabis"
+92013,"Moderate Dose Exceptional Experience","4-Aco-DMT & Cannabis"
+91177,"Tranquil with a Touch of American","4-Aco-DMT, B. caapi, & Cannabis"
+83216,"Auditory and Visual Hallucinations","Cannabis & Cannabis Resin"
+90027,"The Joys of Family","Various"
+67027,"A Different Sort of Extraction","Cannabis - Oil Extract"
+81732,"Witchcraft Revisited","Mandrake & Cannabis"
+64204,"Euphoric Blues, Demon Reds","Cannabis & Endogenous (High Fever)"
+63796,"Rushing Warmth and Torn Blackness","Cannabis"
+63754,"Crrrrrrunch! (I'm Not Dreaming?)","Cannabis"
+85051,"Harnessing Panic into the Astral Realm","Cannabis"
+65200,"A Liter of Green Dragon","Cannabis & Alcohol"
+65118,"Under the Watching Moon","Cannabis"
+64114,"Vicarious Interest, Addiction, and Recovery","Cannabis"
+64364,"A New Appreciation for Nature","Cannabis"
+78904,"Happy, Green, and Stinky","Wormwood, Damiana, Passion Flower, Cacti - T. pachanoi & Cannabis"
+72673,"Trapped In My Own Head","Cannabis"
+62658,"O' Bitter Sweet Canna","Cannabis"
+58136,"Awakening to Face a True, Morbid Reality","Cannabis"
+58538,"The Beginning of a Lifelong Appreciation","Cannabis"
+71476,"Good Mixer Drug","Amphetamines (Adderall), Cannabis & Salvia divinorum (15x extract)"
+69891,"Scribblings of an Infant Psychonaut","Cannabis"
+56558,"First Panic Attack","Cannabis"
+53405,"In A Dream","Cannabis"
+66337,"Shamanic Creek","Cannabis"
+67872,"Memory Exploration","Mushrooms - P. cubensis & Cannabis"
+50235,"Awakening the Green Dragon","Cannabis with Alcohol"
+48632,"Humbled","Cannabis & Alcohol"
+63456,"The Night the Universe Tore Itself Apart","LSD & Cannabis"
+55513,"Completely Unexpected Other Dimension","Cannabis, DXM & Bupropion (Wellbutrin)"
+46429,"Far From Gravity","Cannabis"
+45711,"Twisting on Fire","Cannabis"
+63062,"NooMania, Drugs of the Future","Hydergine, Piracetam, Melatonin & Various"
+61835,"The Summer of Poppies","Opium & Cannabis"
+45092,"Ganja Tea","Cannabis"
+44961,"Effects of Heavy Long-term Use Were Surprising","Cannabis"
+13428,"High Was Mostly in the Head","'White Rock Opium' & Cannabis"
+63212,"Time to Remember (Forget)","Mushrooms - Panaeolus cyanescens & P. mexicana, Syrian Rue & Hash"
+53092,"Badly Thought Out, But Fun","Anadenanthera colubrina, Amphetamines, LSD & Cannabis"
+53633,"Euphoric, Confused, Happy, I Must be Stoned","Cannabis"
+60953,"Machine of Society","LSD, Mushrooms, Cannabis & Police"
+45939,"Ecstatically Enthused","Cannabis"
+52096,"The Catalyst","Syrian Rue & Cannabis"
+61636,"Schizophrenic Journey to Heaven, Hell, In-Between and Back","Cannabis"
+54761,"Religious Awakening","Cannabis"
+42680,"The Universe and Pot","Cannabis, Tobacco & Quetiapine"
+64914,"The Ultimate Truth of the Universe","Cacti - T. pachanoi, Salvia divinorum (extract), Cannabis & Nitrous Oxide"
+42168,"Everything Separates","Cannabis"
+55586,"The Splatty Meltdown of Pharms","Pharmaceuticals (Various) & Cannabis"
+44730,"Like a Light Shroom Trip","Cannabis"
+62729,"Koo Koo For Cops","Cannabis"
+62283,"Amazingly Immersive Psychedelic Visions","Anadenanthera peregrina"
+34165,"Goo From The Candy Dish","Cannabis - Hash"
+57654,"My Peer-Pressure-Free First Experience","Cannabis"
+49697,"Rock Bottom Is a Subjective Thing","Cannabis & Alcohol"
+58364,"An Amazing First Experience","Cannabis"
+42987,"Seizure and Flashbacks","Mushrooms & Cannabis"
+38821,"Testing Its Power","Syrian Rue & Cannabis"
+26496,"Not Great for an Escape, But USEFUL!","Diazepam & Cannabis"
+60371,"An Odd Occurrence","Cannabis & Kratom"
+58443,"Fear and Euphoria: The Speedball","Oxycodone, Cannabis, Cocaine & Amphetamines (Adderall)"
+36571,"No Contact with the Mothership","Cannabis"
+49119,"Merry Christmas","Lotus/Lily - Nymphaea nouchali var caerulea (25x extract), Cannabis, Alcohol & Tobacco - Cigarettes"
+36678,"A Gift and a Curse","Cannabis"
+56319,"Newfound Nirvana","Cannabis"
+55099,"The Hallucinations Are Real?","Mushrooms, Peyote & Cannabis"
+36476,"The Way Forward","H.B. Woodrose & Cannabis"
+31105,"Too Much for the Weak","Cannabis"
+26333,"Beyond High.. More than Stoned....","Cannabis"
+51669,"Through the Panic","Cannabis"
+35795,"And Now I Want it Legalized","Cannabis"
+20864,"Tasting Paradise.","Heroin, Alcohol & Cannabis"
+34531,"Second Time-Didn't I Learn!??","Mushrooms & Cannabis"
+24584,"The Upside Down Tree","Cannabis"
+34521,"New Years Nystagmus","Cannabis & PCP"
+49320,"Stoned Bliss","Dihydrocodeine & Cannabis"
+56494,"Confessions of a Kratom Eater","Kratom (10x extract) & Cannabis"
+43284,"Eternal Paranoia Beyond the Wall of Sleep","Cannabis"
+28638,"Psychosis Triggered by Long-Term Use","Cannabis"
+49929,"A Stoned Weekend","Blue Lotus & Cannabis"
+44769,"Ketamine Himilayas","Ketamine & Cannabis"
+35836,"Conquered My Anxiety","Clonazepam & Cannabis"
+51618,"A Tale of Just One Man","Venlafaxine (Effexor), Cannabis, Alcohol & Tobacco - Cigarettes"
+46757,"Paramedics Came with a Cop","Cannabis"
+52288,"One of My Greatest Discoveries","Cannabis"
+50382,"Strange Unwanted Trips","Tryptophan - L-Tryptophan, Cannabis & Alcohol"
+30693,"A New Dimension of Fear","Cannabis"
+33811,"The Philosopher's Tool","Cannabis"
+25680,"A Hard Lesson in Gastrology","Cannabis - Hash"
+48846,"It's Just a Dream","Modafinil, Tobacco & Cannabis"
+27424,"Do Not Underestimate the Power of the Force","Cannabis"
+27251,"Universal Life","Cannabis"
+28195,"Complete Insanity","Cannabis"
+23227,"Exploring the Vacuum Dimension","Cannabis"
+28619,"Ruminations on the Beginning","Cannabis"
+25373,"Naturally Occuring Euphoria","Mushrooms - P. cubensis, Salvia divinorum & Cannabis"
+26113,"Depression, the Bottom of the Mind","Cannabis"
+34454,"Stayed Awake Too Long","AMT, Cannabis & Methamphetamine"
+32403,"Far from Zen","LSD & Cannabis"
+46009,"Realms of Existence","Cannabis"
+51644,"Between Rachmaninov and Strongbad","Cannabis"
+51233,"In The Toolshed","2C-B & Hash"
+48444,"The Psychoactive Pineal Gland","Various (Meditation, Cannabis, MDA)"
+43664,"First Dance With Lucy","LSD, Nitrous Oxide, Salvia divinorum & Cannabis"
+24521,"One Very Harsh Trip","Cannabis & Nitrous Oxide"
+50352,"A Second Awakening","Cannabis & Meditation"
+45464,"Bad Bhang Recipe","Cannabis & Opium"
+22405,"First Experience With The Dark Side","Mushrooms & Cannabis"
+20629,"Mentalmorphosis","Cannabis"
+46850,"The Nature of Tripping","LSD & Cannabis"
+46849,"Ego Death Reborn, By Way Of The Slug","Mushrooms & Cannabis"
+19046,"Hell Falling","Cannabis"
+31931,"A Thousand Lost Ephiphanies","LSD & Cannabis"
+18240,"Inspired Ramblings","Cannabis"
+44849,"Breathing Better With the Letter B","bk-MBDB, Methylone, DMT & Cannabis"
+18032,"Scientifically Documented Experience","Cannabis"
+42167,"Uploading the Conciousness Worm","DMT, LSD, Nitrous Oxide & Cannabis"
+17028,"Profound Realization of Joy","Mushrooms - P. cubensis & Cannabis"
+16055,"Swimming in Fractalized Spheres of Perception","Cannabis"
+15164,"More Potential Than You Think","Cannabis"
+13419,"Night Of Adderall, Ritalin, And Pot","Amphetamines, Methylphenidate, & Cannabis"
+13255,"From Our Western Heritage","Blue Lotus & Cannabis"
+12586,"To Heaven and Back","Cannabis"
+19759,"I Loved It, but Now It Only Causes Pain","Cannabis & Alcohol"
+34328,"For an Instant I Thought He Might Be Real","Blue Lotus & Cannabis"
+37418,"Do Not Combine!","Venlafaxine (Effexor) & Cannabis"
+34928,"More Physical and Less Mental Than I Expected","Cannabis"
+37542,"Nearly Constant Tracers","Cannabis"
+37341,"THC Detection Times in Occasional Smoker","Cannabis Urine Testing"
+33101,"Unique, Rewarding Range of Experiences","Kratom (extract), Cannabis & Benzodiazepines"
+34991,"After Taking a Year Hiatus","5-MeO-DiPT & Cannabis"
+34888,"Unexpected Result","Cannabis"
+9108,"Weed is the Fuse","LSD & Cannabis"
+30930,"The Wonders of Meth","Methamphetamine & Cannabis"
+17206,"Heart/Breathing Problems","Cannabis"
+28318,"I Became My Heart","Cannabis"
+7873,"Too Far Inside","Cannabis"
+26083,"What is Freaking Out? An Examination...","Cannabis"
+24310,"I Did it For Science","Sildenafil (Viagra), MDMA (Ecstasy) Mushrooms, Cannabis & Cocaine"
+14057,"F.U.B.A.R. on Pot Pastries","Cannabis"
+19781,"Panic Attack","Cannabis"
+7304,"The Meal of Visions and Pure Evil","Cannabis"
+14007,"Cannabis and Kava Comparison","Cannabis & Kava"
+9857,"Bliss, Love, Enlightenment, Insanity","AMT & Cannabis"
+11273,"Fun but Smoking Up Made it a Nightmare","AMT & Cannabis"
+4556,"Summer in Sweden","Cannabis & Alcohol"
+3980,"Wish I Could Feel That Again","Cannabis"
+11244,"Terror Blossom","Cannabis - Hash"
+4246,"Living Nightmare","Cannabis"
+3361,"Bold, Brave, & Strange - 1st time Shroom Trip","Mushrooms & Cannabis"
+3038,"A Total Understanding","Cannabis"
+10884,"Honey Oil Butane Extraction Tips","Cannabis - Oil Extract"
+9916,"Stumbling on His Stash","Cannabis"
+9038,"Sacred Laughter and the Unknown","4-Acetoxy-DiPT, DPT & Cannabis"
+6577,"Psychosis","Cannabis"
+5215,"Thought I'd Made It, But Was Wrong","Cannabis"
+3821,"Almost Too Easy","Urinalysis (the NIDA 5-Drug Panel)"
+1113,"Intense, Terrifying and Unconcerning","Syrian Rue & Cannabis"
+3243,"Smoked 2C-T-7 Works....Wonderfully","2C-T-7 & Cannabis"
+2699,"Tantric Combo","MDMA, Sildenafil (Viagra) & Cannabis"
+2379,"Valium Log","Diazepam (Valium) & Cannabis"
+2239,"Pete the Happy Homegrower","Cannabis"
+113829,"Incredibly Intense Cannabis Experience","Cannabis & Nicotine"
+105436,"Emerald Buddha","bk-2C-B, Cannabis & Meditation"
+100066,"Withdrawal, and Clean at One Month","Cannabis - High THC"
+113216,"Long Lasting, Highly Dissociative","Cannabis (edible)"
+111191,"Panic, Depersonalization and the in-Between","Cannabis"
+91780,"Riding Waves of Electricity","Cannabis"
+113317,"The Odyssey of Uplifted Being","Salvia divinorum, Changa & Hash"
+113277,"Very Good With Hash","2C-B & Hash (edible)"
+105277,"I'm Going to Die Tonight","Cannabis (edible)"
+111241,"First Time I Smoked in Many Years","Cannabis"
+71875,"Thought It Wasn�t Much�","Cannabis, Alcohol & Coffee"
+113048,"Lamictal Did Not Reduce Intensity","3-MeO-PCE"
+112993,"Something Telling Me That I Can't Forget the Trip","Cannabis - High CBD (Tincture)"
+101734,"Beyond Tollerance Reduction","Memantine, Tobacco, Cannabis & Amphetamines (Adderall)"
+66688,"I Couldn't Control My Heart","Diphenhydramine & Cannabis"
+112770,"My Body Felt Absolutely Wonderful","Cannabis - High CBD & Tobacco"
+112823,"Infinite Amount of Voices, Infinite Lives","Cannabis"
+112813,"Music, Icees, and Ill-Advised First Times","Cannabis (edible)"
+112774,"An Avoidable Mistake","LSD & Cannabis"
+112651,"Delayed Trip That Became Musical Bliss","LSD & Cannabis"
+112621,"EXTREME Psychosis. Pure Evil-Spirited Terror!","Methamphetamine, Cannabis & Sleep Deprivation"
+98880,"Terrifying Rebirth","4-AcO-DMT & Cannabis"
+112443,"Into Cosmic Infinity, Self-Liberation","4-AcO-DMT & Hash Oil"
+77874,"Sucked Into a Nihilistic Void","Cannabis"
+112393,"Slices of Time","Cannabis (Edible)"
+82764,"The Worst Experience Imaginable","LSD & Cannabis"
+112247,"Cannapills: Too High for Too Long","Cannabis"
+98817,"Brief but Not Unsuccessful","Cacti - T. pachanoi & Cannabis"
+71698,"The Start to the End of My Paranoia","Cannabis"
+81941,"I Thought Everything Had Changed Forever","Cannabis"
+69054,"Next Time I'll Stick With the Mushrooms","Mushrooms & Cannabis (oral)"
+98859,"Am I Flirting With the Devil","2C-B, Nitrous Oxide & Cannabis"
+33053,"The Being","Cannabis"
+70068,"Losing My Mind","Cannabis & Salvia divinorum (extract)"
+111810,"A Strangely Familiar Place","Salvia divinorum (15x extract) & Cannabis"
+111840,"Weekend Use","Kratom & Cannabis"
+111720,"Fighting the High","Cannabis"
+111588,"43y/o Learned to Vape, Got Uncomfortably Baked","Cannabis"
+68514,"I Felt Alone.  Very Alone.","Cannabis"
+78544,"Mild Effects, but Spiritually Energizing","Sceletium tortuosum (5x extract) & Cannabis"
+69285,"Orgasmic Understanding","Cannabis"
+68960,"I Had Developed a Desire to Try","Cannabis"
+70710,"Second Attempt Four Years After Horrid First","Cannabis"
+103764,"Endless Stream of Parallel Consciousnesses","Cannabis (dabs)"
+56706,"Cookies Weren't What We Expected","Cannabis (Edible)"
+71365,"A Quiet Bond","MDMA & Cannabis"
+111303,"Thought Loops and Panic Attack","DMT & High-CBD Cannabis"
+81763,"Sex with the Universe","Cannabis"
+111079,"There Were Warning Signs for 20 Years","Cannabis"
+110982,"Laser Tag - A Tribal Ritual","Cannabis"
+97539,"Painful Psychedelia","Migraine with Aura & Various"
+111289,"The Bong Dies at the End","Cannabis & Nitrites (Poppers)"
+58734,"Approach Eating It With Caution","Cannabis"
+110913,"Panic and Despair","Cannabis (Edible)"
+74768,"Who is God, A Journey Through Music","Mushrooms & Cannabis"
+110025,"Chilling For Science","Etizolam & Cannabis"
+90125,"Improved Sexual Performance and Connection","Damiana & Cannabis"
+100193,"Neglected Set & Setting, Got Put in My Place","Mushrooms & Cannabis"
+70884,"Bad Panic Trip","Cannabis"
+83309,"No Better Bliss Than for Once Just Not Caring","Cannabis"
+110341,"The Worst Four Hours of My Life","Cannabis"
+95950,"Stopping Time","Mushrooms"
+107830,"Mildly Psychedelic","A. confusa, Cannabis, Passion Flower, Nelumbo nucifera, & Tobacco"
+98018,"Nightmare K-Hole","Cannabis & Ketamine"
+105176,"Edible Overdose Danger","Cannabis"
+98832,"Three Exciting Days","MXE & Cannabis"
+107273,"Turned Out I Wasn't Cautious Enough","Cannabis & Guarana"
+96626,"A Fractal World","Cannabis"
+87053,"Potentiation Buddy for My Weed","Moclobemide & Cannabis"
+104894,"Difficulty Unexpected","Methoxetamine & Cannabis"
+68369,"Withdrawal","Cannabis"
+80830,"A Pseudo-MDMA high","Tramadol, Ativan, Valium, Kratom, Soma, Cannabis & Alcohol"
+88873,"Toilet Seat Trip","Cannabis"
+107047,"THC-like Effects","DMT  & Cannabis (high CBD strain)"
+103800,"Extreme Chills And Hallucinations","Cannabis & Alcohol"
+86913,"Like MDMA but Less Euphoric","Methylone & Cannabis"
+103255,"Grinding Along the Edge of Reality","LSD & Cannabis"
+103352,"A Hazy Blend of Reality and Fantasy","LSD & Cannabis"
+101823,"Lost Control Naked Violence Hospital Jail","25I-NBOMe & Cannabis"
+66717,"Magical Mystery Tour","Magic Mushrooms & Cannabis"
+102370,"Better Than LSD","AL-LAD & Cannabis"
+89173,"Novelty Therapy","Mushrooms - P. cubensis & Cannabis"
+87500,"Something Beyond Paranoia","Quetiapine, Cannabis & Cannabis Hash"
+83142,"Empathy, Synergy, Energy","LSD & Cannabis"
+102075,"Zoning Out","LSZ & Cannabis"
+82964,"Powerful Imagination Enhancer","Zolpidem & Cannabis"
+67516,"One of the Best of My Life","H.B. Woodrose, Cannabis & Tobacco"
+101986,"These Are Real Drugs","BK-2C-B, Alcohol & Cannabis"
+85673,"White Noise","Cannabis"
+83238,"Profoundly Disturbing Trip","LSD & Cannabis"
+81810,"I Can't Believe I'm Back","Salvia divinorum & Cannabis"
+101895,"Now I Know Why They Call It STP","DOM & Cannabis"
+76433,"Something Extra","Cannabis & PCP"
+74736,"The Chronic Wonderland","Cannabis"
+74478,"The Control Panel of the Universe","DMT, Hydrocodone & Cannabis"
+81399,"Beware of Seroquel with Weed","Quetiapine (Seroquel) & Cannabis"
+96384,"Great Binge Until the Awful Comedown","Methylphenidate & Cannabis"
+80451,"A Question of Trust","Methamphetamine, LSD, Tramadol, Cyclobenziprize, Carisoprodol & Alcohol"
+79132,"The Universe Looking In On Itself","Cocaine, MDMA, Alcohol, Hydrocodone & Cannabis"
+76532,"Anaesthetic Hypothermia","Bupropion, Dextroamphetamine & Cannabis"
+75699,"Silly Girl","Morning Glory & Cannabis"
+70992,"Suicidal Recovery","Methamphetamine, alprazolam, zolpidem, codeine & cannabis"
+95593,"A Day at the Park","25I-NBOMe & Cannabis"
+100106,"Infinite Positive Energy","LSD & Cannabis"
+101026,"A Good Intro to an Amazing Compound","AL-LAD & Cannabis"
+95148,"Elevated Consciousness","2C-E, 4-AcO-DMT & Cannabis"
+97670,"High Dose Psychonaut","2C-B & Cannabis"
+100952,"The Breaking of Reality","AL-LAD & Cannabis"
+89644,"From Body Orgasms to Insanity","2C-I & Cannabis"
+100894,"Almost Mushroomesque","Memantine & Cannabis"
+92249,"A Happy and Fluffy Afternoon","Codeine & Cannabis"
+99980,"25I Mishap","25I-NBOMe, MDMA, Methoxetamine, Cannabis & Nitrous Oxide"
+97817,"Balls Have Been Tripped","4-Aco-DPT & Cannabis"
+98835,"How I Spent the Last Day on Earth","25I-NBOMe, Nitrous Oxide & Cannabis"
+95056,"Death and Resurrection","25I-NBOMe & Cannabis"
+72501,"Simply a Disaster","Magic Mushrooms"
+99251,"Stimulating and Enjoyable","4-HO-DET & Cannabis"
+92647,"An Unexpected Type of High","Cannabis"
+100507,"Mild Hallucinogen, Miserable Comedown","Allylescaline & Cannabis"
+93439,"Rushing in Untouched Corners of My Perception","2C-D, GHB, GBL and Cannabis"
+67023,"Behold, the Psychedelic Power of Cannabis","Cannabis"
+66299,"Like an Upside-Down Pendulum","Cannabis"
+95785,"An Awesome Of Days","2C-P & Cannabis"
+98522,"Millions of Eyeballs","DMT and Cannabis"
+96450,"Coming Back on Earth Floating on a Cloud","5-MEO-MIPT & Cannabis"
+68179,"Primal Union","LSD & Cannabis"
+94150,"Finding God in Upstate New York","LSD, Mushrooms, Cannabis & MDMA"
+83203,"Frozen in the River of Time","Salvia divinorum & Cannabis"
+73627,"My Experiences With Medical Cannabis","Cannabis"
+70770,"By the Light of the Moon","Salvia Divinorum & Cannabis (Edibles)"
+96712,"Tweaked Mushroom Visions","4-HO-DiPT & Cannabis"
+98534,"I Am the Music","25C-NBOMe, MDMA, DET, Cannabis & Alcohol"
+87035,"Enter the Herb","Cannabis"
+91065,"Overwhelming Hallucinations","2C-P & Cannabis"
+87427,"Cactus Flip","Cacti (San Pedro), MDMA & Cannabis"
+95751,"12 Hours of Insanity","2C-P & Cannabis"
+97819,"A Lovely Night With an Intimate Friend","4-Acetoxy-DiPT & Cannabis"
+97837,"First Time","AMT & Cannabis"
+69429,"First Try for Amateur, Straight-A Teens","Cannabis"
+67875,"Camera 1, Camera 2","Cannabis"
+66827,"My Surprise Interaction","Amphetemines (Adderall) & Cannabis"
+94062,"The Day I Met Mary","Cannabis"
+62415,"Four Twenty First High","Cannabis"
+67450,"Got My Sense of Humor Back, But Doesn't Combine Well","Venlafaxine (Effexor), Doxycycline, Caffeine & Cannabis"
+68928,"Hotboxin First-Timer","Cannabis"
+92341,"A Whole New World","2C-E & Cannabis"
+89581,"One Neuron Away from Insanity","2C-I & Cannabis"
+92082,"Excellent Concert Drug","2C-D & Cannabis"
+93034,"Prepping for Ecstatic Upload of Consciousnes","LSD and Cannabis"
+90990,"Toilet Bowl Trip","Cannabis (Edibles)"
+94675,"A Delirious Reaction","25C-NBOMe & Cannabis"
+93806,"The Funniest of Times","Bromo-Dragonfly, Alcohol, Cannabis, Diazepam and Clonazepam"
+94200,"The Sky is a Spider Web","25I-NBOMe, Cannabis & Melatonin"
+66125,"The Senses Magnifying Glass","Cannabis"
+68052,"Fun times with Periwinkles","Periwinkle (C. Roseus) & Cannabis"
+68314,"Increased Depth of Music & Advanced 'Thought'","Cannabis (edible)"
+76047,"A Good and Bad Experience","Methylphenidate & Cannabis"
+68695,"Really Good Haul this Year","Mushrooms - P. cyanescens & Cannabis"
+29330,"I Prefer Smoking","Cannabis (edible)"
+91279,"Almost Overwhelmed but Navigated to Safety","Cannabis (edible)"
+93274,"Scary High with Firecrackers","Cannabis (edible)"
+87055,"X'ed Out without MDMA","Methylone, Morphine, Hydromorphone, Ziprasidone & Cannabis"
+88995,"Easily Tickled","2C-C"
+79035,"An Excellent Alternative for Raving","Adderall & Cannabis"
+90792,"Erections During Urination","Cannabis"
+89544,"The Trip to End Trips","2C-E & Cannabis"
+81915,"Long-term Use - Acute Neurological Effects","Cannabis"
+56251,"Even Moderation Can Become Severe","Bupropion (Wellbutrin XL), Cannabis & Alcohol"
+88849,"Reasonable Comments on THC Withdrawal","Cannabis"
+64720,"Brownies Aren't All That Great","Cannabis"
+81008,"The Long Road","Cannabis"
+64474,"Sedate and Contented","Quetiapine (Seroquel) & Various"
+57349,"Short of Amazing, but Not Bad","Mirtazapine (Remeron) & Cannabis"
+84907,"Typical Paranoid Schitzo","Cannabis"
+65440,"All the Buildings Were Models of Themselves","Cannabis"
+65332,"The Shadow is Out to Steal My Soul","Cannabis"
+69926,"The Pot-Luck Weekend","Cannabis"
+82103,"Vomiting and Paralysis","Cannabis"
+60705,"Addiction, Recovery, Addiction","Alcohol, Cannabis, DXM, Cocaine, Heroin"
+73305,"A Few Interactions","Cannabis & Various"
+56554,"A Complete Understanding of Nothing","Cannabis"
+56220,"Mental and Spiritual Non-Existence","Cannabis"
+55726,"Passed a Saliva Drug Test x2","Cannabis & Drug Testing"
+61453,"The Buzzing Force of Truth","Cannabis"
+61127,"Hawaiian Baby. Huh? Lucid Nations","H.B. Woodrose & Cannabis"
+60420,"A 0.5 Oz Shot to the Head","Cannabis"
+62143,"Thor Brings Down His Hammer Onto My Reality","Cannabis"
+61345,"Is it Dog, the Gurd, Or Did I Brake My Brane?","Morning glory, Cannabis, & Methylphenidate"
+60209,"Angry Kettle","Cannabis"
+58682,"One Toke Over The Line . . . 'Dam Paranoia","Cannabis"
+54223,"Came Out With More Than Sick","Tramadol & Cannabis"
+56870,"The Devil and God Were Pulling at My Soul","Cannabis & Alcohol"
+57445,"The Flower Duet","Cannabis"
+57875,"Enhancement and Improvement","MDMA (Ecstasy) & Cannabis"
+57427,"One Crazy Weed-Trip","Cannabis"
+67567,"Blading in Beantown","Mescaline & Cannabis"
+57929,"Off the Wagon","Cannabis"
+61718,"Soaking the Fibres of Existence","Ketamine & Cannabis"
+67519,"Tough First Experience","Cannabis"
+58025,"We Weren't Lost Afterall","Cannabis, Amphetamines (Adderall) & Alcohol"
+57819,"Terrific Terror","Cannabis"
+57909,"First Time with Maryjane","Cannabis"
+41189,"Panic Attacks and Blood Pressure Drop","Cannabis"
+57690,"Numers & Terror","Cannabis"
+73726,"T'Was The Night","Cannabis"
+56845,"*Cough Cough Cough*","Cannabis"
+57400,"My Lifelong Friend & Sometimes Fiend","Cannabis"
+55332,"The  Most Frightening 30 Minutes of my Life","Cannabis (Hashish) & Alcohol"
+55384,"The Great Realization","Cannabis & Buspirone (BuSpar)"
+55209,"Can You Hear That Music?","Cannabis"
+56236,"Nocturnal Mind and Body Fuck","Cannabis"
+54760,"Losing My Mind","Cannabis"
+55378,"Not Addictive but Very Draining","Cannabis"
+72873,"Mary Jane and Bipolar","Escitalopram (Lexapro) & Hash"
+63333,"Good trip, Bad hangover","Codeine & Cannabis"
+46344,"Little Balls of Joy","Cannabis - Hash"
+54318,"The Great Pattern","Cannabis"
+45377,"Exercise, Health, and Urine Testing","Cannabis, Vitamins/Supplements & Drug Testing"
+45085,"Mary Jane Threw Me a Beating","Cannabis"
+54295,"Beautifully Scattered Dreamy Thoughts","Melatonin & Cannabis"
+53877,"A Double Reality","Cannabis"
+54907,"Pink T & Pop Rocks","PCP & Cannabis"
+69182,"What the Hell!?","Cannabis & PCP"
+53916,"An Artist's Bliss","Cannabis"
+53696,"The First of Many","Alcohol - Hard & Cannabis"
+53595,"The Infinite Universes","Cannabis"
+53933,"A Trip I Can't Believe I Had","Adderall (Amphetamine) & Cannabis"
+74623,"The Superman Effect","Cannabis & Cocaine"
+53398,"40 Hours of Experimentation","Sleep Deprivation & Cannabis"
+53536,"I Regret My Use","LSD, Mushrooms & Cannabis"
+53258,"Instant Unconsciousness","LSD & Cannabis"
+53030,"It Comes Unexpected","Cannabis"
+44758,"Am I Being Heard?","Cannabis"
+50185,"Hotbox Gone Wrong","Cannabis"
+16739,"Sinking In","DXM & Cannabis"
+44688,"Fear and Pain","Cannabis"
+52893,"Too Much, Too Far","LSD & Cannabis"
+48462,"Over and Over Again...","Cannabis"
+44398,"It's Not Just a High - It's a Low","Cannabis"
+52759,"Terrifying/Unforgettable Night","Cannabis"
+49481,"Systemic Lupus","Cannabis"
+55762,"Encapsulated and Free","Poppies & Cannabis"
+52366,"A Man With a Sledgehammer","Cannabis"
+64283,"Lighting the Pineal Gland","Sleep Deprivation, Caffeine, Bodywork (Tai Chi), Breathing, Cannabis & Sound (Binaural Beats)"
+42842,"Time to Fulfill My Mission","Cannabis"
+42478,"Like Floating on Clouds","Hydrocodone & Cannabis"
+42276,"Riding the Downward Spiral","Cannabis"
+50920,"Marijuana Brownie Disaster","Cannabis"
+51940,"Nightmare Unleashed","Atomoxetine(Strattera), Amphetamines (Adderall XR), Mushrooms & Cannabis"
+61413,"Testing Time-Frame","Cannabis & Drug Testing"
+57476,"Happy Place","Lorazepam (Ativan), Kava, Citalopram (Celexa) & Cannabis"
+51577,"Unexpected Intensity","Cannabis"
+50504,"3 Hits From the Vaporizer","Cannabis"
+49968,"Mythbusters","Cannabis"
+49949,"Finding My Way","Cannabis"
+70509,"Induced Panic Attack","Sertaline (Zoloft) & Cannabis"
+40093,"Feels Like Death","Amphetamines, Cannabis & Alcohol"
+39629,"Turning Point Bad Trip","Cannabis"
+49047,"Occasionally I Die","Cannabis"
+37505,"Scary Trip","Cannabis"
+37556,"The Brownies From Hell","Cannabis"
+38090,"My Struggle with Depression","Various"
+49363,"The Brownie Experience","Cannabis"
+37874,"One Ticket, Two Rides","MDMA (Ecstasy) & Cannabis"
+49091,"Kicked Up a Notch","Amphetamines (Adderall) & Cannabis"
+49008,"Neither Here Nor There","Cocaine & Cannabis"
+47721,"A Feeling of Perpetual Entrapment","Cannabis"
+47241,"My Body as an Orchestra","Cannabis"
+37028,"Brain Overload","Cannabis"
+46934,"Melting Into the Furniture","Cannabis & Salvia divinorum (leaves)"
+16695,"Two Years in the Life of a Small Town Dealer","Various"
+47306,"4 Hours Inside My World","Mushrooms & Cannabis"
+39335,"Reality Crystalized","Cannabis (Crystals)"
+66061,"Waterworld Highway","MDMA & Cannabis"
+54769,"Two Things I Will Never Do Again","MDMA & Cannabis"
+33651,"Stupid Stupid Stupid","Cannabis"
+67144,"Death Looming","Cannabis"
+45885,"Spiritual Psychedelic First Time Experience","Cannabis & Alcohol"
+25029,"Brain Blender","Morning Glory, Cannabis & Tea"
+33473,"Bizarre Paranoia","Cannabis"
+65084,"Change for the Better","Oxycodone & Cannabis"
+60201,"Appreciative User","Cannabis"
+42038,"The Seeds Of Self-Destruction","Cannabis"
+37208,"Beware","Paroxetine & Various"
+61600,"Insight Into Amnesia","Lorazepam & Cannabis"
+44888,"Country Lane in the Summer","Catnip & Cannabis"
+61175,"Shaping My Thoughts","Cannabis"
+60718,"Things I Won't Try Again","Mushrooms, Kratom, & Cannabis"
+25089,"Multiple 'Bad Trips'/Panic Attacks Over 7 Yrs","Cannabis"
+24624,"A Very Long Night of Pain","Cannabis & 5-HTP"
+24477,"When I Met 'Them'","Salvia divinorum, Opium & Cannabis"
+56814,"My Armpits Started to Tingle","Cannabis"
+56677,"Unreal","Mushrooms & Cannabis"
+56442,"Maximum Dose Maximum Terror","Venlafaxine (Effexor) & Cannabis"
+44155,"Cramp Relief","Cyclobenzaprine (Flexeril), Cannabis & Ibuprofen"
+55620,"The Song Reaches a Crescendo","Mushrooms - P. cubensis, Cannabis & Alcohol - Beer"
+54378,"Negative High","Cannabis"
+53304,"Study Buddy","Amphetamines (Adderall) & Cannabis"
+23223,"Total Blackout","Cannabis"
+52224,"First Dance with the Lady in the White Dress","Cocaine & Cannabis"
+47303,"Totally Different Experience","MDMA (Ecstasy) & Cannabis"
+51558,"Finally Cured","Cannabis, Olanzapine, Paroxetine (Paxil), & Other Pharmaceuticals"
+20664,"New Source = Powerful","Cannabis - Hash & Tobacco"
+51198,"Old Traditions Yield Modern Results","Cannabis - Hashish"
+43230,"The High That Changed","Cannabis"
+54939,"Dreamy, Confused Thoughts","Cannabis"
+20191,"Rediscovering My Mind","Cannabis"
+54132,"Unsettling Kundalini Activity","Hydrocodone & Cannabis"
+36484,"I Felt Like I was Gonna Die","Cannabis"
+63924,"In the House of the Horse Lover","Salvia divinorum & Cannabis"
+18213,"An Unexpected Trip","Cannabis & Salvia divinorum (leaves)"
+42395,"My Whole Life was Leading up to Today","Cannabis"
+42363,"Changed My Life for the Better","Cannabis"
+41327,"The Orgasm of a Lifetime","Cannabis & Nitrates - Isobutyl Nitrite"
+42453,"Lost at Intergalactic-Sea","Cannabis"
+18010,"Walking Home","Cannabis"
+37697,"Low-dose Intensifies Stone","Amphetamines (Adderall) & Cannabis"
+35234,"Dreamy","Cannabis"
+36410,"Alone and Scared","Cannabis"
+35676,"Thai Power Rangers","Cannabis"
+39271,"Great Christmas Night, Horrible Next Morning","Methylphenidate & Cannabis"
+39385,"It Felt Like a Game and a Play Mixed","Cannabis & Alcohol"
+34098,"New Mind","Cannabis"
+55751,"Removal from Reality","Bupropion, Cocaine & Cannabis"
+63513,"A First to Remember","Cannabis"
+34789,"Not Exactly Benign","Cannabis"
+35373,"You're Not On The Truman Show","Bupropion (Wellbutrin) & Cannabis"
+58103,"Anxiety, PTSD, and HPPD from a Bit of Fun","Cannabis"
+23265,"No Withdrawal Symptoms","Cannabis"
+30811,"I Live In a Dream","Cannabis"
+31537,"The Years Caught Up With Me","Cannabis"
+21649,"Fear, Paranoia, and Happiness","Cannabis"
+30370,"Uninhibited Vibrations","Cannabis"
+55882,"My Trip to Hell","Cannabis"
+31194,"I Felt Like I was Dying","Cannabis"
+29610,"Enchanted Forest","Cannabis"
+38917,"15 Year Addiction","Cannabis"
+49643,"The Shakes","Cannabis"
+30164,"A Year Long Hangover","Cannabis"
+28385,"From Mild To Wild","Morning Glory (Heavenly Blue) & cannabis"
+33661,"Fibromyalgia Syndrome","Clonazepam, Venlafaxine (Effexor XR) & Cannabis"
+56818,"Overall Effect Reduction & One Increase","Paroxetine & Various"
+28596,"My Mind is a Garden","mushrooms (dried)"
+40662,"Different Over Time","Cannabis"
+27808,"No 'Standard' Dose","MDMA (Ecstasy), Mushrooms & Cannabis"
+26512,"Wonderful Fantasy","Cannabis"
+35761,"Fear of Everything","Cannabis"
+43956,"Highlight of My Life","Various"
+41977,"A Lesson in Karma","Cannabis & PCP"
+19429,"An Equation for Bliss","Codeine & Cannabis"
+21935,"My Friends Became Demons","Cannabis"
+38867,"My Body is a Bomb","Salvia divinorum & Cannabis"
+37693,"Basketball Star","Cannabis"
+25085,"The Internal Glow Is Lit","Cannabis"
+37725,"Musical Light Show in a Living Room","Cannabis"
+28957,"Panic Attack","Cannabis"
+40766,"1/2 Zion, 1/2 What the Fuck","MDMA (Ecstasy) & Cannabis"
+51531,"Profound Distortion of Time and Space","2C-E & Cannabis"
+60827,"The Slinky Effect","Alcohol, Cannabis & Unknown"
+50686,"A Fainting Spell","Mushrooms - P. cubensis & Cannabis"
+42609,"Very Physical and Surreal","H. B. Woodrose & Cannabis - Hash"
+34533,"A Doctor's Account","Cannabis"
+56322,"I Smoked the Legal Smoke, and Lost","Tobacco & Cannabis"
+36391,"Almost Died","Methylphenidate, Cannabis, Lorazepam  & Tobacco"
+11402,"The Mind Destroyed","Cannabis"
+23330,"10 Hour Stone","Cannabis - Hash"
+24315,"Complete Distortion Of Time","Cannabis"
+34709,"Trip and a Flashback","Cannabis"
+48191,"Seizure/Convulsion","Mushrooms, Cannabis & Tobacco - Cigarettes"
+25118,"Took Me to Hell","Cannabis"
+37410,"Static Noise from Rebooting Brain","Cannabis"
+25880,"Running While Stoned","Bodywork (Running), Cannabis, Ephedra & Caffiene"
+10851,"Cow Tipping and Celestial Zen","Cannabis"
+35962,"Just a Segment of the Dream That is My Life","Alcohol & Cannabis"
+21957,"Beauty Blooms","Cannabis - Hash"
+22765,"Never Again!!","Cannabis, Alcohol, Mushrooms & Oxycodone"
+31291,"The Shower is Music","Cannabis"
+58905,"Endorphins at Their Most Profound","Oxycodone, Diazepam & Cannabis"
+35784,"My Own Birth","Alcohol & Cannabis"
+32042,"A Little Goes a Long Way","Cannabis & Alcohol (beer)"
+31957,"It Was Interesting","Cannabis"
+30890,"This Time We Used Dad's Pipe","Cannabis"
+32677,"A New Twist on Partying on School Nights","Cocaine & Cannabis"
+29601,"The Scariest Experience of My Life","LSD, Cannabis & Alcohol"
+29050,"Brain Flash Cards","Cannabis"
+29286,"Funny Way to Say 'Ego Loss'","Salvia divinorum (5x extract) & Cannabis"
+59794,"Convulsions after Smoking","Cannabis"
+38639,"I Discovered What Magical Abilities I Have","Cacti - T. pachanoi & Cannabis"
+35430,"Ultimate Relaxation","Cannabis - Hash"
+30332,"A Stimulated Night","Methylphenidate (Concerta), Cannabis & Opium"
+34644,"Walking the Path of Bliss - Briefly","Kava, Cannabis, Absinthe & Nitrous Oxide"
+41766,"Giants in my Bedroom!","Zolpidem & Cannabis"
+34960,"Confused and Heavy","Metaxalone (Skelaxin) & Cannabis"
+27397,"Revelation","Morning Glory (heavenly blue) & Cannabis"
+34663,"What the....?","Cannabis"
+34579,"Earthgasms and Telepathy","Cannabis"
+26812,"The Green , or Yes! You Can Trip on Weed","Cannabis"
+24853,"What It's All About","Cannabis"
+58608,"Great with Smoke","Olanzapine (Zyprexa)"
+58599,"Philosophical High","Cannabis,  Blue Lotus (Nymphaea caerulaea) & leonotis leonurus"
+58006,"Suffering and Love","LSD & Cannabis"
+33376,"Great Synergy","Absinthe & Cannabis"
+23052,"Halcyonic Libation","Cannabis & Alcohol"
+22939,"Potato Chips and Compulsive Liars","Cannabis"
+21623,"Was I Dreaming?","Cannabis & Alcohol (Beer)"
+33637,"A Frightening Trip to Heaven","Cannabis"
+56613,"I Love Smoking Alone","Cannabis"
+25547,"Fun... Ended Up in Suicide","LSD, Cannabis & Alcohol"
+50453,"Panic Attack and Evil Thoughts","Cannabis"
+29945,"Signs and Psychosis","Cannabis"
+54577,"Sensitivity, Panic Attacks, and Psychosis","Cannabis"
+35409,"Fun, But a Bit Dissappointed","Codeine & Cannabis"
+31388,"Of Particular Light - Revelatory","LSD & Cannabis"
+31869,"A Glimpse of Perfection","Cocaine, Alcohol & Cannabis"
+52494,"Didn't Feel Like Moving","Blue Lotus, Salvia divinorum, Cannabis & Alcohol"
+50990,"Exactly How it Feels","Kratom & Cannabis"
+42705,"Meditation on the Combinations","Venlafaxine (Effexor), Cannabis, Mescaline, Cacti, Mushrooms - P. cubensis &  P. cyanescens"
+30054,"Paranoid Mind Warp","Cannabis"
+27648,"Ostracized State of Existence","Cannabis"
+28021,"All Is Full of Love","Cannabis - Hash"
+14529,"The Day I Quit Doing Drugs","Methamphetamine & Cannabis"
+52862,"The Awakening Began In My Soles","Leonotis leonurus, Mugwort, Damiana, Cannabis, Passion Flower & Meditation"
+53383,"Life Compressed into Seven Hours","Piperazines - BZP & TFMPP, Nitrous Oxide & Cannabis"
+46599,"The Evil Twin","Mandrake, Cannabis, & Sceletium tortuosum"
+28865,"Laughing at Me","Cannabis - Hash"
+46852,"Collective Insanity at a Music Festival","Cannabis, LSD & MDMA (Ecstasy)"
+29766,"Discovered at 19","Cannabis"
+45074,"Interesting with Drawbacks","Monkshood, Belladonna, Cannabis, Poppies - Opium, Mandrake & Datura ('Flying Ointment')"
+45597,"Moderation in All Things","Cannabis"
+42346,"Detection Cut-Off Too Low","None (THC detected)"
+24543,"Something Wasn't Right","Cannabis"
+23274,"Induced Paranoid Psychosis/Schizophrenia","Cannabis"
+48728,"Stiffened Lungs","Cannabis"
+21809,"Stoned Beyond Belief, Too Scary to Enjoy It!","Cannabis"
+33308,"The Beginning","Cannabis"
+48103,"From MariPills to Cookies","Cannabis - Oil Extract"
+20591,"Agony Of Speeding In The UK","Amphetamines, Cannabis & Alcohol"
+20478,"Brownie Stoned Intensity","Cannabis (Oral)"
+19983,"Can't Blame It","Cannabis"
+20221,"BC Bud Bomber","Cannabis"
+19732,"Reliving My Life Over and Over...","Cannabis"
+19783,"The Edge of Awareness: Smooth Panic?","Cannabis"
+19501,"Strange Feelings","Cannabis (oral)"
+19543,"Empathy and Art","Mushrooms, Cannabis & Amphetamines (Dexedrine)"
+18895,"Head Meltdown!!","Cannabis"
+29556,"Lessons Learned From Trip Gone Wrong","LSD, Amphetamines, Cannabis, Alcohol & MDMA"
+43030,"Anything is Everything; Everything is Nothing","Opium & Cannabis (hash oil)"
+13929,"Waves of Energy","Cannabis"
+26971,"Spiritual Ash","Cannabis (oral)"
+12911,"Eyes On A Ninety-Degree Angle","Cannabis"
+43997,"Evidentual Mushrooms","Mushrooms & Cannabis"
+18852,"My Last Time Smoking","Cannabis"
+29110,"Close to Death","Cannabis"
+18149,"The Honeymoon is Over","Ecstasy, Amphetamine & Cannabis"
+14892,"Pleading for Help","Cannabis"
+41360,"Not The Enlightenment I Expected","Cannabis"
+20631,"Like a Compass with a Broken Needle","Cannabis"
+14405,"New York City Was Talking To Me","Cannabis"
+14052,"Theory of Emotional Influences","Morning Glory & Cannabis"
+14008,"The Only Lifestyle For Me","Cannabis"
+13850,"Candy Cane Fans and Gelatin","Cannabis & Hydrocodone"
+17826,"And The Roar Began","Cannabis"
+16337,"Another Existence","Salvia divinorum (10x extract) & Cannabis"
+15216,"Shrinking into an Infinitely Small Space","Cannabis"
+29453,"I was Dead and Reborn that Day","Mushrooms - P. semilanceata, Passion Flower, Cannabis & Zolpidem"
+13280,"Eternal Fullfilment","Cannabis, MDMA, Nitrous Oxide"
+16664,"My First Fun Panic","Cannabis"
+15225,"Discovery...","Cocaine, Alcohol & Cannabis"
+35510,"An Unexpected and Frightening trip","Cannabis"
+13246,"Accidently smoked PCP","Cannabis & PCP(?)"
+15326,"Just Feeling Everything So Much","Cannabis"
+14393,"Nothing Like being Stoned on Grass Alone","Bupropion (Wellbutrin) & Cannabis"
+40167,"'Mitch Is Back!'","2C-I & Hash"
+14603,"A Warning for Addictive Personalities","Cannabis"
+17685,"The High Life Hits an Unexpected Low","Alcohol & Cannabis"
+38978,"Toxic Super-Freakout","Cannabis"
+13713,"Breakthrough","Cannabis - Hash"
+14146,"To Hell and Back","Cannabis (White Widow)"
+13360,"Sick and Nauseous","Cannabis & Tobacco"
+13239,"Too Much of Everything","Cannabis & Morning Glory"
+13065,"Both Ends of the Dope Spectrum, in One Night","Alcohol & Cannabis"
+13954,"Beware of Satan's Piss","Alcohol & Cannabis"
+12839,"To This Day I Still Am a Solo Adventurer","Cannabis"
+12148,"MuSiC eNgInEeReD fOr WeEd_sMoKeRs,& MoRe","Cannabis"
+10105,"An LSD-like High","Cannabis"
+24957,"Severe Panic Attack","Cannabis & Divalproex (Depakote)"
+38550,"Complete Body Stone, Moderate Mental Disorientation","Codeine & Cannabis"
+27815,"More Powerful Than You Think","Salvia divinorum & Cannabis"
+16686,"Being Hit By a Ton of Bricks","Cannabis"
+38231,"Scientific Journey","Anadenanthera colubrina, Cannabis sativa,  & Dextroamphetamine"
+34933,"What Was I Thinking When I Wrote That?","Cannabis"
+37521,"Out Of Body Experience, Fading","Cannabis & Escitalopram"
+10768,"I Might Never Smoke Again...","Cannabis"
+35449,"Out-of-body Insight","Cannabis"
+29389,"Ego Death?","Cannabis"
+10454,"Strobe Light Vision and Panic...","Cannabis"
+10326,"I Couldn't Stop 'The Fear'","Mushrooms, Cannabis, & Methamphetamine"
+9557,"Pulsating Warmth, Making Discoveries","Cannabis"
+9711,"I Saw Jesus Christ and Talked With Dead","Mushrooms, Cannabis"
+9216,"What I Get Out of It","Cannabis"
+9231,"And Then, the Paranoia Set in...","Methamphetamine & Cannabis"
+8201,"Feeling that I Couldn't Stop Thinking","Mushrooms & Cannabis"
+29873,"Temporary Insanity","Cannabis"
+30458,"A Different Time Zone","Mushrooms & Cannabis"
+30114,"Did I Just Do Something Bad?","Cannabis & Tobacco"
+7958,"Ground Control, We're Unprepared for Lift-off","Salvia divinorum & Cannabis"
+28315,"'Have I Seen this Before?'   Deja-vu Gone Bad","Cannabis & Bupropion"
+27470,"Listening to the Muse","Cannabis"
+16727,"Barely Made It Back","Cannabis & MDMA"
+24650,"More Common Ground","Mushrooms, MDMA  & Cannabis"
+24204,"I Have Also Been There Before...","Cannabis"
+18342,"Sick to my Stomach","Ephedrine (Ma Huang extract) & Cannabis"
+8877,"Afraid I'll Never Wake Up","Cannabis"
+22992,"Tolerable Panic","Cannabis & Alcohol"
+7417,"Outside Looking In","Mushrooms & Cannabis"
+7268,"A Fantasic Poolside Trip","Salvia divinorum & Cannabis"
+21215,"Black and White Movie","Cannabis"
+12676,"5-HTP Cannabis Preloading Double Blind Study","5-HTP & Cannabis"
+20755,"Perfect Potentiation","2C-T-2, Cannabis & Hydromorphone (Dilaudid)"
+7156,"We Were The Archetypes","DXM & Cannabis"
+14381,"Second Time's The Charm","Cannabis"
+19390,"A Paralyzing Mixture for Someone Like Me","Alcohol & Cannabis"
+18460,"One Hit","Cannabis"
+18192,"Much Too Much Too Much Too Much Too...","Cannabis"
+16620,"Panic and Mean Friends","Cannabis"
+17205,"Master Mindfuck","AMT & Cannabis"
+7079,"New Mammalian Shut Off","Cannabis"
+10676,"A Cosmic Revelation Viewing a Meteor Shower","MDA & Cannabis"
+15179,"Trapped In Time","AMT, Cannabis & Amitriptyline"
+15509,"Undeniable Ignorance....But Whose?","Cannabis"
+6838,"In Love With The World","Cannabis - Hash"
+14638,"2 Days with 5-MeO-AMT","5-MeO-AMT & Cannabis"
+13665,"A Beautiful If Somewhat Confusing Night","MDMA & Cannabis"
+13984,"Despite precautions...","Blue Lotus, Cannabis, & AMT"
+8742,"Nothing Is but I AM","AMT, Clonazepam & Cannabis"
+6620,"Backyard Blitz","Cannabis"
+6452,"Beware, I Underestimated the Seeds","Morning Glory Seeds (Heavenly Blue) & Cannabis"
+6426,"I Hate What Weed Has Done","Cannabis"
+6248,"Panic In 2-D","Cannabis"
+8485,"A Trip to the Mental Ward","Cannabis & 5-MeO-DiPT"
+6208,"Slow Motion Paranoia","Cannabis"
+12627,"5-HTP May Potentiate Cannabis","5-HTP & Cannabis"
+12578,"The Sun","5-MeO-DIPT, Cannabis & 5-MeO-DMT"
+8368,"5-Meo-DIPT notes","5-Meo-DIPT, Cannabis"
+5510,"Nice Report Card! Let's Celebrate!","Cannabis"
+5144,"My Body Was a Meaty Unit","Cannabis - Hash Oil & Salvia divinorum"
+5101,"Sensitive","Cannabis"
+11707,"My Best Friend is My Dad's Dealer","Cannabis"
+11465,"Bhang Death","Cannabis"
+4086,"The long car ride","Cannabis"
+3707,"Geology Field Trip 101","LSD & Cannabis"
+3071,"Everything in Strobe Light...","Cannabis"
+11335,"Calm Observations in a Mushroom Environment","2C-T-2 & Cannabis"
+11242,"First High: Massive Overdose at 17","Cannabis - Hash"
+11236,"A Couple Share a Brain and Body","Mushrooms - P. cubensis & Cannabis"
+11214,"Beyond This World...","Peyote & Cannabis"
+2719,"Seeing the Mind","Cannabis"
+7047,"Reminiscent of Childhood Bliss","Cannabis"
+5120,"Everything's Just GOOD","Morphine, Cannabis & Alcohol"
+9552,"Experiments","Amanita muscaria & Cannabis"
+87660,"Time and Self","Cannabis"
+29608,"The Paradox of Existence","Cannabis"
+113532,"A Walk in the Chelsea Physic Garden","Hash & 2C-B"
+69165,"I Used It to Escape From Reality","Cannabis"
+96622,"It Felt Very Spiritually Involved","MDMA & Cannabis"
+94006,"Opiated Hash - or Something Else","Hash"
+95550,"What Worked for Me","Cannabis & Drug Testing"
+11645,"Infinite Terror","Cannabis - Hash"
+11227,"Doing the Hula Without Lessons","Cannabis"
+97888,"Relieved My Acute Gout","Cannabis - High CBD"
+104562,"Rollercoaster of Emotions","LSD, MDMA, MDA & Cannabis"
+113616,"A Trip I Will Never Forget","Cannabis"
+105021,"More Than Just the High","Cannabis"
+106830,"I Got Trails in My Vision","Cannabis (oral)"
+60409,"The Unending Depth of Reality","Cannabis"
+41819,"Is Anything Real?","Cannabis"
+113428,"Unusual Stimulation","Cacao & Cannabis"
+81434,"Good Mixer","Leonotis leonurus, Cannabis & Alcohol"
+113512,"Can Cause Me to Fail a Drug Test","Cannabis - High CBD"
+99673,"Acute Hypertension and How I Handled It","LSD & Cannabis"
+87248,"I've Used It With Differing Frequency","Cannabis"
+74960,"Great Synergy and Pressure-Drop Dissociation","Sceletium tortuosum, Cannabis & Tobacco"
+106987,"Dreamtime Explorations","Cannabis & Caffeine"
+82357,"Blank Mind With Vision Distortions","Atomoxetine & Cannabis"
+101202,"Subtle, Gentle","Cannabis"
+74450,"The Shakes","Cannabis"
+95560,"It All Feels Like a Dream","Cannabis (edible)"
+107587,"The Second Time, I Made Them Myself","Cannabis (edible)"
+103350,"Un-Jolly Rancher","Cannabis (edible)"
+99512,"Eczema Healing, the Mind and the Body","Cannabis"
+84409,"Never Fear the Unknown","Cannabis"
+101659,"Trembling, Shaking, Convulsing Violently","Cannabis"
+93615,"It's Just Not the Same Anymore","Cannabis"
+93722,"Complete Emptiness at the Worst Time","Cannabis"
+93668,"Went Blind for 10 Minutes","Cannabis & Beer"
+96206,"Compassion and Nostalgic Wonder","Cannabis"
+100265,"Worse than Panic","Cannabis"
+80486,"That's the Big Fuss?!","Cannabis"
+113264,"5-Hour Nightmare","Cannabis & Salvia divinorum"
+113303,"User Control Panel","Cannabis"
+111335,"A Golden Circle","Cannabis & Nitrites"
+76297,"Blocks Marijuana High","Bupropion & Cannabis"
+27053,"Convulsions and OBE","Cannabis"
+50514,"Then the Lights Went Out","Mushrooms & Cannabis"
+113209,"Not Ok Together","Venlafaxine & Cannabis (edible)"
+113186,"Visual Distortions and Thought Disruption","Cannabis & PCP"
+103283,"It Felt Like I Was in a 3-D Movie","Cannabis"
+107132,"I Did Not Know This Was Possible","Cannabis (edible)"
+74101,"Drug Testing: Don't Believe the Hype","Cannabis"
+100053,"Pretty Much Made Me Feel Like I Was Tripping","Cannabis & Mind Machine"
+103839,"I'll Never Smoke Weed on Mushrooms Again","Cannabis after Mushrooms"
+103029,"The High Got More and More Intense","Cannabis (edible)"
+88168,"Horrible Headache","Cannabis"
+72083,"A Deeper Look Into Visuals","LSD & Cannabis"
+112990,"Accidental Salvia and Walking the Planck","1P-LSD, Salvia divinorum & Cannabis"
+112947,"My Brain Warned Me","Cannabis"
+103016,"From Good to Bad to Worse","2C-I & Cannabis"
+71791,"Metamorphic Shake","Cannabis"
+112896,"A Friendship Trip","LSD & Cannabis"
+16877,"Realized Uneasiness","Cannabis"
+112927,"No Effect From Edibles","Cannabis"
+105095,"Eaten Fresh, No High, Cured Arthritis","Cannabis (oral)"
+88169,"Very Calm and Fun","Cannabis (extract)"
+91049,"Not as Good","Cannabis & Bupropion"
+110060,"Looking for Answers... and Found Them","Cannabis"
+112816,"I Thought I Was Going to Die","Cannabis - High CBD"
+112802,"Viima - Icy Wind","Cannabis"
+112270,"Much Writing Accomplished, Many New Ideas Explored","Cannabis Edible, Passion Flower & Coleus"
+112753,"Temporary Nothingness","Cannabis (extract)"
+64349,"Am I Dead?","LSD & Cannabis"
+112055,"Visuals and No Dysphoria","Salvia divinorum, Cannabis, Aripiprazole & Venlafaxine"
+82585,"Getting Lost in the Bathroom and More","MDMA & Cannabis"
+55433,"Odes of Hyperweirdness - Retrospect","LSD & Cannabis"
+63486,"Static","Cannabis"
+112687,"Puke With Sparkles","LSD & Cannabis - Hash (edible)"
+112527,"Green Dragon Roar","Cannabis"
+12260,"My Head Undergoes a Supernova","Cannabis"
+28659,"Halloween High I Can Barely Remember","Cannabis"
+112337,"Beware of the Underestimated Weed Brownie","Cannabis Edible"
+54202,"Forever Changed","Cannabis"
+66805,"A Beautiful Peace Came Over Me","Cannabis"
+24995,"Losing Reality","Mushrooms & Cannabis"
+78921,"Nature of Universe and Rebirth","Cannabis"
+97519,"Ambiguously Uncomfortably High","Kratom & Cannabis"
+112268,"Really Want to Take One More Pill","Cannabis (extract)"
+112250,"Gummies to Experiment With","Cannabis"
+33296,"Zero Fun","Cannabis"
+90004,"Fantastic Synergy","Damiana & Cannabis"
+19887,"Crazy Geometry","Cannabis"
+89113,"Very Psychedelic Qualities","Cannabis"
+19596,"Midday Panic","Methamphetamine & Cannabis"
+22953,"Pot Hates Me","Cannabis & Heimia salicifolia"
+69483,"Hypersensitive","Cannabis"
+20444,"Contributes to Panic Attack","Cannabis"
+90980,"Quitting Is Hard to Do","Cannabis"
+111975,"Unexpected Visitor","Cannabis"
+65450,"Better Than Perscriptions","Cannabis & Fluoxetine"
+68326,"Very Memorable 4/20","Cannabis/Hash (Edible)"
+71388,"Overlapping Time","Cannabis"
+86320,"Euphoric Death","Cannabis & PCP"
+12735,"November 17, 1989","Cannabis"
+107208,"Overdose in the Ardennes","Hash"
+109291,"Motion Sickness","Cannabis"
+111386,"Quitting After 12 Years","Cannabis"
+54031,"WTF!!! It Gets Better","Cannabis"
+61082,"Seizure After a Big Bong Toke","Cannabis"
+67319,"THC Interfering With Peak?","Cannabis & Salvia divinorum (40x extract)"
+41437,"A Terrible Tour De Head","Cannabis"
+21078,"One Hit Trip","Cannabis"
+83809,"Fainting While Stoned","Cannabis & Fasting"
+111725,"The Feeling of Being Pulled Down and Numb","Quetiapine & Cannabis"
+24127,"Good Things Come in Small Packages","Cannabis"
+110814,"Four Years of Heavy Consumption","Cannabis"
+53323,"Yellow Submarine of Death","Hash & Alcohol"
+24301,"Drooling on the Floor Is Suddenly Fun","Oxycodone & Cannabis"
+111445,"25 Years Searching for Best Quick Recipe","Cannabis"
+69771,"One Night Results In Lasting Discomfort And Panic","Cannabis & Alcohol - Hard"
+87811,"Seeing The Patterns Of Life","Alcohol & Cannabis"
+69678,"Seizure and Vomiting","Hash"
+77263,"Fear Of Death (The Worst Kind)","Cannabis"
+103602,"I Didn't Know I Was Essentially Tripping","Cannabis, Amphetamines & Sleep Deprivation"
+111390,"My Partner Called the Ambulance","Venlafaxine & THC"
+69740,"Brownies As Therapy for Alcohol Abuse","Cannabis"
+95486,"Accidental High Dose Adventure","AMT & Cannabis"
+108610,"Visit From the Aether","Diphenhydramine, Hydroxyzine, Cannabis, & Etizolam"
+93730,"Thinking Up Savoury Dishes It Works In","Cannabis (Edible)"
+62144,"Still Scared Deep Down That My Brain Is Fried","Cannabis"
+65505,"Hallcinations, God and the Devil","Cannabis & PCP"
+65948,"Demons Everywhere","Cannabis & PCP"
+26797,"Living Dead","PCP & Cannabis"
+67324,"I Don't Know if This Was PCP or Not","Cannabis"
+73429,"Forever Changed","PCP on Cannabis?"
+62128,"The Very Witching Time of Night","Cannabis"
+85566,"Thankful I'm Alive","Cannabis"
+107179,"Pain Relief and Aspergers Syndrome Relief","Cannabis"
+110366,"Why Do You Banna the Canna","Cannabis"
+46904,"A Flying Kitten In The Sky","Cannabis Cookies"
+95985,"Spiders Crawling In Our Minds","DOC & Cannabis"
+110340,"Everything Was Taking a Very Long Time","2C-B & Hash"
+110581,"Dissociation and Re-association","Deschloroketamine & Cannabis"
+89949,"Productivity Turns To Paranoia","Adderall, Alcohol & Cannabis"
+110335,"Getting Nauseous and Throwing Up","Gabapentin & Cannabis"
+110154,"Playing a Game With My Soul","Cannabis Tincture"
+107645,"Bad Reaction","Bupropion & Cannabis"
+80782,"A Life of Grey...","Cannabis"
+64712,"Musical Nirvana","Cannabis"
+66556,"Horrible Panic Attack","Cannabis"
+106471,"Confusing and Stressful Interaction","Cannabis"
+81648,"Vivid Dreams, Did Not Feel at All Rested","Mugwort & Cannabis"
+109569,"One With Nature","Mushrooms & Cannabis"
+73594,"The Loss of Logic","Cannabis"
+109211,"Ritual Mindfulness","Calea zacatechichi & Cannabis"
+109463,"Dreams of Pure Bliss","Opium & Cannabis"
+77175,"Relief From Opiate Withdrawal","Lactuca - L. virosa & Cannabis"
+108361,"This Ain't Your 70s Dope","Cannabis"
+109158,"Unexpected Intense Buzz","Cannabis & Tobacco"
+109191,"My Social Anxiety Savior Becomes My Enemy","Gabapentin & Cannabis"
+67999,"Intense Surging in and Out to Enjoyable","Cannabis"
+76656,"Temporary Insanity","Cannabis & Amphetamines"
+83323,"Not Your Reality as You Know It, but Mine","Cannabis"
+70529,"Starting to Freak Out a Bit","Cannabis"
+108829,"A Fleeting Consciousness or Three","Salvia Divinorum & Cannabis"
+108684,"An Old Lady Tries Something New","Cannabis (edible)"
+107386,"This Woman That I Meet Is Lady Love Herself","Cannabis"
+108153,"Going in and Out of Reality","Cannabis (edible)"
+108020,"Traveling Back In Time","LSD & Cannabis"
+92123,"Flashback","LSD & Hash"
+79360,"Shape of Mind","DXM & Cannabis"
+11449,"Merry Christmas...","Alcohol & Cannabis"
+102133,"Derivations in Psychedelia","DPT, MET & Cannabis"
+103824,"The First Day","Cannabis"
+43574,"Blissful Numb Euphoria","Kratom & Cannabis"
+75306,"Entirely Worth It","Kratom, Blue Lotus & Cannabis"
+67683,"The Evil Grip of the Psychedelic Gods","Mushrooms - P. cubensis, Salvia divinorum & Cannabis"
+84945,"Third-Eye Coloring Book","Atomoxetine & Cannabis"
+88323,"The Effect of ADHD on Various Drugs","2C-I, 2C-E, Spice, JWH-018, Cannabis & Alcohol"
+90589,"K Reality","MDMA, Ketamine & Cannabis"
+99616,"MXE in the Park","Methoxetamine & Cannabis"
+87863,"I Now Know What Death Is Like","Spice & Cannabis"
+83307,"The Real World Was Lagging","Cannabis"
+83305,"Stretching My Mind","Morning Glory, Tobacco & Cannabis"
+82694,"Chucking a Whitey","Alcohol, Cannabis & Tobacco"
+100405,"Depressed & Traumatic","25I-NBOMe & Cannabis"
+100512,"Worth the Bad Ending","25I-NBOMe & Cannabis"
+91156,"Near Death Experience on Pot","Cannabis"
+100744,"Coming to Terms With Death","25C-NBOMe & Cannabis"
+77155,"Giant Neighbours Through a Square Holed Hedge","Acacia, Cannabis & Dihydrocodeine"
+96091,"Where the Hell Is My Mouth?","Cannabis & 25I-NBOMe"
+68307,"New Years Ecstacy","MDMA & Cannabis"
+34425,"Through Absolute Nothingness","Anadenanthera colubrina & Cannabis"
+98695,"A Beautiful Apocalypse","NBOMe Series & Cannabis"
+16396,"Sudden Rushes of Euphoria","5-Methoxy-Tryptamine, Cannabis & Alcohol"
+98908,"Down the Rabbit Hole...","4-HO-MET & Cannabis"
+100453,"The Cutting Edge of Psychedelic Rsearch","AL-LAD & Cannabis"
+93800,"A Divine Meeting","Mushrooms - P. cubensis & Hashish"
+67089,"Put On The Godmind, Megalomaniac","LSD & Cannabis"
+94859,"Detached and Out of Touch","Cannabis & Alcohol"
+97453,"Lunar Coastal Entity Contact","DOI, 4-AcO-DMT & Cannabis"
+98247,"Bizarre Exploration","2C-I & Cannabis"
+77941,"All in One","Pregabalin & Cannabis"
+75135,"Not Invited to the Party","MDMA & Cannabis"
+96910,"Ultimate Zen State","2C-E & Cannabis"
+91229,"Chilling In A Fog","2C-C & Cannabis"
+97876,"Blunted Cognition","25I-NBOMe, 25C-NBOMe & Cannabis"
+69368,"Experiment Gone Recreational","Lorazepam, Alcohol, Cannabis & Tobacco"
+95385,"My Belly Flop into Psychedelics","2C-I"
+97643,"Ridiculously Intense but Completely Amazing","25I-NBOMe & Cannabis"
+97767,"Personal Baseline","2C-B & Cannabis"
+66166,"Happy 4/20","Cannabis"
+47841,"High in Hawaii","Cannabis"
+94167,"Nitrous as Eternity","Nitrous and Cannabis"
+94747,"Most Intense Drug Experience to Date","Methoxetamine & Cannabis"
+76852,"Bad Bad Trip","Sertraline, Clozapine, Vodka, Caffeine & Hash"
+83926,"Flying High","Cannabis (edible)"
+84611,"Crushed","Cannabis (edible)"
+39965,"Divine Brownies?","Cannabis (edible)"
+83873,"One Love","Cannabis (edible and smoked)"
+47321,"Stuck in a Dream, Trapped in a Bubble","Cannabis (edible)"
+92750,"The One Bad Time","Cannabis & Tobacco"
+40130,"Long-lasting Visionary State","Cannabis (edible)"
+86985,"Those About To Die By Edibles: We Salute You","Cannabis"
+89536,"Accidental High","Cannabis"
+92835,"A Lucid Out of Body Experience Like No Other","Methoxetamine & Cannabis"
+78469,"Before and After Prozac","Cannabis (oral) & Fluoxetine"
+92015,"Weird Reaction","Cannabis"
+67772,"Unexplained Strong CEVs","Venlafaxine, Mirtazapine, Cannabis & Zolpidem"
+75961,"Enlightened in Karauli","Cannabis (bhang)"
+31784,"5 Years","Paroxetine (Paxil CR), Cannabis & Topiramate (Topomax)"
+89297,"A Pocketful of Molecules or Zero Milligrams","Cannabis"
+66684,"E and Weed=Dissociation?","MDMA (Ecstasy) & Cannabis"
+87180,"Not Terrifying, But Not Again Please","Kratom, Cannabis, Spice Product, Pedicularis spp. & Tobacco"
+65579,"Mass Paranoia","Cannabis"
+82094,"The Orgasm Engine","4-Methoxymethcathinone (Methedrone), MDPV & Cannabis"
+81544,"Slowed Down Spin","Salvia, Cannabis & Cloves"
+76749,"HPPD as a Gateway to Irrational Reality","Cannabis, Amanita muscaria, & Calea zacatechichi"
+27214,"How Views Change","Topiramate (Topomax) & Cannabis"
+31520,"Waking Up Dead","Topiramate (Topamax) & Cannabis"
+45664,"Midsummer Eve","Alcohol & Cannabis"
+76169,"Whispers of the World","Cannabis"
+64766,"Caution With Effexor and Marijuana","Venlafaxine & Cannabis"
+64538,"What I Live For","Cannabis"
+51568,"Panic Attacks","Escitalopram (Lexapro) & Cannabis"
+74529,"Nature and the Movement","Running & Cannabis"
+76703,"My Medicine","Cannabis"
+78651,"Three Hours of Hell","Cannabis"
+78918,"Numb and Lucid","Cannabis"
+60743,"Hoe's Down","MDMA (Ecstasy) & Cannabis"
+74413,"First and Second Time Around","Cannabis"
+77186,"Twas a Sweet Night for a Bitter Flip","MDMA, DOB & Cannabis"
+74746,"A Good Start","Yarrow, Alcohol & Cannabis"
+35329,"Hallucinations with Full Awareness","Cytisus scoparius (Scotch Broom) & Cannabis (Hashish)"
+53177,"Catatonic Captain Crunch","Cannabis"
+55020,"What Made Me Quit","Cannabis"
+46542,"Jesus, Elton John, and my Birth Father","Cannabis & OBE"
+45723,"It Crushed My Humanity","Cannabis"
+29536,"Like a Ghost of Me","Cannabis & Diazepam (Valium)"
+62585,"A Village on Fire","Cannabis"
+61159,"The Second Time Around","LSD & Cannabis"
+53382,"Ecstravaganza","MDMA & Cannabis"
+16008,"The Whole World Became One Big Strobe Light","Wormwood, Alcohol & Cannabis"
+67594,"Catalyst for Positive Change","Cannabis"
+64322,"Hillbilly Hash","Cannabis"
+56366,"Bad Experiences Last Years","Cannabis"
+58559,"The Dark Side of Who's Razor","LSD & Cannabis & Ketamine"
+60755,"The Caffeine Fiend","Caffeine & Cannabis"
+57888,"50 Year Old Ferris Bueller","Cannabis"
+54266,"Optomistic Herb Day","Damania, Sceletium tortuosum, Leonotis leonurus, Lactuca - L. virosa, Argemone spp."
+56041,"One Bad Day","Cannabis & Alcohol"
+69656,"The Brownie of Hell","Cannabis"
+62717,"Insight Through Herbal Exploration","Cannabis, Mugwort, Lavender, Hops & Rose"
+80200,"Destruction of Reality is Creation","MDMA, Ketamine & Cannabis"
+70174,"Gone Insane","Morning Glory & Cannabis"
+50044,"An Unexpected Happening","Morning Glory (Heavenly Blue/Flying Saucers) & Cannabis"
+58644,"Melting On Sponge","Cannabis"
+63458,"Massive Panic Attack","MDMA (Ecstasy) & Cannabis"
+52583,"The Perfect High","MDA, Ketamine & Hash"
+69526,"Difficult Times","Cannabis"
+63923,"Was it Laced Material?","Cannabis"
+79361,"2 Months of Positive Tests","Cannabis & Drug Testing"
+66858,"A Walk Towards the Fourth Door","Cannabis"
+45592,"Interesting Combo","Diazepam (Valium), Alcohol (Wine) & Cannabis"
+69103,"A Fun Day","Dextromethorphan HBr, Chloropheniramine Maleate, Cannabis"
+58902,"Chronic Pain Management","Hydrocodone & Cannabis"
+54950,"Freezing in Snow","Cocaine & Cannabis"
+45571,"My Eyes Were Like Windows, My Body A Shell","Cannabis, St John's Wort & Alcohol"
+45285,"Intense and Horribly Strange Journey","Zolpidem (Ambien) & Cannabis"
+54572,"The Blunt That Burned Me Back","Cannabis"
+75517,"Nice and Smooth","Damiana & Cannabis"
+46160,"More Depressed Than Ever","DXM & Cannabis"
+45970,"Mix It Up","Alcohol, Cannabis, DXM, Valerian & Melatonin"
+53931,"A Refreshing Experience","MDMA"
+53446,"Strange Experience","Cannabis & Alcohol"
+74609,"Detection Times Using Home Testing","Cannabis & Drug Testing"
+19975,"The End of the World","Cannabis (with PCP)"
+20081,"This is Just Weed?","PCP & Cannabis"
+52710,"Post-Drug Use Flashbacks","Ecstasy, Cannabis & Mushrooms"
+70126,"Induced Flashbacks?","LSD & Cannabis"
+44738,"The Best of Times, The Worst of Times","Cannabis"
+13420,"In The Dead Of Night","Morning Glory (Heavenly Blue) & Cannabis"
+13873,"Myriad Trip","LSD & Cannabis"
+44367,"First Time Was the Worst","Cannabis"
+43930,"Abuse and the Toll It Takes","Various"
+43769,"Aspirin/Water miracle","Cannabis & Drug Testing"
+52419,"Silence and Perfection","LSD, MDMA (Ecstasy), Cannabis & Alcohol"
+43531,"Previously Passed Over, Now Highly Respected.","Cannabis"
+28966,"Once a Week, Everything Fades Into Love","Cannabis"
+43205,"A Sinuous River of Relaxation","Alprazolam (Xanax), Cocaine & Cannabis"
+42872,"Most Embarassing Night of My Life","Sertaline (Zoloft) & Cannabis"
+42723,"Hilarity Ensued","Cannabis"
+42682,"Waking Up in a Really Bad Movie","Cannabis"
+42677,"Everything Alive","Cannabis"
+72906,"Perfect Combo for a Chill Show","Gabapentin & Cannabis"
+72845,"Antidepressant Effects","Cannabis & Effexor"
+42335,"HPPD: A Form of Selective Attention?","LSD, Mushrooms & Cannabis"
+42334,"Pain in My Side","Cannabis & Pharmaceuticals"
+42042,"Vietnam and Baby Heads","Cannabis"
+41824,"Amotivational Syndrome","Cannabis"
+41448,"Banshees and Henry Winkler","Cannabis"
+67246,"Deja Vu Dreams","Cannabis, Salvia divinorum & Dreams"
+63980,"A (Somewhat) Better High","Venlafaxine (Effexor XR) & Cannabis"
+51261,"I Am a Want Pig","Cannabis"
+51254,"50 Foot Long Couch","Cannabis"
+54098,"Fantasia Spoke to Me","Cannabis"
+55698,"Destroyed My Love for Weed","Cocaine & Cannabis"
+55599,"Loss of Vision","Cannabis"
+57513,"Inside a Fishtank","Cannabis"
+52017,"Temporary Loss of Vision and Hearing","Cannabis"
+54252,"Experience Conversion Over Time","Cannabis"
+51427,"I Passed","Cannabis & Drug Testing"
+53651,"Skinny Marijuana User","Cannabis & Drug Testing"
+40404,"Time to Chill","Cannabis, Mushrooms & MDMA (Ecstasy)"
+50414,"Scared of Everything","Cannabis"
+70740,"20 Days","Cannabis & Drug Testing"
+49931,"Identity Forgotten","Cannabis"
+10736,"Frames","Cannabis - Hash"
+39688,"It Must Have Been the Rain","Cannabis"
+39558,"Here I Sit Now, Reflecting on 8 Years","Cannabis"
+53850,"Profoundly Altered","Cannabis"
+39448,"Electricians Nirvana","Cannabis"
+39431,"As Sick As I've Ever Been","Alcohol & Cannabis"
+21301,"A Fine, Fine Cocktail","MDMA, Hashish, Heroin, Cocaine & 2C-B"
+23418,"Me and Mary Jane ...","Cannabis"
+37724,"Various Notes on my Experiences","2C-I, Cannabis & Nitrous Oxide"
+38975,"Falling Over the Edge","Cannabis"
+38926,"Mexican Meals and Alarms","Cannabis"
+37380,"My Make-Over","Cannabis"
+37823,"Out of Phase","Absinthe & Cannabis"
+66560,"Random Drug Screen Job Site","Cannabis"
+11445,"What the Fux0r","Cannabis"
+50537,"The Cannabis Catalyst","Mushrooms  & Cannabis"
+20612,"Oil Extraction","Cannabis"
+31320,"Unexpected Crossover into Hyperspace","LSD,  2C-I & Hashish (Cannabis)"
+56214,"Very Wise","Alprazolam, Cannabis & Alcohol"
+57313,"My Epilepsy and THC","Cannabis"
+24964,"I'm Not Paranoid","Cannabis"
+36158,"Aztec Ruins","Cannabis"
+52367,"Watered Down Piss","Cannabis & Drug Testing"
+37196,"Extreme Fatigue","DXM & Cannabis"
+35888,"Bong Fear","Cannabis"
+35794,"Childhood Flashback","Cannabis"
+52016,"Tingling Goodness","Ephedrine &  Cannabis"
+35669,"An Incredible Music Experience","Cannabis"
+52655,"Dazed without the Confusion","Darvocet, Alcohol & Cannabis"
+35064,"A Different Experience Every Time","Cannabis"
+35025,"Slapped in the Face with a Splash","Cannabis"
+34993,"Parachuting","Cannabis"
+67707,"Enemies","Cannabis & Fluvoxamine"
+34988,"Complete Unity with the World","Cannabis & Alcohol"
+34924,"Best Bag of Chips Ever","Cannabis"
+34330,"A Clown on a Light Switch Cover","Nutmeg & Cannabis"
+34259,"Panic Attacks Out of the Blue","Cannabis"
+34247,"Brining of the Nausea","Salvia divinorium (15x extract) & Cannabis"
+39405,"Tachycardia","Cannabis & Coffee"
+64001,"The Sweet Spot","Wormwood & Cannabis"
+33884,"My Years with Buddha","Cannabis"
+33846,"My Brain is Bleeding From a Sobe","Cannabis"
+33725,"Psy Effects","Cannabis"
+33343,"At Peace with Nature","Salvia divinorum (5x extract) & Cannabis"
+33281,"Singing Stoned","Cannabis"
+32830,"Too Much Too Soon","Cannabis"
+21099,"Unified Solipsism","Cannabis"
+32039,"Worst Drug Experience I've Had","Caffeine & Cannabis"
+31412,"Too Much XTC for First Time User","MDMA (Ecstasy), Cannabis & Alprazolam (Xanax)"
+31169,"One With Nature","Mushrooms - P. cubensis & Cannabis"
+30796,"The Train to Nowheres","Cannabis"
+30567,"Ride Out the Storm","Bupropion (Wellbutrin), Alcohol & Cannabis"
+30223,"Bliss, Minus the Weed","MDMA & Cannabis"
+29983,"I'll Never Take My Mind For Granted Again","Cannabis - Hashish"
+29852,"Why I'm Now Taking Antipsychotics","Cannabis"
+32591,"Amazing Combination","Nutmeg, Sassafras, Coffee, Alcohol & Cannabis"
+27651,"Floating Weightless though Hyperspace","Dimenhydrinate & Cannabis"
+45196,"Don't Smoke When Depressed","Cannabis"
+29435,"Peace Colors","Cannabis"
+29206,"Clumsy, but Fun","Cannabis"
+45247,"Its Only Bad Thing?","Cannabis"
+56403,"This Stuff Isn't Bunk","'White Rock Opium' & Cannabis"
+28314,"Sensations","Cannabis"
+27224,"More Powerful Than Imagined","Cannabis"
+25386,"The Best Way to Get High","Cannabis"
+65411,"Moderation or Suffer the Consequences","Cannabis & Various"
+23446,"Bizarre Combinations","Amphetamines (Adderall), Alcohol, Opium & Cannabis"
+22733,"Overwhelming Experience","Cannabis"
+22064,"Levels of Red","Cannabis"
+66068,"Combo Sent Me Into Seizure","Venlafaxine (Effexor XR) & Cannabis"
+47936,"Recapitulation","Salvia divinorum (leaves) & Cannabis"
+21913,"Friendship","Cannabis & Tobacco"
+11624,"Uncharted Catalyst","Citalopram (Celexa), DXM, Mushrooms & Cannabis"
+48056,"Exploring","Mushroom - P.  cubensis & Cannabis"
+48560,"A Better Version of Myself","Amphetamines (Adderall), Cannabis & Tobacco"
+43233,"Pale and Dizzy","Hydrocodone & Cannabis"
+19992,"A Trip in Panama","Cannabis"
+58012,"Reality Through a Ringmod Tapeloop","Nitrous Oxide & Cannabis"
+35338,"Panic Ensued","Amitriptyline (Elavil), Sertraline (Zoloft) & Cannabis"
+41854,"Methamphetamine-Laced Marijuana","Cannabis, Methamphetamine & Alprazolam"
+33772,"A Synergy Between Plants","Salvia divinorum (20x extract), Cannabis & Alcohol"
+41767,"Baking Special Brownies in a Toaster Oven","Cannabis"
+42404,"Distortions and Thin Blood","Escitalopram (Lexapro) & Cannabis"
+16613,"Bonfire","Cannabis"
+35691,"Moon Screen","Cannabis & Salvia divinorum(20x extract)"
+41639,"Most of All I Sleep","Cannabis"
+23909,"Experimentation","Various"
+55077,"Enjoying the Legal Highs","Kratom, Piracetam, Cannabis & Vitamins"
+42107,"My Head is on Gears","Cannabis"
+64293,"Greatly Reduces Tinnitus","Cannabis"
+34324,"First Bong O' Dope","Cannabis"
+34283,"The End of the World Behind an Eyelid","Cannabis & Hydrocodone"
+57755,"Lifelong Aftereffects","Cannabis"
+41224,"Weed As A Lifestyle and the Piss Police","Cannabis & Drug Testing"
+62874,"Did Not Expect This","PCP & Cannabis"
+11367,"Definitely Just Incense","Red Rock & Cannabis"
+15148,"In the Tub","Red Rock & Cannabis"
+21552,"To Be or Not to Be?","Red Rock & Cannabis"
+48766,"Longing for Truth","Red Rock & Cannabis"
+12113,"My Withdrawal Symptoms","Cannabis"
+25603,"Withdrawal Sucks","Cannabis"
+45176,"Light Withdrawal","Cannabis"
+60835,"Time for Bed","4-HO-DiPT, Hydrocodone & Cannabis"
+47726,"How I Pass My Tests","Drug Testing & Cannabis"
+37323,"The Groovy Glide","Tramadol (Ultracet) & Cannabis"
+21174,"Feeling Good","Tramadol (Ultram) & Cannabis"
+15113,"Dizzy","Cannabis"
+36622,"The Bad News","Tramadol & Cannabis"
+63300,"I Almost Prayed to God","Heroin, Cocaine & Cannabis"
+30599,"Dragons are Guarding the Spoon","Cannabis"
+27147,"Underestimated the Leaves","Cannabis"
+29637,"The Sick Combo","Aripiprazole (Abilify) & Cannabis"
+62402,"Bad Combination For Me","Citalopram & Cannabis"
+13483,"It's Not Just Me","Cannabis"
+13342,"Flashback in 4D","Cannabis & Salvia divinorum (6x extract)"
+46453,"No Sleep and a Good Smoke","Sleep Deprivation & Cannabis"
+31992,"Pure Paranoia","Cannabis & MDMA (Ecstasy)"
+30085,"A Different High","Cannabis"
+29996,"Two Completely Juxtaposing Experiences","Cannabis"
+10764,"This is What Weed is Supposed to be Like","Cannabis & Parexotine (Paxil)"
+30011,"Getting My Act Together","Mushrooms & Cannabis"
+22454,"Trying to get Caught in the Rye","Cannabis"
+48762,"Sinus Infection","Cannabis"
+26997,"For Cancer and Fun","Opiates & Cannabis"
+35018,"Weed's 'Not Addictive' My Ass","Cannabis"
+40995,"Meditative Aid","Valerian & Cannabis"
+24470,"Stoned Heaven","Cannabis"
+13138,"Time Dilation and Raindance of the Mushroom","Cannabis"
+36534,"Perfect","Oxycodone & Cannabis"
+24975,"Convulsions on the Green","Cannabis"
+52047,"To the Womb","Melatonin & Cannabis"
+27379,"New found Happyness","Cannabis"
+28732,"The Grass is Neon Green","Cannabis"
+29008,"Second Time Lucky","Cannabis"
+29149,"Sex and Horror","Cannabis, Salvia divinorum, Mugwort & Leonotis leonurus"
+51165,"My Panic Induced Epiphany","Cannabis"
+29461,"Avid User, Yet New Experience","Cannabis"
+12879,"So High for So Long","Ephedrine & Cannabis"
+24369,"A Gift From Above","Cannabis"
+24264,"War Against My Ego","Cannabis & Alcohol"
+11294,"Synergy","Kava & Cannabis"
+22728,"Completely Removed from Everything","Cannabis"
+17100,"A Lightweight's First Time","Cannabis"
+35637,"Nice Night in the Treehouse","Opium & Cannabis"
+10660,"My First Shamanic Trip","Mushrooms - P. cubensis & Cannabis"
+26900,"11:00","Mushrooms & Cannabis"
+38468,"Weed Seizures?","Cannabis"
+24496,"Dream Macine and Drugs","Dream Machine, Caffeine, Hydrocodone, Quetiapine & Cannabis"
+16471,"Plastic Enlightenment","Various & Meditation"
+31133,"A Bit Different","Wormwood & Cannabis"
+27774,"Grim Reaper's Salad:  Part One","Wormwood, Cannabis & Salvia divinorum"
+25235,"Brownie Experiment","Cannabis & Valium"
+10362,"Soft Around the Edges","Mushrooms & Cannabis"
+42032,"A Trip to London","Mushrooms, MDMA, Amyl Nitrite, Cannabis & Alcohol"
+47123,"Seizure / Blackout","Cannabis & Alcohol"
+39461,"Gravity and Respect","Datura & Cannabis"
+55710,"Night of Hell","Lorazapam, Cannabis & Antibiotics (Cipro)"
+33646,"Hell","Ephedrine & Cannabis"
+33316,"Heart Problems/Numbness","Cannabis"
+22263,"Friend Overdoses On Bars","Cannabis & Alprazolam"
+45804,"Gave Me Seizures","Cannabis & Alcohol - Hard"
+22148,"Intro to Psychosis","Cannabis"
+20107,"It Cured My Depression","Cannabis"
+47142,"Seizures","Venlafaxine (Effexor) & Cannabis"
+24930,"PCP Experiences","Cannabis & PCP"
+25805,"Depression and the Bonds","Cannabis"
+50031,"Euphoria and Cops","Oxycodone & Cannabis"
+40743,"Out of Nowhere","Clonidine & Cannabis"
+21423,"The Rush and the Speech","Sceletium tortuosum & Cannabis - Hash"
+21169,"Combo Induced Fear","Escitalopram & Cannabis"
+34583,"Danger, Friend Passing Out","Hydrocodone (with Acetominophen), Alcohol, Salvia divinorum & Cannabis"
+24685,"Levitation","Cannabis & Cocaine"
+11453,"A Pleasant Blend","Paroxetine & Cannabis"
+22884,"A Night with the Usual","Alcohol, Tobacco & Cannabis"
+22844,"A Rude Awakening","Cannabis"
+21224,"Cid In The City Alone","LSD & Cannabis"
+20668,"Increased Bad Side Effects of Withdrawal","Cannabis & Paroxetine"
+22466,"Patterns In The Darkness","Morning Glory (Heavenly Blue) & Cannabis"
+18654,"A Paranoia Suppressant","Blue Lotus & Cannabis"
+19228,"Decay of Reality","Cannabis, MDMA & Methamphetamine"
+33739,"The Stick Man In The Static","2C-T-7 & Cannabis"
+18919,"Thanks a Lot, Thanks a Lot","MDMA & Cannabis (Hashish)"
+22026,"Not a Smart Combo","Ziprasidone (Geodon) & Cannabis"
+38991,"Extremely Bad Panic Attack","Sertraline & Cannabis"
+45153,"'Super Grade' Experience","Kratom, Cannabis, Alcohol & Blue Lotus"
+15848,"A Dangerous Mix","Alcohol & Cannabis"
+39994,"What I Thought I Wanted","Alcohol, Cannabis, Pain Killers, Cocaine, & Heroin"
+34420,"Ego Loss and Identity Switching","Mushrooms - P. cubensis & Cannabis"
+11105,"Religion, Time, and Pot","Cannabis"
+10187,"Never Had Anything Like This Before","Cannabis"
+10108,"'It's Only Your Imagination'","Cacti - T. peruvianus & Cannabis"
+10031,"It Was Unreal","Cannabis & Inhalants (Aerosol)"
+9940,"Witnessing My Inner Neural Mechanics","Nitrous oxide, LSD, Cannabis & Opium"
+9932,"Trippy Patches Of Color","Amanita muscaria var. formosa & Cannabis"
+9923,"Unexpected Trip","Cannabis"
+9786,"Sadder Than I've Ever Been Before","Mushrooms & Cannabis"
+9725,"The Need For a Good Laugh","Mushrooms - P. semilanceata  & Cannabis"
+9666,"Olianic Epiphany","Cannabis & Salvia divinorum"
+9569,"The Connection Between Cats and the Universe","Mushrooms - P. cubensis, Redrum & Cannabis"
+9548,"Trying to Figure Out Who's in the Mirror","Cannabis"
+9536,"Using Kava to Counter Marijuana Anxiety","Cannabis & Kava"
+9512,"Empathy For The Devil","Cannabis"
+9502,"Pot For My Colitis","Cannabis"
+9392,"100% Visual Hallucinations","Belladonna"
+9298,"The Best Way to Relax After a Long Day","Codeine & Cannabis"
+15291,"A Series of PCP Experiments","PCP, MDMA, GHB & Cannabis"
+13266,"Pot Hallucinations - More THC Receptors?","Cannabis"
+13178,"I Was Shpongled","Alcohol, LSD, Cannabis & MDA"
+13120,"Omeg the Shadow Guy","LSD & Cannabis"
+8423,"Whitey's Aren't Good!","Cannabis"
+17605,"A Night Like No Other","Cannabis"
+17386,"Inside a Four Layer Cake","Cannabis & Salvia divinorum"
+15467,"One Bad (VERY BAD) Experience","Cannabis"
+14979,"Ate Too Much Brownies and Had a Bad Trip","Cannabis"
+24518,"An Unexpected Dissociative Night","Cannabis ('with PCP')"
+19569,"Unexpected Tremors and Dissociation","Amphetamines (Adderall) & Cannabis"
+14589,"A Night Like No Other","Cannabis"
+13845,"The Young and the Mindless","Cannabis ('with PCP')"
+13127,"Alone & Combined","Cannabis & Alcohol"
+11802,"Smoking, Sitting Up, Headrush, Passing Out","Cannabis"
+13227,"Pretty Embarassing","Codeine (with Acetaminophen), Alcohol & Cannabis"
+12763,"Lifestyle and Continuance","Tobacco (Cigarettes), Cannabis"
+12840,"It Isn't All Harmless","Cannabis"
+12086,"A Note on Moderation","Cannabis"
+13411,"Enhanced by Meditation?","Cannabis"
+12272,"3 Days in the Mental Ward","Ecstasy (MDMA), Cannabis, & Methylphenidate"
+12275,"Friday Mood Enhancements","Cannabis"
+27264,"Experimenting with Bhang","Cannabis"
+28387,"God Was a Tease","Cannabis ('with PCP')"
+11804,"Too Much Too Early","Cannabis"
+11794,"Too Many Biccies","Cannabis - Hash"
+17510,"Clarity - Out of  Body Experience","Cannabis - Hash"
+30944,"Simple Pleasure Made Way More Intense","Cannabis & Sleep Deprivation"
+30402,"Synergy with Nausea and Visuals","Cannabis & Alcohol"
+12239,"How to Have A Nice Time with Bhang Lassi","Cannabis"
+37376,"Tachycardia and Arrythmias","Venlafaxine (Effexor XR) & Cannabis"
+27600,"I Saw Jesus in the Mirror and Levitated","Cannabis, Venlafaxine (Effexor), Mirtazapine (Remeron) & Amphetamine (Adderall)"
+12374,"My Fate","Cannabis"
+8411,"Groovy with Energy","Methylphenidate, Alcohol, Cannabis, & Tobacco"
+11604,"They Don't Go Together","Cannabis & Alcohol"
+21851,"Still Feel Minor Effects After 6 Hours","Cannabis"
+11374,"Purgatory at Magnolia Street","Cannabis"
+37444,"True Purpose is Love","Meditation, 5-MeO-DMT & Cannabis"
+10722,"Glowing Mystical Imagery","Cannabis"
+36930,"Overwhelming Terror and Lostness","Cannabis (cookies)"
+26820,"Shroomy Cookies","Amanita muscaria & Cannabis"
+36763,"Achieving an Out-of-Body Experience","Cannabis, Mescaline & Nitrous Oxide"
+10531,"Sailing with Sailor Moon","Cannabis"
+12643,"Death and Insanity","Cannabis"
+10321,"The Lessons of the Plant","Cannabis"
+8390,"Whistling in the Dark","Cannabis & Amphetamines (Dexedrine)"
+8255,"Sharing the Pain","Cannabis"
+29990,"Conveniently Subtle","2C-T-2 & Cannabis"
+9372,"Step in the Surreal","Cannabis (possibly with PCP)"
+34742,"Being Here AND There","Cacti - T. pachanoi & Cannabis"
+34200,"Reducing Nausea and Headaches","5-MeO-AMT & Cannabis"
+8237,"Can't Escape Being a Pothead","Cannabis"
+8697,"Relaxing Free Association","Alprazolam (Xanax) & Cannabis"
+15141,"Stupid Move, Payed for It","DXM, CPM & Cannabis"
+32505,"An Adverse Reaction","Cannabis & Divalproex (Depakote)"
+32225,"Euphoric Insanity","PCP & Cannabis"
+31239,"I Freaked Myself Out, Hardcore...","Cyclobenzaprine & Cannabis"
+31389,"Alone Is Sometimes the Best","Cannabis"
+13013,"More Than Expected","Salvia divinorum, Syrian Rue & Cannabis"
+30917,"Check Your Sources","Cannabis"
+31074,"Dealing With Dry Buds","Cannabis"
+8075,"Eating Excessive Amount Is Like Tripping","Cannabis - Hash"
+20227,"The Destroyer of Anxieties","Clonazepam & Cannabis"
+7997,"Puh-puh-paranoia","Cannabis"
+29831,"Passed Out","Cannabis & Alcohol - Beer"
+30078,"Beware of Shower","Mushrooms & Cannabis"
+29606,"Reflections on Brownie Making","Cannabis"
+25698,"Blissfully Surprising","Cannabis"
+18620,"+4, Words Are Inadequate","Mushrooms & Cannabis"
+8130,"An Interesting, Yet Very Scary Experience","Cannabis"
+29281,"Butane Extract Warning","Cannabis - Oil Extract"
+10283,"Pounding Heart","Levmetafetamine, Cannabis, St John's Wort, & Other Herbs"
+21484,"Heart Racing Experience","Cannabis & Alcohol"
+18753,"Heart Still Racing 2 Weeks Later?!","Cannabis"
+15183,"Heart Racing Way Too Fast","Cannabis"
+29219,"Before Mixing, Be Informed","Bupropion (Wellbutrin), Alcohol, Cocaine, Ecstasy, Cannabis & Adderall"
+29141,"Handle Your High","Cannabis"
+16519,"Rapid Heart Beat","Cannabis (Northern Light)"
+13604,"Panic Attacks/Heart Racing","Cannabis"
+20973,"The Day After Is What Got Me...","AMT & Cannabis"
+28664,"Intense Discovery","Cannabis, Blue Lotus & Datura"
+26779,"Waking Up High: A Sleep Experiment","Cannabis"
+28002,"They Left Me, I Don't Blame Them","Cannabis"
+14080,"What the Hell Happened Here?","Cannabis & Caffeine"
+27672,"Fucked Up On Pharms","Bupropion (Wellbutrin) & Cannabis"
+27623,"A Totally Different Experience","Cannabis"
+21881,"The Heartbeat of the Universe","Heimia salicifolia & Cannabis"
+26560,"Enlightenment? Kundalini awakening? What?","Cannabis - Hash"
+7844,"Stoned & Eating Pizza - 'Nuff Said","Cannabis"
+7795,"Talking to Plants and Hugging Trees","Mushrooms & Cannabis"
+7769,"Satan Made Hell Like Heaven To Torture Us","DXM (with CPM) & Cannabis"
+25477,"Amazing but Long","IAP, Alcohol & Cannabis"
+25331,"Unstoppable Anxiety","Cannabis"
+25164,"Combo = Seizures","Venlafaxine (Effexor) & Cannabis"
+7612,"A Slow Tumble Forward into Nothingness","DXM (with CPM) & Cannabis"
+7588,"Improvement of the Honey Oil Method","Cannabis - Oil Extract"
+7485,"Brainkill","Cannabis"
+7495,"Can't Blame the Drugs This Time","Cannabis"
+23989,"Stopped Reason","Police (Cannabis & Alcohol)"
+23746,"Smoking a Woo b=Before a Final Exam","Cannabis & Cocaine"
+9833,"Crying For the World","Cannabis"
+15491,"Close to Death","Diazepam, Cannabis & & Alcohol"
+12264,"Yellow Submarine in the Sea of Death","Mushrooms - P. Cubensis & Cannabis"
+11524,"Best Time of My Life","LSD & Cannabis"
+9132,"So This Is What Death Feels Like","Cannabis"
+7466,"Dancing with Death","Cannabis"
+22671,"Heavy Contrast","Cannabis vs Cannabis - Hash"
+7568,"Deja-Vus and 'Locked Up'","Cannabis - Hash"
+7557,"After Tonight I'm a Stoner Forever","Cannabis"
+7551,"Nicely Lit","Cannabis"
+22297,"Let's Go Smoke It","Cannabis"
+22265,"A Panic Disorder Is Terrifying","Cannabis"
+14319,"Experimenting with a Panic Disorder","Cannabis, Venlafaxine (Effexor) & Bupropion (Wellbutrin)"
+20971,"There Are Two Colors In My Head","Alcohol & Cannabis"
+21997,"Permanently Fried","Cannabis"
+7368,"Intense Relaxation","Opium & Cannabis"
+7250,"Stuff Called Skunk","Cannabis"
+19116,"Home and Scared Alone","Cannabis"
+9993,"Remedy for Insomnia","Kava Kava & Cannabis"
+21245,"My Life Flashed Before My Eyes","Cannabis"
+7200,"Mi Primera Vez","Cannabis"
+12130,"Piperazines and Phenethylamines go clubbing!","2C-B, BZP, Hashish & Alcohol"
+20150,"Unexpected Call","DPT, DiPT, GBL, Cannabis, & Wormwood extract"
+19626,"Tweed","DMT & Cannabis"
+19542,"I Beat the Bladder Cops!","Cannabis"
+19341,"Why? What For?","Cannabis"
+19218,"Don't Smoke From Pewter and Plastic","Cannabis"
+18652,"A Little Too Stoned","Cannabis"
+18395,"What an INTENSE Feeling...","Mushrooms & Cannabis"
+18205,"Temperance versus Indulgence","Cannabis"
+18162,"Time Freeze Brownies","Cannabis"
+17992,"A Test of Friendship","Cannabis (Northern Lights)"
+7597,"Persisting Confusion and Other Effects","Cannabis"
+7660,"I Felt Very Scared","Cannabis"
+7114,"2D Cartoon and All the Colors Washed Out","Cannabis"
+7153,"Breaking the Barrier; an Unforgettable First","Cannabis"
+7144,"Suddenly Hits Me...Boom!","Cannabis"
+16094,"Folie A Deux","Cacti - T. peruvianus, Cacti - T. pachanoi & Cannabis"
+15178,"Bad Cops in South Carolina","Cannabis"
+12238,"Dizzy, Sluggish, Sick","Cannabis (extract)"
+6910,"Racing Heart","Cannabis"
+6900,"How to stop the itch","Dimenhydrinate & Cannabis"
+6821,"A Valentine's Day I Won't Soon Forget","Bupropion, DXM & Cannabis"
+6799,"Almost The Perfect Drug","Amphetamine (Adderall), Cannabis & Tobacco"
+6810,"A Brand New World","Cannabis"
+6696,"Negativity","Cannabis"
+6642,"The Nightmare Began","Cannabis (oral)"
+12784,"Enjoyment of Sport","ephedra & cannabis"
+12861,"Out of the Ordinary","Sildenafil (Viagra) & Cannabis"
+6544,"Kind Of Like a Really Bad Hangover","Methylphenidate & Cannabis"
+6531,"Throwing My Life Away...","Cannabis"
+6476,"Couldn't Breathe On My First Bad Trip","Cannabis"
+9820,"Felt So Good That I Cried","Salvia splendens & Cannabis"
+6727,"Bad Trips Are Possible","Cannabis"
+12521,"Melatonin Is the Answer","Melatonin & Cannabis"
+11900,"Fade to Black","5-MeO-DiPT & Cannabis"
+6840,"More Interesting Than Anticipated","5-MeO-DiPT & Cannabis"
+6310,"Herb Trippin","Kava Kava & Cannabis"
+7827,"DPT Hausca Up the Butt","Syrian Rue, DPT, & Cannabis"
+6071,"Paranoiabutter","Cannabis"
+5786,"Acid Bucket","Cannabis"
+5742,"Wonderfully High","Hydrocodone & Cannabis"
+5570,"Freaked Me Out","Cannabis"
+5532,"Bonding Experience","Cannabis"
+5415,"Honey Oil Extraction Comments","Cannabis - Oil Extract"
+5100,"Lying On a Movie","LSD & Cannabis"
+4866,"I Became the Music","Alcohol, Cannabis - Hash & Gotu Kola"
+4843,"What i needed","Cannabis"
+4793,"DXM, THC and NIN","DXM (with CPM) & Cannabis"
+4695,"Lifting You Up","Cacti - T. pachanoi &  Hashish"
+4678,"Heart Racing Panic Attack","Cannabis"
+4622,"High Times for a First Timer","Cannabis"
+4532,"Am I Gonna Die?","Cannabis"
+3805,"Am I Drunk or Am I Dead?","Alcohol & Cannabis"
+4294,"My First Bad Experience","Cannabis"
+4197,"Cutting the Midnight Oil","Damiana"
+4188,"Kanaka Hashshash","Cannabis - Hash & Caffeine"
+4269,"My Content Knew No Bounds","LSD & Cannabis"
+3169,"Nirvana And Near-Death","DXM & Cannabis"
+3415,"Unexpected Reactions...","Cannabis - Hash"
+3125,"One With the Universe","Cannabis"
+3135,"MJ Isn't that Bad After All","Cannabis"
+2928,"Weird hallucination","Cannabis"
+2677,"Palm Trees","Cannabis"
+9623,"Honey Oil Butane Extraction","Cannabis - Oil Extract"
+5870,"Yikes!","Cannabis & Nitrous Oxide"
+9497,"Helpful Thoughts for Tripped Out Herb Heads","Cannabis"
+2381,"An Even Synergy","Propoxyphene & Cannabis"
+2416,"Pot? or Something Toxic?","Cannabis"
+9726,"Body Building Supplement","Cannabis"
+9641,"Clear Communication over the Toilet Bowl","Cannabis"
+9599,"I Doesn't Stand for Impressive","2C-I, Nitrous Oxide, Cannabis, & Kava Kava"
+289,"Flying Under the Bridge","Cannabis, Crack & Ecstasy"
+8869,"Smoking Two Different Species","Mushrooms - P. semilanceata & Hashish"
+8857,"The River and The Mountains","Mescaline, Methamphetamine, Cannabis & Heroin"
+3797,"Shimmering Stars","PCP & Cannabis"
+8587,"Happy Honey Oil","Cannabis - Oil Extract"
+3001,"Candytripping","LSD, Ecstasy, Cannabis, Kava & Alcohol"
+157,"6 Miles to the House","Cannabis (extract)"
+8709,"On the Run from Myself","MDMA, Alcohol, & Cannabis"
+8532,"Hated by Everyone","Ecstasy, Alcohol & Cannabis"
+8477,"Very Pleasant, Floating, and Relaxed Gassy","Blue Lotus & Cannabis"
+6870,"Stem Soda Recipe","Cannabis"
+100,"Make Sure the Music's Not Too Complex","Salvia divinorum & Cannabis"
+86,"The Wind Cried Mary","Cannabis"
+8352,"Interesting Cocktail","Salvia divinorum, Nitrous Oxide, Cannabis & Alcohol"
+8357,"Camping in Hell","LSD, Cannabis & Paroxetine (Paxil)"
+7355,"Black and White Precursors","Cannabis (Northern Lights)"
+1638,"1st effective Salvia Expierence","Salvia divinorum (extract)"
+7668,"Too much, too much!","TFMPP, LSD, & Cannabis"
+6118,"True Tales of Bizarre Marijuana Experiences","Cannabis & Nitrous Oxide"
+4809,"THC Delivery Methods","Cannabis"
+6825,"Vomiting from Swallowing Smoke","Cannabis"
+1488,"A Night Not Remembered","Diazepam (Valium), Alprazolam (Xanax), Hydrocodone (Vicodin), Alcohol & Cannabis"
+6723,"Ecstasy and Drug Interaction","Ecstasy, Tobacco & Cannabis"
+6589,"Cosmic Baby","5-MeO-DMT & Salvia divinorum & Cannabis"
+1220,"Last Dance With the Devil, I Hope","Cannabis"
+1186,"Can You 'Trip' on Weed?  I Think So!","Cannabis (India Kush)"
+6093,"Depersonalization","Cannabis"
+5432,"Wiggy Weed...Is This Normal?","Cannabis"
+5426,"A Soul-Cleansing Liftoff, A Crash Landing","2C-T-7 & Cannabis"
+3558,"No Desire To Move","Cannabis"
+3002,"An Amazing Experience","Cannabis"
+1330,"Time-Travelling Cannabis Fun","Cannabis"
+4141,"Horrible Fun","Cannabis"
+4779,"Nature is Fucking Wonderful","Cannabis - Hash"
+4672,"Kava Trance","Kava Kava & Cannabis"
+5476,"How to Smoke Pot Without Smell","Cannabis"
+2313,"Weed in the Bush","Cannabis"
+81,"Total Nirvana From One Lungfull of Pot","Cannabis"
+3136,"First High of my life","Cannabis"
+4994,"No more War","Cannabis"
+4404,"Bad Trip","Cannabis"
+4016,"Jubilant","5-HTP & Cannabis"
+4510,"The Worst Experience On Weed","Cannabis"
+4956,"Codeine's good friend...Marijuana","Codeine & Cannabis"
+5342,"Comments on Hash Honey Oil Technique","Cannabis - Oil Extract"
+2651,"Life Changing Experience","Cannabis"
+4332,"Buzzing, Engulfing","Nitrous Oxide, GHB & Cannabis"
+1070,"Higher","Cannabis"
+1010,"A Taste of Nirvana","Cannabis"
+617,"The Forgotten Spirit of the Earth","Cannabis"
+3827,"First Time Getting High","Cannabis"
+3966,"Getting Sleepy Anyone?","Cannabis"
+3992,"Crazy Blue Juice Windex-Weed","Cannabis"
+4072,"Setting off a bomb in my head","LSD & THC"
+2823,"Time Lapses","Cannabis"
+3927,"I Found Life","Cannabis"
+3660,"A Spiritual Journey","Cannabis"
+976,"Blackout/Rebirth","Cannabis"
+839,"So This Is What The Shaman Sees...","DXM, Cannabis, Opium & Alcohol"
+3550,"Falling For Hours","Cannabis"
+3102,"Laced Marijuana?","Cannabis"
+1058,"A Mesmerising Experience on the Blessed Herb","Cannabis"
+2903,"Bad Experience","Cannabis"
+3426,"An Awkward First Time","Cannabis"
+3047,"Transformation","Cannabis - Hash"
+827,"clairvoyant to the meaning of the music","Cannabis"
+747,"Psychedelic Roller Coaster","Cannabis"
+2892,"Never Smoking Again...","Cannabis"
+745,"An Experience to Remember","Cannabis"
+741,"So Clear, So Simple","Cannabis - Hash"
+2867,"Psychedelic Enlightenment Or Chemical Buzz?","Ecstasy & LSD"
+932,"Near Death Experience on Pot","Cannabis"
+2851,"Soul-less and Sliding in New Space Dimensions","5-Meo-DiPT, N20, & Cannabis"
+589,"Tearing Assunder the Veil Of Reality","Cannabis"
+1045,"The Best High I've Ever Had","Opium & Cannabis"
+645,"Who Knew?","Cannabis"
+2826,"Lotus and Salvia Unlock Reality","Blue Lotus (extract), Salvia divinorum, & Cannabis"
+2326,"Dream Tripping","Calea zacatechichi & Cannabis"
+2535,"Close to Heart Attack","Cannabis"
+722,"Too Much, But Thankfully Not TOO Too Much","GHB, Ecstasy, GBL & Cannabis"
+719,"A Glimps Of Paradise","Cannabis"
+494,"Marijuana Was Supposed to Be Fun","Cannabis & Methaqualone"
+490,"Uneasy First Time","Cannabis"
+440,"Timed Stopped","Nitrous Oxide & Cannabis"
+1004,"Weed of Visons","Cannabis"
+1082,"Weed from Holland","Cannabis"
+311,"Smoking Bundleflower Root Bark","Desmanthus illinoensis & Cannabis"
+414,"The Plane of Infinity","Cannabis"
+1830,"'Wow' Doesn't Do it Justice","Salvia divinorum, Brugmansia & Cannabis"
+1791,"Adverse Reaction to Marijuana","Cannabis"
+1790,"A Very Intense Cannabis Trip","Cannabis"
+1789,"Total Nirvana From One Lung Full","Cannabis"
+1788,"A Stunning Experience","Cannabis"
+1787,"A Glimpse of Infinite Wisdom","Cannabis"
+384,"A Good Mix!","Ecstasy & Cannabis"
+113880,"My Happy Friends Shadow People","Cannabis & MDMA (Ecstasy)"
+73446,"A Good Time at the Lake","Cannabis"
+50510,"Not a Good Scene","Hydrocodone & Cannabis"
+25104,"Happy Till This","Mushrooms & Cannabis"
+56060,"Clonazy Weekend","Clonazepam, Cannabis & Alcohol - Beer"
+55734,"Never Been So High","Cannabis"
+91908,"A Lot of the High Was in the Head","Cannabis & MDMA"
+90693,"Aphasia Beyond Language and the Beyond","Cannabis & MDMA"
+103792,"Very Bad Trip","Cannabis"
+37917,"Chocolate Trip","Cannabis"
+10692,"Weak in the Knees","Losartan & Cannabis"
+11437,"Decided to Try It Out, Glad I Did","Mushrooms & Cannabis"
+101794,"One Foot Above and Behind My Body","Cannabis"
+82284,"Like God Was Speaking Right Out of Him","Cannabis"
+74633,"Not Really There...","Cannabis"
+51670,"Laughing Too Hard","Cannabis"
+62755,"Baby My Toes Are Dancing","Hydrocodone & Cannabis"
+11457,"On My Own in a Busy Chippie","Cannabis"
+110623,"Poor Judgment  Unexpected Visions","LSD & Cannabis"
+86789,"My Vision Was Almost Completely Blurred","Bupropion & Cannabis"
+77130,"I Thought I Was Dying","Venlafaxine (Effexor) & Cannabis"
+11124,"Vivid Hallucinogenic Colors...","Cannabis"
+14318,"My Mind Was Out of Control","Cannabis"
+30150,"I Couldn't Control It","Cannabis"
+106713,"My Life Has Improved","Venlafaxine & Cannabis"
+10674,"An Expansive Being Are We","Mushrooms - P. cubensis, Alcohol - Beer & Cannabis"
+86917,"They Don't Mix","Venlafaxine & Cannabis"
+74620,"Shimmering (Synthetic?) High","Cannabis & Dronabinol"
+74141,"A New Reality","Cannabis"
+88913,"I Think It Was That Energy Shot","Cannabis, Caffeine & Sleep Deprivation"
+73208,"First Time, Best Time","Cannabis"
+84344,"Spiritual Confusion","Cannabis"
+86627,"Something Isn't Right","Bupropion & Cannabis"
+104998,"Realization in a Blink of an Eye","Cannabis"
+92758,"The Pain of PTSD Was Comforted","Cannabis"
+95586,"Not What I Expected","Cannabis"
+78492,"Awesome","Cannabis"
+79965,"Five Senses Become One","Cannabis"
+77127,"Saying 'We' When I Was Talking About Myself","Cannabis"
+83502,"Childhood Flashback","Cannabis"
+92342,"Paranoia Then Euphoria","Cannabis"
+90506,"Paranoia Ataxia and Terror","Cannabis"
+101084,"Total Relaxation","Amanitas - A. muscaria & Cannabis"
+113233,"Failed to Identify a Threshold Level","Cannabis - Hash"
+98848,"Into the Wild Green Yonder","AMT & Cannabis"
+113068,"Afterglow","Cannabis (edible)"
+113174,"Diminished Love","Cannabis & Tobacco"
+113240,"Underestimated Dab Pen","Cannabis"
+11426,"Smiling With the Albino White Tiger","MDMA & Cannabis"
+113017,"Unexpected Trip, but Fun in the End","Tramado & Cannais"
+90531,"Vibration and Distortion","LSD & Cannabis"
+36308,"I Had No Recollection of What Happened","Clonazepam & Cannabis"
+109271,"Panic Mode","Cannabis"
+63291,"I Never Felt Sick Again","Cannabis"
+33849,"Dun GOOD for ME","Cannabis"
+100585,"My Memories From This Night Are Very Sparse","Alcohol & Cannabis"
+105106,"Lavender Bong Water","Cannabis & Lavender"
+113121,"Never Again","Cannabis & Alcohol"
+102290,"Brownie Hell","Cannabis (edible)"
+111220,"Night of the Great Shiva","Cannabis (edible)"
+97955,"One With the Sky","Methoxetamine & Cannabis"
+98228,"Another Failed Attempt","Brugmansia & Cannabis"
+108696,"Fight Fire with Fire","Cannabis & Pericyazine"
+66458,"Mind Tripped, for Better or Worse?","Amphetamines (Adderall) & Cannabis"
+40635,"Lend Me Your Ears and I'll Sing You a Song","Cannabis"
+40769,"Extremely Refreshing","Cannabis"
+61249,"Bucks Night","Cannabis & Alcohol - Beer"
+43076,"A Breathless Night","Cannabis & Nitrous Oxide"
+32218,"Hanging in Space","Cannabis & Nitrous Oxide"
+93330,"A Beautiful High","Cannabis"
+102519,"Ended Up Falling Out of My Chair","Tobacco & Cannabis"
+86277,"Unexpected","Cannabis & Tobacco"
+109500,"Getting Slapped","Tobacco & Cannabis"
+95513,"Going to Another Dimension","Nitrous Oxide & Cannabis"
+71502,"Cure of My Food Allergies","Cannabis"
+69083,"Nothing Earth Shattering...","Passion Flower & Cannabis"
+14706,"Time Had Become a Skipping Record","LSD & Cannabis"
+32217,"Best Chillout Drug","Amphetamines (Adderall) & Cannabis"
+87463,"Light, Floaty, Spaced Out","Cannabis"
+112762,"A Unexpected Journey Outside of Time","Hash"
+74389,"Giggle Fest","Alcohol & Cannabis"
+112703,"K-Holed to Another Universe","Ketamine, MDMA & Cannabis"
+68692,"My First Panic Attack","Cannabis"
+88052,"Acid Flashbacks","LSD & Cannabis"
+38612,"Lasted All Day on Thanksgiving","Nutmeg & Cannabis"
+29356,"Pause Mode in the Movie","Hydrocodone & Cannabis"
+112353,"Very Psychedelic","Cannabis Edible"
+32952,"I Needed to Take a Fucking Break","Cannabis"
+17355,"Wake and Bake","Cannabis"
+71158,"Bud Blindness","Cannabis"
+96001,"Mildly Relaxed and General Sense of Well Being","Buprenorphine, Naloxone & Cannabis"
+30155,"Crushed and Prinkled on a Bowl","Zolpidem & Cannabis"
+112017,"Got Caught by Grandma","Cannabis - Hash"
+100790,"Not Horrible, Not Amazing, Slightly Interesting","Cannabis - Hash"
+112289,"Purple/Yellow Tinted Vision/Spine Shock Tingle","Cannabis & CBD"
+108313,"Seems So Silly To Me Now","LSD, Morning Glory, Salvia divinorum, Heimia salicifolia & Cannabis"
+76049,"Using Alpha Nipple","Cannabis"
+112287,"BAD Brownies","Cannabis"
+112265,"Anxiety, Depression","Cannabis"
+112264,"Mostly Good, Little Bad Together in a Brownie","Cannabis"
+112220,"Went to Mars and Back to Earth","Cannabis - Hash"
+11299,"I Appreciate Life Better Than I Ever Did Before","Cannabis"
+91002,"Random Loot","Methocarbamol & Cannabis"
+111125,"The Car Feels Like Animal Technology","LSD, Mushrooms & Cannabis"
+52468,"Nearly Lethal Mix (Know Your Friends)","Cannabis (edible), Butalbital, Caffeine & Acetaminophen"
+66796,"Going 'Downtown'","Heroin, LSD & Cannabis"
+104634,"5D World Mrs. Broomhandle and Whiskers","LSD, Cannabis, Alprazolam & Hydrocodone"
+60690,"First Prophetic Experience","Cannabis"
+109607,"In Search of the Psychedelic Dose","Cannabis - Oil Extract"
+50341,"Recuring Dream of Philosophy Text","Olanzapine & Cannabis"
+37224,"I Can't Even Explain It","Cannabis"
+96714,"Slip Into Limbo","Ketamine & Cannabis"
+11014,"This Was a Buzz Kill","Opium & Cannabis"
+108928,"Day Six of Detox","Cannabis (after Suboxone)"
+109890,"A Wonderful Stupor","Pregabalin & Cannabis"
+65376,"Great at First, Now Not So Much","Zolpidem, Cannabis & Alcohol"
+35640,"Pleasant Suprise","Zolpidem & Cannabis"
+109164,"Recreating My Universe","Cannabis"
+110694,"Spirit Possession by Edible","Cannabis - Hash"
+15774,"Lipsmacking Good","Cannabis & Beer"
+109552,"When Magic Becomes Tragic","Cannabis & Alcohol"
+110568,"First Time Smoking in Over Two Years","Cannabis"
+52552,"Mulche's Odyssey","DMT & Cannabis"
+32878,"Layers Under Reality","Cannabis & Nitrous Oxide"
+31960,"When We Smoked It, It Sizzled Like a Resin","Ketamine & Cannabis"
+25744,"The Green Fairy","Absinthe & Cannabis - Hash"
+41755,"Maybe a Little Too Much","Cannabis - Hash & Cannabis"
+28761,"Euphoric High","Cannabis"
+25777,"Change of Entire Life Perspective","Cannabis"
+104599,"Swallowed by BHO","Cannabis (extract)"
+111717,"My First Accident","Codeine & Cannabis"
+70490,"Waves Rushing in and Out of My Body","Cannabis & Methylphenidate"
+23415,"'Is This Real... or Am I Dreaming?'","Cannabis"
+57554,"I Can't Even Comprehend","Cannabis"
+52620,"The Most Amaizing Experience I Ever Had","Cannabis & Tobacco - Cigarettes"
+66184,"Worst Experience Ever","Mushrooms & Cannabis"
+53499,"I Thought It Was Just Because I Was Stoned","Mushrooms, MDMA, Cocaine & Cannabis"
+89833,"Consciousness is Reason","Cannabis"
+81299,"Withdrawal Symptoms While Body Adjusts","Cannabis"
+39554,"It Packs a Punch","Methadone & Cannabis"
+51732,"Paranoid Psychosis","Cannabis"
+34426,"Alone in the Woods","Cannabis"
+111609,"I Went Full on Panic and Realized I'm Tripping","Cannabis"
+24971,"Discovery of Music","Hydrocodone & Cannabis"
+29303,"Very Deep Yawns","Clonazepam & Cannabis"
+47758,"Intense Fear","Cannabis"
+49066,"I Am the Lamp","Cannabis & MDMA"
+19008,"The Cannabis / Caffeine Seesaw","Cannabis & Caffeine"
+92642,"The Seven Levels","Cannabis"
+45982,"Enjoying The Lower Limits Of The First Plateau","DXM, Alcohol - Beer & Cannabis"
+82101,"Four Parts To My First Time Smoking","Cannabis"
+42801,"Light And Sound Shooting At Me In Red And Green","Nitrous Oxide & Cannabis"
+28935,"Dizzy Dizzy And More Dizzy","Nutmeg & Cannabis"
+36555,"An Australian Tries First A Combination In Montana","Cannabis & Alcohol"
+60551,"It All Depends on What I'm Looking For","Calamus, Cannabis & Wormwood"
+110964,"The Devil's Lettuce","Cannabis"
+68335,"Cleansing My Third Eye, and Reconnect to God","Hash & Tobacco"
+111347,"Spiritual Relief / De-Stressing","Cannabis - High CBD"
+62328,"Waves of Warm Water","MDMA & Cannabis"
+21856,"Surprised By The Effects And The Tastey Tastey Chicken","PCP & Cannabis"
+50056,"Bad Time, Back in My Starting Days","Cannabis & PCP"
+104922,"The New Frequency That I Was Operating On","Methoxetamine & Cannabis"
+66150,"I Should Have Thought This Through...","Cannabis"
+69806,"The World Will Perish","Cannabis"
+77814,"It Made Me Think Differently","Cannabis"
+110663,"Unexpected","Cannabis & Prayer"
+69310,"Electricity in My Body","Cannabis"
+89864,"I Just Can't Handle Weed","Cannabis"
+63113,"Everything Was Pressing Down","Cannabis & Alcohol"
+42252,"The Best Bagel I've Ever Had","Cannabis"
+97568,"What It Means To Roll","6-APB, 5-HTP & Cannabis"
+110428,"Enlightenment","Noopept & Cannabis"
+50626,"Opening a New World","Cannabis"
+71373,"So High That God Would Need a Telescope","Cannabis"
+63886,"Felt Pure Terror","Cannabis & Beer"
+110445,"More than What Meets the Eye","Cannabis"
+110282,"Severely Psychedelic and After a Concussion","Cannabis"
+80855,"Brings Me Close to God","Cannabis"
+109701,"A Love Supreme","Cannabis & Prayer"
+94289,"The Universe Within","Mushrooms & Cannabis"
+108691,"Potentiates Ganja High","Lemon Balm"
+108527,"Hideous Auditory Hallucinations and Delusions","Aripiprazole & Cannabis"
+108426,"Cannahoney","Cannabidiol (in honey) & Cannabis (resin)"
+108217,"Flying on Edibles","Cannabis (brownie)"
+69777,"Wombing in N2O Land","Cannabis, Nitrous Oxide & Tobacco"
+107506,"Slowly Titrated Down","Cannabis (for Fentanyl withdrawal)"
+105798,"Unpleasant Combo","Pregabalin, Hashish,  Tianeptine &  Baclofen"
+107404,"False Yet Real Paranoia","Cannabis & Caffeine"
+97254,"Colors Were Brighter and Stranger","DMT & Cannabis"
+10536,"Cardboard People On the Dancefloor!","Cannabis - Hash"
+107101,"Single Use Mysterious Psychosis","Cannabis"
+21491,"I Can't Sleep Without Weed","Cannabis"
+102749,"Bipolar Nightmare Whiplash","3-MeO-PCP & Cannabis"
+103561,"Don�t Harsh Our Mellow, Dude","Oral Cannabis"
+88633,"Oh God There Goes My Heart","Mushrooms, Cocaine & Cannabis"
+81907,"The Other Side","LSD & Cannabis"
+100255,"Relived Love","Methoxetamine, 25I-NBOMe & Cannabis"
+100493,"Lara Croft Style","Methoxetamine, Alcohol, & Cannabis"
+100526,"Solid Plus Three on 25I-NBOMe","25I-NMOBe & Cannabis"
+100599,"Inside the Lightspeed Capsule","25I-NBOMe & Cannabis"
+91322,"My First Experience With 5-MeO-DALT","5-MeO-DALT & Cannabis"
+99989,"Tripping with 25I","25I-NBOMe & Cannabis"
+98941,"Confusion Meets Crazy","25I-NBOMe, Cannabis & Alcohol"
+29408,"Damn It Burns","Diphenyl-2-pyrrolidinemethanol (D2PM)"
+94135,"The Best of Both Worlds","6-APB, Methoxetamine & Cannabis"
+98499,"Paranoia at Its Finest","Cannabis"
+98459,"A Soothing Tasty Herb","Lavender & Cannabis"
+76148,"Nine Amazing Days of Skiing and Drugs","Cannabis, Alcohol, Codeine, Clonazepam, Mushrooms, Dextromethorphan, Hydrocodone & Oxycodone"
+92325,"The Journey to Complete Euphoria","MDMA, Mushrooms, Cannabis, LSD & Alcohol"
+10432,"Finally A Breakthrough!","Salvia divinorum & Cannabis"
+11022,"Clarity Never Before Thought Of","LSD & Cannabis"
+69175,"The Droplet Epitome","Cannabis"
+36056,"Lost Mind on 4/20","Cannabis"
+95587,"Nausea at First, Then Fine","Venlafaxine and Cannabis"
+87203,"It Is a Seeker's Drug (Poem)","Cannabis"
+94991,"Enlightenment","Cannabis (bhang)"
+80412,"Hash Trip / Kundalini?","Cannabis (edible)"
+92130,"The Edge of Nothing","Mephedrone, 4-MeO-PCP, Alcohol & Cannabis"
+91608,"MDMA Acid Hangover","Cannabis (brownie)"
+68206,"Flipping Out","Albuterol & Cannabis"
+88971,"Scarier Than It Was Cool","Cannabis"
+91458,"A Blessed Chemical","Methoxetamine & Cannabis ('laced with LSD')"
+25096,"I Am Not the Only One Worrying","Cannabis"
+88583,"Don't Take Your Mind for Granted","Cannabis, Alcohol & Various"
+57891,"Perfect Aid for Menstrual Discomfort","Cannabis"
+88344,"Simple Little Look back","Cannabis & Morning Glory"
+86816,"Quite the Enhancer","Tryptophan - 5-HTP & Cannabis"
+86712,"I Don't Even Know What I Was Seeing","Mirtazapine & Cannabis"
+85087,"Releasing My Soul","Cannabis"
+75596,"A Trip in Every Pot","Cannabis & Fluoxetine (Prozac)"
+57348,"Wonderfully Tired","Cannabis & Mirtazapine (Remeron)"
+84217,"Canceling Effect","Diazepam (Valium) & Cannabis"
+70327,"Woman Seduced by Woman","Cannabis"
+83347,"My Recovery","Cannabis"
+82360,"Zombified, Then Trippin","Venlafaxine (Effexor) & Cannabis"
+24768,"Nightmares Caught Me Off-Guard","Trazadone, Melatonin & Cannabis"
+65016,"Sandpaper","Cannabis"
+49940,"Home Study On Detection Times","Cannabis & Drug Testing"
+79189,"Never Had a Problem","Fluvoxamine (Luvox) & Cannabis"
+55281,"Releases Muscles and Weakens My Brain","Cannabis"
+16851,"A Night In Heaven","Cannabis"
+53943,"Was this me?","Cannabis"
+19157,"Our Legs Are Covered In Foam","PCP (Angel Dust)"
+28953,"Horrid First Time Smoking","Cannabis"
+27829,"This Must Be Laced...","Cannabis"
+73717,"My Body in a Delerious State","Sleep Deprivation, Fasting & Cannabis"
+73143,"A Great Help for Paranoia","Cannabis & Niacin"
+73196,"Medical Balm","Cannabis"
+71518,"Good Until I Smoked","Oxycodone (Oxycontin) & Cannabis"
+70190,"Ruined It","Cannabis, Amphetamines (Adderall) & Sleep Deprivation"
+70822,"Space Cakes with Morning Glory Icing","Morning Glory & Cannabis"
+16736,"Change of Life","Cannabis"
+49937,"Parallel Universe (Deja Vu?)","Cannabis"
+10598,"I Wish I Could Replicate the Experience","Shwag (weed)"
+52350,"Hallucinations, Black Out, and Nothing Else","Bupropion, Cannabis & Pharmaceuticals"
+43784,"Lost All Muscle Control","DXM, Diphenhydramine, Escitalopram (Lexapro) & Cannabis"
+60867,"Toxic Cocktail","Divalproex, Fluvoxomine, Remeron, Risperidone, Zopiclone & Cannabis"
+21555,"Bordering on the Brink of Pure Beauty","AMT, Cannabis & Nitrous Oxide"
+36613,"Three Drug Daze","DXM with CPM, Crack & Cannabis"
+67914,"Mellow Mix","Cannabis, Melatonin, Herbal Mix (Tea, Catnip & Nutmeg)"
+43601,"Squash Aftertaste","Sceletium tortuosum & Cannabis"
+53609,"Crohn's Disease","Cannabis"
+46131,"Relieved My Grandmother's Legs","Cannabis"
+56440,"Trippin All Night","Amphetamines (Adderall), DXM & Cannabis"
+10918,"Dancing, Colorful Patterns","Cannabis - Hash"
+67414,"The Safe Drug...Right..?","Cannabis"
+45255,"'I Am Going to Die'","Cannabis"
+23412,"Passing a Urine Drug Test","Cannabis & Drug Testing"
+26649,"Tongue Absorption","Salvia divinorum (5x extract) & Cannabis"
+63069,"Visine Worked","Cannabis & Drug Testing"
+13770,"An Art","DXM, LSA & Cannabis"
+56249,"Rollercoaster of Fun","Cannabis"
+64765,"Thoughts of Life","Cannabis"
+29052,"I Got Sick","Cannabis"
+40641,"Quite Funky","Cyclobenzaprine & Cannabis"
+55183,"Shadow People Appear","Cannabis & Alcohol - Hard"
+49441,"Passing the Piss Test","Drug Testing & Cannabis"
+13522,"Going Downhill","Tramadol (Ultram) & Cannabis"
+61806,"Hydro and Fossil Fuel","Cannabis"
+52465,"Mitigates The Side Effects","Cocaine & Cannabis"
+58531,"Pumped Up My High","Paroxetine (Paxil) & Cannabis"
+58125,"Obstructive Sleep Apnea","Cannabis"
+12606,"Rolling Blunts","Cannabis"
+12543,"The Depression Guy","Cannabis"
+46254,"The World that Wasn't There","Cannabis - Hash & Calea zacatechichi"
+40694,"Cops and the Parking Lot","Cannabis"
+53153,"Setting Sail","Oxycodone (Percocet), Cannabis & Alcohol - Beer"
+29188,"Legalization Equals World Peace","Cannabis"
+12523,"A Great Buzz Enhancer","Cannabis & Vitamin C"
+39454,"Time Warp","Hydrocodone, Carisoprodol & Cannabis"
+15843,"Staggering Blindly Through the Chaos","Cannabis"
+25014,"Traveling Without Movement","Cannabis"
+21148,"The Fantastic Four","Alcohol, Cannabis, Tobacco - Cigarettes & Inhalants - Nitrites"
+43309,"Meditation","Cannabis"
+47901,"Shaking to Death","Cocaine & Cannabis"
+45408,"A Bitter Bliss","Ayahuasca & Cannabis"
+13904,"Having Sex With Keyboard Duster","Cannabis & Inhalents"
+10019,"Eating Them Nuggets","Cannabis"
+9868,"My Night in the Park","Ecstasy & Cannabis"
+9709,"For Those About to Puff","Cannabis"
+9659,"Trapped in Hell","Cannabis"
+9504,"The Sun Was Falling From The Sky","LSD & Cannabis"
+9432,"Tuning My Conciousness","Cannabis & Caffeine"
+9358,"My Heart Felt Like Bursting","Codeine, Cannabis & St. John's Wort"
+9352,"A Completely Different World, an Alternate Dimension","Alcohol, Cannabis & LSD"
+9280,"Making Music High","Cannabis"
+9248,"The Robot Voice","Cannabis"
+9045,"Forgetfulness","Cannabis"
+8921,"The Antagonist to Higher Level Mental Filtration","Cannabis"
+8796,"Is it All in my Head?","Cannabis"
+8645,"Cannabis Tolerance and Moderation","Cannabis"
+8444,"Marijuana Makes Me Horny","Cannabis"
+17570,"Wellbutrin + Pot = No fun.","Cannabis & Wellbutrin"
+17451,"One Toke Over the Line","Cannabis"
+16978,"Relearning Self-Awareness","Cannabis"
+16095,"Heart Pounding and Blackout","Cannabis"
+39223,"Unexpected Fear","Cannabis"
+14518,"A Crackout on Nitrous","Codeine (with Acetaminophen), Cannabis & Nitrous Oxide"
+10742,"Unlocking the Inner-Mind","Cannabis"
+26261,"First Time For Everything","Cannabis"
+11832,"Why I Am Never Touching It Again","Cannabis"
+27061,"Dissociative Time","Cannabis"
+16199,"Soothing, Less Paranoia","Citalopram & Cannabis"
+19807,"OK Together","Cannabis & Methlyphenidate (Concerta)"
+20989,"My Night at Sue Bee's House","Cannabis"
+11539,"Beautiful Hallucinations","Kava & Cannabis"
+33001,"Binge End Epiphany","Nitrous Oxide, Cannabis, Kratom & Blue Lotus"
+10260,"Mary and Me: How We Became Acquainted","Cannabis"
+35892,"Superhuman","Sceletium tortuosum"
+35666,"Waiting for Control","Calea zacatechichi & Cannabis"
+8137,"Dealin With the Poh","Cannabis & Tobacco"
+35549,"Absolute Wonder","Cannabis, 5MeO-MIPT,  & Ayahuasca"
+8227,"Woke Up This Morning, Toked On Me Bifta","Cannabis & Alcohol (Vodka)"
+8374,"Very Scary Panic","Cannabis"
+8284,"Don't Believe I'll Do That Again","Dexedrine & Cannabis"
+8133,"My Years with Mary Jane","Cannabis"
+8542,"Relaxed and Light","Cannabis"
+8039,"Smoked Shrooms","Mushrooms (smoked) & Cannabis"
+31602,"One Bad Trip","Cannabis"
+7989,"Very Pleasant Experience","Cannabis"
+29412,"My First Week Awake","Methamphetamine, Alcohol, & Cannabis"
+29539,"Strange Mindstates","Alcohol, MDMA, & Cannabis"
+7884,"Every Action Has A Reaction","Various"
+9138,"Inner Sanctum","Cannabis"
+9124,"Weed Changed My Life","Cannabis"
+14371,"Time Passes Through My Beating Heart","Amphetamines (Adderall), Paroxetine (Paxil) & Cannabis"
+23877,"Heart Racer","Cannabis"
+12420,"Ouch My Heart!","Cannabis"
+8126,"Heart Problems","Cannabis"
+28311,"Treating Auditory Hallucinations","Olanzapine & Cannabis"
+7871,"Problems With THC","Cannabis & Alprazolam"
+7864,"The Bday Stoner","Cannabis"
+7771,"Mushrooms In A Joint","Cannabis & Mushrooms"
+25059,"Paranoia and Social Withdrawal","Cannabis"
+11143,"For the Pain of Fibromyalgia","Cannabis"
+24724,"Good Things Come To The Curious","Cannabis & Olanzapine"
+24726,"Now It Was My Turn","Cannabis"
+24708,"Thought I Was Going To Die","Paxil & Cannabis"
+24722,"Weed Isn't Addictive, But","Cannabis"
+7484,"Outside of reality","Cannabis & Alcohol"
+19099,"Life, Love and Family","Cannabis"
+21764,"Death Wish 2003","DMAE & Cannabis"
+7519,"Want to Try Again","Mushrooms & Cannabis"
+22220,"Bong Bad Trip","Cannabis - Hash"
+22021,"Lucid Dreams Invading Reality","Melatonin & Cannabis"
+21827,"DWAI that Should Have Been Avoided","Alcohol & Cannabis"
+8607,"Self Exploration","Cannabis"
+15798,"Know Your Source","Cannabis"
+19175,"Disconnected From Reality","Cannabis (brownies)"
+18762,"Salvia Trip","Salvia divinorum & Cannabis"
+18716,"Play It Cool","Cannabis & Alcohol"
+16121,"Down the Rabbit's K-Hole","Cannabis & Ketamine (freebase)"
+10586,"I Was Scared Shitless","Fluoxetine & Cannabis"
+6899,"I Had Only Seen Sharks On TV Before...","Cannabis"
+6856,"Mysteria Eleusii","LSD & Cannabis - Hash"
+14255,"The Wormwood Experiment","Wormwood & Cannabis"
+12984,"All Hopped Up","Hops & Cannabis"
+13736,"AMT Rollercoaster","AMT & Cannabis"
+13482,"Station Nightmare","Cannabis"
+6678,"Cannabis in a Vaporizer","Cannabis"
+6632,"It's World War Three","Cannabis"
+6617,"Good Setting","Cannabis"
+6427,"The Start of the End","Cannabis"
+6415,"So That's  Pot","Cannabis"
+6691,"Empty Stomach Blues","Cannabis"
+6384,"The Day I Was Possessed By Gum","Cannabis"
+6283,"Religious Visions, Man!","Cannabis"
+6219,"Unexplainable Twitching","Cannabis & Zoloft"
+6261,"Seeing the Music","Cannabis"
+6199,"Veggie Burger Recipe","Cannabis"
+5887,"Bad Times","Cannabis"
+5774,"So That's What Happens","MAOI & Cannabis"
+5740,"A Friend For Life","LSD, Alcohol & Cannabis"
+10293,"Proper Mushroom Smoking Technique","Mushrooms (P. cyanescens) & Cannabis"
+5599,"Light At The End Of The Tunnel","Cannabis"
+11068,"A Trip Back To The 70's","Methaqualone, Alcohol & Cannabis"
+4770,"Railin' No-Doz","Caffeine & Cannabis"
+4623,"Dangerous Combination?","Cannabis - Hash & Sertraline (Zoloft)"
+3791,"My Head Is Burning!!!","Cannabis"
+3962,"The Oddest Three of Four Hours of My Life","Cannabis"
+3675,"DXM and Brain Wave Generator","DXM, Cannabis & Sound and Light Machine"
+3152,"A New Respect For Marijuana","Cannabis & Esctacy"
+4419,"Smoking with Strangers","Cannabis"
+4451,"Thanks Mom","Cannabis"
+3005,"Did I Die?","Cannabis"
+2766,"Vibrations, Bad Ones","Cannabis"
+11307,"Bad Connections","Cannabis"
+2749,"The Swirling Vortex Behind Me...","Salvia divinorum & Cannabis"
+2672,"Not As Short As They Say","Salvia divinorum, Cannabis & Ecstasy"
+2702,"Falling Out of Reality","Nitrous Oxide & Cannabis"
+4090,"Moderation is the Key","Ecstasy, Cocaine & Cannabis"
+9449,"Flying with Nature","Cannabis"
+9687,"The MOST relaxing way to smoke","Cannabis"
+10096,"Does Marijuana Lead To Heart Problems?","Cannabis"
+9134,"Beer Brewers and Home Growers Unite","Cannabis Cultivation"
+3950,"Pot Dreamland","Cannabis"
+2707,"A Quiet Smoker","Cannabis"
+5413,"Life in the Third Person","Ecstasy, Cannabis & Caffeine"
+108053,"God's Good Herb","Cannabis"
+82372,"The Damages to My Mind","LSD & MDMA"
+113797,"Seeing the Highest Being Possible","LSD & Cannabis"
+58430,"A Trip Into the Unknown","LSD & Cannabis"
+72279,"Mind-Blanks","Cannabis"
+11420,"Horrible Paranoia and Deja Vu ~Two Bad Trips","Cannabis"
+11813,"Tunnel Vision","Cannabis"
+11384,"S P a C E D","Cannabis & Dimenhydrinate"
+11326,"My First (And Only) Time","Nutmeg & Cannabis"
+11393,"The Awakening","Marijuana, Nitrous Oxide & MDMA"
+10824,"An Introduction to Mr. Waterbong","Cannabis"
+52781,"I Saw a Cat in the Woods","LSD & Cannabis"
+72341,"Blazin at High Noon","Cannabis & Alcohol - Beer"
+96230,"Uncovering the Mystery of Anxiety","Cannabis & Red Clover Extract"
+110615,"How Have I Made It This Far","Cannabis"
+107147,"The Conversation","Cannabis & Various Substances"
+72120,"The Things I Saw as an Infant","Cannabis"
+72784,"Life Alteration","Cannabis"
+11332,"Extremely Relaxed Feeling","Catnip, Tobacco, Chamomile & Cannabis"
+11400,"Absolutely Nothing Makes Sense","Cannabis"
+10940,"Numb and Hysterical","Cannabis"
+105932,"It Definitely Wasn't Worth Smoking","Cannabis & Unknown"
+104354,"Lost Hour Lost Mind","Alcohol, Cannabis & Pharmaceuticals"
+10650,"Cartoonish Remembering in Liquid Space","Cannabis & LSD"
+106356,"A Very Positive Overall Mental Elicitation","Cannabis & Pharmaceuticals"
+93156,"Out of Body","Hash"
+111022,"Cartoon Vision","Cannabis"
+108980,"End of the World","Cannabis"
+10983,"I'd Grown Up","Cannabis"
+109173,"Mania Effects","Venlafaxine & Cannabis"
+108158,"Extraterrestrial Encounters","Cannabis, Blue Lotus, Passion Flower, Damiana & Ashwagandha"
+78101,"An Amazing Discovery","DXM & Cannabis"
+82384,"Beauty of Space and Time","Cannabis"
+85819,"Helped Me Stand Up to My Father","Cannabis"
+92147,"Weird Reaction","Cannabis"
+11418,"Thinking Smart and Acute Thoughts","Hydrocodone & Cannabis"
+34662,"Sick Then Stoned","Heroin & Cannabis"
+113291,"My Peripheral Vision Was Nonexistent","LSD & Cannabis"
+31587,"Blacked Out and Hit My Head","Mushrooms & Cannabis"
+18607,"Something New Unexplored and Beautiful","Piracetam & Cannabis"
+53936,"Losing My Tolerance","Cannabis & Caffeine (Energy Drink)"
+93930,"I've Smoked It on and Off","Cannabis"
+48783,"Learned My Lesson","Cannabis"
+110157,"I Never Allowed Myself to Be Happy","Cannabis"
+84524,"Depression Cloud","Cannabis"
+111283,"Altered State of Mind","Cannabis (edible)"
+110116,"Everything Became a Mystical Land","Gabapentin & Cannabis"
+108595,"Unexpected Bonus","Cannabis & Sassafras (edible)"
+52360,"Out of Body, Out of Mind","Cannabis"
+112794,"Trippy but an Unpleasant Body Load","4-Aco-DMT, 4-Ho-DET, Alprazolam, Marijuana, nicotine"
+103184,"Gravity Had Its Thumb on My Head","Cannabis (edible)"
+84113,"A Little Too Much Harsh Smoke","Cloves & Cannabis"
+91472,"Locked in the Bathroom -  Forever","Hash & Alcohol"
+112518,"I Almost Passed Out Several Times","4-HO-MET, Cannabis, Phenibut, Kratom, Melatonin & Diphenhydramine"
+97289,"Nervous System Disconnect","DMT & Cannabis"
+25864,"Talk About Feeling Good!","Oxycodone & Cannabis"
+63403,"I Started Hearing Ocean Noises","Cannabis & Nitrous Oxide"
+75609,"A Feeling I Didn't See as Ever Ending","Cannabis"
+108794,"Lights and Afghanistan","Cannabis"
+94961,"Eating Away At The Sun","Cannabis"
+54902,"One Mind?","MDMA & Various"
+45444,"Smoking With a Lightbulb Worked","Amphetamines (Adderall) & Cannabis"
+55622,"My Plant Friend Came to Life","Zolpidem & Cannabis"
+34074,"Hearing BLISS","Cannabis"
+99286,"Into to the Core of Universe","Cannabis & Ketamine"
+87334,"I Just Passed Out","Cannabis & LSD"
+94986,"Respect","Salvia divinorum (10x extract) & Cannabis (extract)"
+112508,"A Wonderful Synergy","Lemon Balm & Cannabis"
+112652,"Divine Geometries","Cannabis (extract)"
+112588,"My Sitter Is Pretty Awesome","Cannabis"
+16225,"More Fucked Than I Thought Possible","Cannabis"
+29418,"Never Been Higher","Cannabis"
+112497,"Bad Trip AGAIN - Third Attempt","Cannabis Edible"
+42710,"Horrific Epiphany!","Cannabis"
+42739,"Crazy Night - Everything Tasted Like Chicken","Cannabis"
+31002,"I Wasn't Getting Any Visual Stuff","Cannabis & Mushrooms"
+16622,"Paralyzing and Uncontrollable","Cannabis"
+86431,"Didgeridoo Chanting","Controlled Breathing & Cannabis"
+77044,"Reaching for My Didgeridoo","Controlled Breathing, Cannabis & Mushrooms"
+96167,"Effect on Mental Disorder","Cannabis"
+105606,"I Don't Know What Happened","Cannabis"
+70451,"How I Avoid the Comedowns","MDMA & Cannabis"
+15305,"A Night Like All the Rest","Cannabis"
+11350,"What's That Music?","Cannabis"
+76920,"Laced?","Cannabis"
+93689,"Able to Hear Every Conversation in a Room","Hash"
+29066,"Joyride Combinations","Mushrooms & Cannabis"
+43608,"Great Combo Flying Into Space","Nitrous Oxide & Cannabis"
+112332,"Like Any Other High","Cannabis & Atomoxetine"
+14947,"Combining Really Enhanced Effects","Oxycodone & Cannabis"
+109267,"Kundalini Awakening","Damiana & Cannabis"
+102237,"Ruined My Lungs","Cannabis"
+39720,"The 12 Hour Headache","5-MeO-AMT & Cannabis"
+112256,"Agape Unconditional Love","Cannabis & MDMA"
+87923,"Outer Realms of Bizarre","Kratom, Ketamine & Cannabis"
+67536,"Together Forever","Hydrocodone & Cannabis"
+21446,"I Had No Idea What I Was Saying","Cannabis"
+63533,"Lasts Just About All Day","Methadone & Cannabis"
+75790,"Good Sedative","Datura & Cannabis"
+16049,"Amusement Parks While High","Cannabis"
+91636,"What I Remember From Before I Blacked Out","Methylphenidate & Cannabis"
+19463,"Funnest Time on Vacation Ever!","Methylphenidate & Cannabis"
+83019,"Taking Time to Understand Myself","MDMA & Cannabis"
+63975,"The Second Time Was a Little Different","Yarrow, Wormwood & Cannabis"
+96023,"The Worst Drug Experience I've Ever Had","Clonazepam & Cannabis"
+61502,"The Best Night of My Life","5-MeO-DMT & Cannabis"
+112019,"Life With No Opposite","Cannabis"
+47539,"Tried So Hard, to No Avail!","Cannabis"
+74594,"Bixsexually Enlightened Me","Cannabis"
+65798,"A Very Physical Euphoria","Bromazepam & Cannabis"
+86319,"Dance in the Stars","Cannabis"
+111269,"What Ya Talkin A Beet","Cannabis & Alcohol - Hard"
+37878,"Ringing and It Wasn't the School Bell","Cannabis & Crack"
+111888,"A Diffrent Look, Diffrent Reality","1P-LSD & Cannabis"
+83624,"Simply Too Much","Cannabis"
+91200,"Not Good for the Common College Student","Cannabis & Sertraline"
+15052,"White Widow","Cannabis"
+19291,"Mini-Thins Blow","Cannabis, Ephedra & Caffeine"
+57555,"We Sipped Slowly as We Conversed","Hash"
+13782,"Relaxed With Visions","Mushrooms & Cannabis"
+23774,"1 Crazy Nite","Ether & Cannabis"
+24734,"My First Hit of Weed","Cannabis & Tobacco"
+31409,"Time Warp","Zolpidem & Cannabis"
+111141,"The Powers of the Air","Methamphetamine, Kratom & Cannabis"
+101400,"Halloween Hallucinations","Lorazepam & Cannabis"
+27099,"Life the Universe and Everything","Cannabis & Alcohol"
+30498,"No Doubt That It Worked","Mushrooms & Cannabis"
+26322,"I Was Fucked Up to Shit","Crack & Cannabis"
+93464,"Don't Remember Much, Almost Like a Dream","Cannabis"
+93587,"I Think I Stuttered a Bit","Dexmethylphenidate & Cannabis"
+101711,"Best Medicine","Cannabis"
+24609,"It Can Do This?","Cannabis"
+36611,"Less of the Groggy Feeling","Cannabis & Melatonin"
+53752,"Never Ever Again!","Ketamine & Cannabis"
+57384,"Little Smoke and a Little Pill","Alprazolam & Cannabis"
+29531,"Different Perspective","Cannabis"
+27139,"Go for It","Mushrooms & Cannabis"
+30998,"Smoking Them Doesn't Work.","Mushrooms & Cannabis"
+44353,"We Were Completley Smashed","Codeine & Cannabis"
+105523,"Heart Racing, Extremely Anxious","Alcohol - Beer, Alcohol - Hard, Cocaine & Cannabis"
+82603,"Quite Pleasantly Surprised","JWH-018, O-Desmethyltramadol & Cannabis"
+13642,"A Match Made in Heaven","Ketamine & Cannabis"
+57225,"Experimental-Styles","Ketamine & Cannabis"
+65853,"Close Call: Military Drug Test","Cannabis"
+45133,"Froze in Time","Cannabis & Alcohol - Hard"
+91230,"Body Feeling Lighter","Cannabis"
+49699,"Requiem","Cannabis"
+111404,"I Thought I Can Handle It","Cannabis"
+24081,"The Two Drugs Were Having a Battle for My Brain","Cannabis & Alcohol - Beer"
+101363,"What Just Happened","Cannabis"
+73900,"Laced Joint Always a Good Decision for Me","Alprazolam & Cannabis"
+44161,"Not Like the Ordinary High","Alprazolam & Cannabis"
+66119,"Floating Over the Game of Rummy","Cannabis"
+70963,"Beyond the K-Hole","Ketamine & Cannabis"
+79239,"24hr+: High & Nauseous","Hydrocodone,Cannabis & Lisdexamfetamine"
+66408,"Most Amazing Body High","Alcohol - Beer, Hydrocodone & Cannabis"
+43480,"Burnout Cure","MDMA & Cannabis"
+57159,"Happy Darkness","Cannabis"
+75717,"A Little Orange Balloon","Dronabinol & Cannabis"
+57407,"Panic Attacks and Anxiety","Cannabis"
+72351,"Bad Trip","Cannabis"
+41550,"Strange Noises","Oxycodone & Cannabis"
+14777,"Proud To Smoke","Cannabis"
+44408,"I Could Still Tell the Migraine Was There But...","Cannabis"
+104387,"Concussion-like Feeling","Cannabis"
+14643,"Yoda In The Sky","PCP & Cannabis"
+43609,"Enjoyed Every Second Of The Ride","Nitrous Oxide & Cannabis"
+57031,"Snow Caps To Help The Come Down","Cocaine & Cannabis"
+30953,"God Spoke And The Vortex Opened","Cannabis & Amphetamines (Adderall)"
+44124,"Two Crackers Turned Me Into A Cat","Cannabis"
+52852,"Clocks All Over The Walls","Cannabis"
+53896,"Combination Really Changed The Outcome","MDMA & Cannabis"
+27326,"A Train That Creeps Up On You","Hydrocodone & Cannabis"
+46553,"The Ice Queen Meets Purple Haze","Cannabis"
+43224,"Backtripping","Cannabis"
+35511,"Always Want To Keep The High Going","Cannabis"
+90645,"Very Little Effects -  A Few Odd Noises","2C-I & Cannabis"
+103096,"Dreams That Get Dizzy","Cannabis - Hash"
+74865,"Anxiety Gives Way To Pleasant Night","Cannabis & Alcohol (Hard)"
+69339,"Trying to Sort Myself Out","Cannabis"
+55790,"The Disassembling Of Reality","Cannabis"
+106211,"Lung Expansion","Cannabis"
+90643,"Jacuzzi Surfing","Alcohol, Hydrocodone & Cannabis"
+102697,"Getting a Helluva Lot More Stoned","Mirtazapine"
+34277,"Panic Attacks","Cannabis, Cocaine & Beer"
+32882,"5th & 6th Dimensions","Cannabis"
+111041,"Being Van Gogh","Cannabis"
+69970,"From Twelve Beers A Night to Two","Cannabis & Alcohol"
+66521,"He Said He Smelled Pot","Cannabis & Police Encounter"
+53553,"Smooth, Comfortable High","Cannabis & Beer"
+54349,"I Never Come All the Way Down","Cannabis"
+47431,"Not a Good Combination","Cannabis & Cocaine"
+98087,"I Deserve Eternal Torture","Cannabis & (Possibly) Unknown"
+52283,"Odd High","Cannabis"
+39427,"Coughs, Tears, and Paranoia","Cannabis"
+75116,"I Need Water!","Sertraline & Cannabis"
+86596,"Saved My Life","Cannabis"
+68398,"So Tired of Pot","Cannabis"
+109630,"Weed-Is-By-My-Side-Its-Always-Been-There","Cannabis"
+107106,"Light Dose Gave More of a Sedative Effect","DXM & Cannabis Extract"
+73218,"Care and Comfort","Fentanyl & Cannabis"
+108391,"Dope Ruins Souls","Cannabis"
+92374,"Samotarki Trance Festival Greece 2001","LSD & Hash"
+70296,"Missing Time","Alcohol, Cannabis & Alprazolam"
+105705,"Sinusitis Pain Relief","Cannabis"
+107344,"The Dimension of Imagination","Cannabis"
+107102,"No Ill Side Effect vs. Severe Migraine","Quetiapine & Cannabis (extract)"
+96570,"Felt as if It Was a Dream","Cannabis ('Blue Dream' strain)"
+80056,"Three Things at Once","Magic Mushrooms, Cannabis & Alcohol"
+69130,"Questionable Delirium","Unknown Muscle Relaxant, Cannabis & Caffeine"
+99627,"Smoking Weed Over Time","Cannabis"
+99704,"Shroom Like Hallucinations","Lorazepam (Ativan) & Cannabis"
+95472,"Body Tremors and Ear Popping","6-APB & Cannabis"
+85961,"My Trigger","Cannabis (with PCP)"
+92364,"Reality Is Dream","Cannabis"
+88109,"Crazy Hydro Experience","Cannabis"
+41844,"Freaky Blackout","HASH"
+82030,"The Next Dimension","Cannabis"
+86256,"Autism and Weed Are Fun","Cannabis"
+51017,"The Pleasing Smoke","Psychotria viridis, Nicotiana rustica & Cannabis"
+76965,"Wake and Bake Times 4","Cannabis"
+64489,"What Happened? Where Am I?","Propoxyphene, Hydrocodone, LSD & Cannabis"
+39740,"Mushroom Crack","5-MeO-AMT, Cocaine, Alprazolam (Xanax), Alcohol - Hard & Cannabis"
+21226,"Absolute Bliss","AMT, Cannabis & Alprazolam"
+68825,"Blue Red Black Spiritual Connection","Cannabis"
+68383,"Long Term Fun","Cannabis, Alcohol & Inhalants - Nitrites"
+68226,"Air Distorts Images","Cannabis"
+19416,"Hash on Toast","Cannabis - Hash"
+53166,"Nightmares in My Wake","Cannabis"
+26952,"Different High","Codeine with acetaminophen, Alcohol & Cannabis"
+24736,"Eaten Bud","Cannabis"
+13277,"Candybowl","Cannabis & Codeine"
+19173,"Burnout Delay","Caffeine & Cannabis"
+19172,"Hurricane","Methamphetamine & Cannabis"
+67001,"Very Impressive","Pregabalin & Cannabis"
+66722,"Falling from Reality","Promethazine"
+24587,"Couldn't Tell It from the Weed","'White Rock Opium' & Cannabis"
+65415,"In a Tea","Cannabis"
+41557,"Bunk Ass Crap","Red Rock & Cannabis"
+38863,"Visiting Ancient Tenochtitlan","Cannabis & PCP"
+21961,"Sick Stomach","Cannabis"
+57112,"Medications Didn't Really Affect Other Drugs","Divalproex, Venlafaxine, Aripiprazole & Others"
+12102,"Years Gone By","Cannabis"
+23837,"Paraniod","Cannabis & Various"
+14737,"Altered thoughts","Alcohol, Cannabis & Methylphenidate"
+10392,"Unusual, Beautiful, Positive, Intense Trip","Cannabis"
+56482,"Detection Times in Standard 50 ng/ml Test","Cannabis"
+32008,"Lookin' at the Moon","Cannabis, Citalopram & Mucle Relaxant"
+15443,"Music Comes Alive","Cannabis - Hash"
+22374,"For a Migraine","Cannabis"
+21115,"Making School Fun","Adderall & Cannabis"
+19509,"Dancing Like A Maniac In The Middle Of The Living Room","MDMA (Ecstasy), Cannabis, Alcohol"
+16828,"Laced Weed?","Cannabis"
+9605,"One Wet Trippy Spring Day in Melbourne","Mushrooms - P. subaeruginosa, Cannabis & Salvia divinorum"
+17490,"Why I Don't Smoke Marijuana Anymore","Cannabis"
+17358,"This is Your Life . . . On Cannabis","Cannabis"
+17202,"Bathtub?","Cannabis - Hash"
+19351,"Puking and Rushed to the Hospital","Cannabis - Hash Oil"
+11736,"No Effect Whatsoever","Alcohol, Paroxetine, Olanzapine, Cannabis & Methamphetamine"
+37270,"Twilight Sleep","Datura, Codeine & Cannabis"
+10358,"A Little Scary","Cannabis & Opium"
+10466,"Jack Herer High","Cannabis & Tobacco"
+8422,"Too Much for My Third Time","Cocaine, Cannabis & Tobacco"
+8415,"Just a Bit Too Much...","Cannabis, Hash & Cocaine"
+9223,"More Psychedelic Then I Thought","Alcohol & Cannabis"
+8961,"A slight Disappointment","Cannabis"
+34079,"Backpain when Stoned","Cannabis"
+31306,"Near Death Experience","Cannabis"
+29719,"Wake Up and Stop Shaking","DXM (with CPM) & Cannabis"
+29079,"Vaporizer - The Ultimate Apparatus","Cannabis"
+29403,"Floater Relief","Cannabis"
+28007,"One Big Fluffy Pillow","LSD, Paxil & Cannabis"
+17527,"Deeper, More Lucid","Cannabis & 5-HTP"
+13894,"Out of Body Experience","Cannabis & Software"
+27457,"Music At A Higher Level","Cannabis"
+7856,"House Party","Cannabis"
+21062,"Mixing Too Much","MDMA, Methamphetamine, & Cannabis"
+7673,"The Worst Paranoia I Have Ever Experienced","Cannabis - Hash"
+24744,"A Great Combination","Skullcap, Damiana, & Cannabis"
+7545,"Herbal Euphoria","Ephedrine (Herbal X) & Hash"
+24455,"Woodstock","LSD, Cannabis, Mescaline"
+7407,"My First Hotbox, My First Bad Trip","Cannabis"
+21871,"Cant Stop Laughing!!","Cannabis"
+7971,"I Was Advised It Was Probably Panic Attacks","Cannabis"
+22074,"Bad Memories","DXM (Coricidin) & Cannabis"
+13605,"One Toke Over the Line","Cannabis"
+21608,"Dry Skin","Cannabis"
+21863,"Don't Remember Jack Shit","Alprazolam (Xanax) & Cannabis"
+7281,"THC Guides the Spirit","Cannabis - Hash & Cannabis"
+7138,"Interesting, but highly derivitive...","Salvia divinorum (dried leaves, smoked), cannabis"
+7502,"Addictive?","Cannabis"
+9144,"Thick Soup","Salvia divinorum, Absinthe, H.B. Woodrose, & Hashish"
+16266,"Lord of the Rings","Cannabis"
+7092,"A Night to Remember","Mushrooms, Cannabis & PCP"
+15617,"Herbal Party Starter","Ephedra sinica, Passion Flower & Cannabis"
+15290,"Highschool Blazin'","Cannabis"
+6915,"That Day Changed My Life Forever","Cannabis"
+14195,"Perfect Happiness","Mescaline, Cannabis"
+6510,"Is this Actually Happening?","Cannabis"
+6355,"How To Become a Hoopy Frood","Cannabis"
+6041,"Smoking Cannabis Oil","Cannabis (Oil)"
+5445,"I Was A Seventh Dimensional Being","LSD & Cannabis"
+5669,"Nothing Like I Have Ever Experienced","Cannabis"
+5074,"The Power of Suggestion","Cannabis & Salvia Divinorum (10x extract)"
+3873,"Terror & Recovery","LSD & Cannabis"
+3782,"Intense Experience","Cannabis"
+3726,"The Voice of a Friend's Shadow","Cannabis"
+4289,"One Month, Two Bad Trips","Cannabis"
+3556,"An Amazing Experience","Cannabis"
+4311,"A Night To Remember","Cannabis"
+8122,"An Experiment in Ethnobotany","Mandrake, Galangal, Damiana, Skullcap, Cannabis, & Wormwood"
+10380,"Acid Flashbacks and Weed","Cannabis"
+7843,"Hypothermia-induced flashback?","Hypothermia & Cannabis"
+2762,"Astounding difference... shawag to KINE!!","Cannabis (oral)"
+9863,"Uncontrollable Anger","LSD & Cannabis"
+6942,"Lost and Forgotten","Cannabis"
+9415,"Busted in West Vancouver","Cannabis & Cops"
+9264,"Smoking XTC","MDMA & Cannabis"
+8957,"Crazy Trip and Always in Control","Cacti - T. pachanoi & Cannabis"
+8871,"Red Rock vs. Opium","Red Rock Opium & Cannabis"
+8500,"Zoloft With Xtra Cream and Xtra Sugar","MDMA"
+5981,"Basically Weird","Cannabis"
+8319,"First encounter with the police","Cannabis & Cops"
+98,"A Gift or a Curse? A Pinch of Shamanism.","Cannabis"
+8054,"Mind-Reading on LSD","LSD"
+1599,"Weed doesn't mix well with all drugs","Methylphenidate & Cannabis"
+6365,"Tasting Salvia's Kiss Thru Cannabis","Salvia divinorum & Cannabis - Hash"
+6672,"A blend of Salvia and Cannabis","Salvia divinorum, Cannabis & Damiana"
+1167,"'where's did my alligator go?'","Cannabis"
+6010,"Drug Cocktail","LSD, MDMA, Alcohol & Cannabis"
+3766,"Strange Stuff","Cannabis"
+3879,"A Trade with Nature","Cannabis"
+4304,"Time Warp","Cannabis"
+4683,"Pretty Drunk","Alcohol & Cannabis"
+3911,"Beautiful Music...","Cannabis"
+4030,"First Time, Gotta Love It!","Cannabis"
+1140,"Scent Proof Smoking of Cannabis","Cannabis"
+3806,"Not Opium, but What?","Red Rock Opium"
+1256,"The World has Shifted","Cannabis"
+1032,"Am I Talking A Bit Loud?","Cannabis"
+1038,"Arts County XPerience","Cannabis & Ecstasy"
+3713,"Never combine too many drugs!","Datura, DXM, Hydrocodone, Methylphenidate, Nutmeg, Alcohol & Cannabis"
+1588,"Heavenly Blue mixed with Hash Oil (low dose of MG)","Morning Glory Seeds & Cannabis - Hash Oil"
+1029,"A Definite Cure","Cannabis"
+854,"Trippin' with Gravity","Cannabis"
+1176,"You Never Know Who You Can Trust","Cannabis"
+1130,"Ganja","Cannabis"
+601,"Smoked Ketamine","Ketamine & Cannabis"
+484,"Fun In The Jungle","Cannabis"
+2290,"A Bender to Remember!!!","Alcohol, Cannabis & Caffeine"
+2163,"Salvia Cross-Tolerance with Cannabis?","Salvia divinorum & Cannabis"
+426,"Unexpected Trip","Cannabis"
+9,"The night of my life, how i remembered it","Cannabis"
 %

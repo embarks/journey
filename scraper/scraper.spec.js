@@ -4,16 +4,16 @@ jest.mock('./config', () => ({
   XP_BASE_PATH: 'blogs',
   XP_VAULT_PATH: 'dogs.ogg'
 }))
-describe('scraper', () => {
-  beforeEach(() => {
-    jest.resetModules()
-    jest.unmock('../logs')
-    jest.unmock('./foresight')
-    jest.unmock('./util')
-    jest.unmock('./consumers')
-    jest.unmock('fs')
-  })
 
+beforeEach(() => {
+  jest.resetModules()
+  jest.unmock('../logs')
+  jest.unmock('./foresight')
+  jest.unmock('./util')
+  jest.unmock('./consumers')
+  jest.unmock('fs')
+})
+describe('scraper', () => {
   test('say hello', () => {
     jest.doMock('../logs', () => {
       return {
@@ -122,12 +122,21 @@ describe('scraper', () => {
     expect(spy).toHaveBeenCalledTimes(1)
   })
   test('experience', (done) => {
+    jest.doMock('./util', () => {
+      const util = jest.requireActual('./util')
+      return {
+        ...util,
+        oaty: {
+          get: jest.fn((URL, fn) => {
+            fn('[test] scraper - experience')
+          })
+        }
+      }
+    })
     jest.doMock('./consumers', () => {
       return {
         experienceConsumer: jest.fn(() => {
-          return jest.fn(() => {
-            done()
-          })
+          return () => done()
         })
       }
     })
@@ -136,7 +145,7 @@ describe('scraper', () => {
       return {
         ...rest,
         readFile: jest.fn((url, cb) => {
-          cb(undefined, Buffer.from('100\n102\n%'))
+          cb(undefined, Buffer.from('109504,"Before and After","LSD & Escitalopram (Lexapro)"\n106589,"Insight","LSD"\n108950,"Anxiety Nothingness and the Logic-Machine","LSD"\n108676,"Tripp on the Hill","MDMA, 1P-LSD & LSD"\n102840,"Colors of an LSD Sunrise","LSD"\n89368,"Kundalini and the Power of Love","LSD & Cannabis"\n103265,"A Very Psychedelic Vacation","LSD, Nitrous Oxide, 4-HO-DiPT & Cannabis"\n69875,"Tripping on the Paradisiac Brazilian Coast","LSD"\n107585,"At Last A Psychedelic Hike and More","LSD"\n98139,"Self-Deception Induced Nightmare","Suspected DOB (sold as LSD), Cannabis & Synthetic Cannabinoids"'))
         }),
         accessSync: jest.fn(() => {
         })
@@ -151,73 +160,5 @@ describe('scraper', () => {
     doScrape()
     expect(fs.readFile).toHaveBeenCalled()
     expect(consumers.experienceConsumer).toHaveBeenCalled()
-  })
-  xtest('order of operations', () => {
-    jest.doMock('fs', () => ({
-      constants: {
-        R_OK: true
-      },
-      mkdirSync: jest.fn(),
-      accessSync: jest.fn((...args) => {
-        console.log(`[test] fs.accessSync(${[...args].join(', ')})`)
-        if ([
-          `${process.cwd()}/datfiles/lsd`,
-          `${process.cwd()}/datfiles/cannabis`,
-          `${process.cwd()}/datfiles/toad-venom`
-        ].includes(args[0])) {
-        } else {
-          throw Error(`[test] ERR accessSync(${[...args]})`)
-        }
-      }),
-      readFileSync: jest.fn((...args) => {
-        console.log(`[test] fs.readFileSync(${[...args].join(', ')}) -> '0,--nonce--\n1,Cannabis\n2,LSD\n3,Toad Venom\n%'`)
-        return '0,--nonce--\n1,Cannabis\n2,LSD\n3,Toad Venom\n%'
-      }),
-      readFile: jest.fn((...args) => {
-        console.log(`[test] fs.readFile(${[...args].join(', ')})`)
-        if ([
-          `${process.cwd()}/datfiles/lsd`,
-          `${process.cwd()}/datfiles/cannabis`
-        ].includes(args[0])) {
-          args[1](undefined, Buffer.from('100\n102\n%'))
-        } else {
-          throw Error(`[test] ERR readFile(${[...args]})`)
-        }
-      })
-    }))
-    const foresight = require('./foresight')
-    jest.spyOn(foresight, 'wisdom')
-    jest.spyOn(foresight, 'experiences')
-    const sx = require('.')
-    expect(() => sx()).toThrow()
-    expect(foresight.wisdom).toHaveBeenCalledTimes(0)
-
-    expect(sx('/substances')).toBeInstanceOf(Function)
-    expect(foresight.wisdom).toHaveBeenCalledTimes(1)
-
-    expect(sx('/experiences/please-do-not-make-this-file')).toBeUndefined()
-    expect(sx('/substances/please-do-not-make-this-route')).toBeUndefined()
-
-    expect(sx('/experiences/lsd')).toBeInstanceOf(Function)
-    expect(sx('/substances/lsd')).toBeInstanceOf(Function)
-    expect(sx('/substances/lsd')).toBeInstanceOf(Function)
-    expect(foresight.wisdom).toHaveBeenCalledTimes(1)
-
-    expect(sx('/substances/cannabis')).toBeInstanceOf(Function)
-    expect(foresight.wisdom).toHaveBeenCalledTimes(1)
-
-    expect(sx('/experiences/cannabis')).toBeInstanceOf(Function)
-    expect(sx('/substances/toad-venom')).toBeInstanceOf(Function)
-    expect(foresight.wisdom).toHaveBeenCalledTimes(1)
-
-    const sx2 = require('.')
-    const foresight2 = require('./foresight')
-    expect(sx2('/substances/lsd')).toBeInstanceOf(Function)
-    expect(sx2('/substances/cannabis')).toBeInstanceOf(Function)
-    expect(sx2('/experiences/toad-venom')).toBeInstanceOf(Function)
-
-    // it should have only read the substances file once
-    expect(foresight.wisdom).toHaveBeenCalledTimes(1)
-    expect(foresight2.wisdom).toHaveBeenCalledTimes(1)
   })
 })

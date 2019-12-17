@@ -70,7 +70,7 @@ const ReportListBody100 = `<html><body vlink="#999999" text="#999977" link="#777
    <tbody><tr height="10">
    <th width="75"><input type="Button" value="Rating" onclick="SortBy('RA');"><img src="/experiences/images/arrow_down.jpg"></th>
    <th width="230"><input type="Button" value=" Title" onclick="SortBy('TA');"></th>
-   <th width="105"><input type="Button" value=" Author " onclick="SortBy('AA');"></th>
+   <th width="105"><input type="Button" value=" Author" onclick="SortBy('AA');"></th>
    <th width="150"><input type="Button" value="Substance" onclick="SortBy('SA');"></th>
    <th width="85"><input type="Button" value="Pub Date" onclick="SortBy('PDD');"><img src="/experiences/images/arrow_down.jpg"></th>
    
@@ -318,7 +318,7 @@ const ReportListBody100 = `<html><body vlink="#999999" text="#999977" link="#777
   </tbody></table>
      <div id="show-cellar-block" style="font-weight:bold; width:600px; margin-left:auto; margin-right:auto; margin-top:1em; padding:5px; border: 1px dotted gray;">
   <div class="show-cellar-title" style="color:yellow;">NOTE: There are 126 experiences matching this search in the Erowid Cellar.</div>
-  "Cellar" reports contain important or useful pieces of information but otherwise fall below the minimum readability or reliability standards expected of published reports (or have significant other problems identified by the Erowid crew).<br>
+ "Cellar" reports contain important or useful pieces of information but otherwise fall below the minimum readability or reliability standards expected of published reports (or have significant other problems identified by the Erowid crew).<br>
   <div style="text-align:center;"><input type="button" value="Click to Show Cellar Reports" onclick="ShowCellarReports();"></div>
   </div>
   
@@ -361,6 +361,108 @@ const ReportListBody100 = `<html><body vlink="#999999" text="#999977" link="#777
   
   
   </body></html>`
+
+const ReportListBody100Result = `109504,"Before and After","LSD & Escitalopram (Lexapro)"
+106589,"Insight","LSD"
+108950,"Anxiety Nothingness and the Logic-Machine","LSD"
+108676,"Tripp on the Hill","MDMA, 1P-LSD & LSD"
+102840,"Colors of an LSD Sunrise","LSD"
+89368,"Kundalini and the Power of Love","LSD & Cannabis"
+103265,"A Very Psychedelic Vacation","LSD, Nitrous Oxide, 4-HO-DiPT & Cannabis"
+69875,"Tripping on the Paradisiac Brazilian Coast","LSD"
+107585,"At Last A Psychedelic Hike and More","LSD"
+98139,"Self-Deception Induced Nightmare","Suspected DOB (sold as LSD), Cannabis & Synthetic Cannabinoids"
+67150,"Fighting the Body High, Embracing the Mental High","LSD"
+74570,"Personal Discoveries : People are Really Invisible","LSD & Cannabis"
+86012,"Range of Emotion","LSD"
+97586,"Dancing for the First Time","LSD, Mushrooms, & bk-MDMA (sold as MDMA)"
+95802,"Disconnected From My Physical Body","LSD & Cannabis"
+103042,"First Impressions of First Experience","LSD"
+103010,"Reversible MAOI Interactions","Moclobemide, MDMA, Amphetamines, NBOmes, 2C-B, Cannabis, et al."
+86291,"Seeking Normality","LSD, Cannabis & Alcohol"
+90120,"First Rebirth","LSD"
+90892,"Provence on Acid","LSD"
+91948,"Underestimating Acid","LSD & Cannabis"
+92381,"First Experience of DMT","DMT & LSD"
+96331,"Acidception","LSD"
+93952,"Parade Of Lights","LSD, Mushrooms & Hash Oil"
+99985,"The Infinite Beauty of the Snow","LSD"
+87058,"Psilopsychology","LSD & Mushrooms"
+99779,"Report of Session of M.J. Stolaroff, 16 Apr 1956","LSD"
+95292,"Gaining Strength in the Rabbit Hole","LSD"
+95024,"Hospitalized and Teleportation","LSD & Mushrooms"
+69082,"One Windy City Reminiscence","LSD"
+70489,"A Spiritual Chill and an Invasion","LSD & Cannabis"
+68795,"New Respect for a Drug","LSD"
+73806,"Two Days of LSD Psychosis","LSD"
+71918,"A Mind-Fuck for the Ages","LSD & Cannabis"
+82774,"Reality 101","LSD"
+83671,"The 24 Hour Electric Bubblegum Fiasco","LSD"
+81325,"4th Dimension Maelstrom","LSD, MDMA & Nitrous Oxide"
+73201,"A Newborn Third Eye Opens","LSD"
+89094,"Deluge of Experience","LSD"
+96165,"Surreal Reality","LSD, Ketamine & Cannabis"
+89351,"Flipping Through Realities","MDMA, LSD, DMT & Cannabis"
+98027,"Halloween Town","LSD"
+98101,"Ego Death Through LSD","LSD, MDMA, Cannabis & Alcohol"
+88252,"Spun Into Insanity","LSD & Mushrooms - P. cubensis"
+90041,"Apocalyptic Nightmare","LSD"
+82595,"My Experience","LSD"
+90758,"Amazing: Not A Good Enough Word","Ketamine, LSD & MDMA"
+83138,"Acid Rain","LSD"
+82676,"Picaresque Adventure on Wednesday Afternoon","LSD & Alcohol"
+83692,"Rebooting My Mind","LSD, Nitrous Oxide & Salvia divonorum"
+87507,"A Guided Step Into the Unknown","LSD"
+69495,"My First Difficult Experience...","LSD"
+72025,"Lack of Concept","LSD"
+96427,"The Best Tripnic","LSD"
+96749,"Codes of My Kin","LSD"
+68733,"LSD Isn't Mania, but Blueberries are Nice","LSD & Lamotrigine (Lamictal)"
+78686,"Dancing Between Mortal Fear and Perfect Calm","LSD, Cannabis, Throat Singing, Didgeridoo, Meditation & Yoga"
+66912,"Cars Are So Loud and Unfortunate","LSD"
+66222,"Too Much of a Good Thing","LSD"
+68354,"Holy Cat & Wall People","LSD & Cannabis"
+88121,"Life Questioning Problem Solving","LSD"
+90477,"Sporadic Impulses","LSD & Cannabis"
+92657,"Confronting the Blur","LSD & Cannabis"
+89195,"Accidental Double Dose","LSD & Cannabis"
+88499,"Festive Clarity","LSD"
+88724,"The Godvision","LSD & Cannabis"
+67788,"The Mind, when Viewed as a Mere Toy...","LSD"
+67627,"Less Is More","LSD"
+88866,"Demon Woman","LSD"
+88760,"Gascid and the Cosmic Consciousness","LSD & Nitrous Oxide"
+89493,"Chaos and Beauty Being Dumped in a Trip","LSD, Ketamine & Hash"
+65728,"I Made a Mistake..","LSD & Cannabis"
+66148,"A Circus of Distortion","LSD & Salvia divinorum (leaves)"
+84139,"The Rimpling of Reality","LSD, Nitrous Oxide, Ketamine & Cannabis"
+65797,"Needlessness","LSD"
+81564,"A Universal Experiment in Consciousness","LSD"
+80897,"Sacred Love and LSD","LSD"
+84954,"Tales of an SF Bike Messenger/Acid Addict","LSD"
+74690,"Captain Acid Hat's Amazing Acid Aventure","LSD & Cannabis"
+76922,"Those who Speak Don't Know: In Defense of Psy","LSD"
+80128,"Forever Changed","LSD, MDMA (Ecstasy), & Cannabis"
+72529,"Incredible Insight and Periodic Paranoia","LSD"
+64518,"Looking Into the Eyes of Insanity","LSD & Cannabis"
+78253,"Reading the Book of My Life","LSD & Cannabis"
+63617,"The Sweetest Sugar Cube I'd Tasted","LSD & Cannabis"
+72910,"Judged by the Primordial Energy","LSD & Cannabis"
+59616,"Abriendo Los Ojos","LSD"
+60279,"Asunder, the End of Cities, the Rise of Drago","LSD"
+57959,"Unexplainable Beauty","LSD"
+67528,"Double Whammy Death Trip","LSD & Salvia divinorum"
+56654,"Love, Life, Spirit, Completely Reformed","LSD & Cannabis"
+53392,"I Am It, It Is I","LSD & Cannabis"
+72107,"The Beat of the Beast That Drives Us","LSD"
+72627,"Hallucinating But Not Tripping (HPPD)","LSD & Various"
+52117,"Shrooms vs. LSD","LSD & Mushrooms"
+66968,"This One Belongs in the Dante's Inferno Vault","LSD & Cannabis"
+51872,"The Story of Tom (Schizophrenia Revealed)","Amphetamines, LSD, Cannabis, Aripiprazole (Abilify) & Quetiapine (Seroquel)"
+58115,"Sugar Cube Goodness","LSD & Cannabis"
+70035,"It All Makes Too Much Sense","LSD"
+48302,"Going on a Bicycle Ride","LSD"
+`
 
 const ReportBody = `<body onload="expSetColors();">
 
@@ -408,7 +510,7 @@ psychedelics and other drugs improves health, culture, and policies.</div></a>
 <div class="author">by <a href="/experiences/exp.cgi?A=Search&amp;AuthorSearch=Johnny+Blaze&amp;Exact=1">Johnny Blaze</a></div>
 
 
-<div class="ts-citation">Citation:&nbsp;&nbsp; Johnny Blaze. "An Unforgettable Ride!: An Experience with Ecstasy (exp1)". <u>Erowid.org</u>. May 30, 2000. erowid.org/exp/1</div>
+<div class="ts-citation">Citation:&nbsp;&nbsp; Johnny Blaze."An Unforgettable Ride!: An Experience with Ecstasy (exp1)". <u>Erowid.org</u>. May 30, 2000. erowid.org/exp/1</div>
 
 <br>
 
@@ -504,5 +606,6 @@ Some of the activities described are dangerous and/or illegal and none are recom
 
 module.exports = {
   ReportListBody100,
+  ReportListBody100Result,
   ReportBody
 }

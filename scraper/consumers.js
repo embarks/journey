@@ -4,6 +4,7 @@ const fs = require('fs')
 const chalk = require('chalk')
 const { log } = require('../logs')
 const { handleError, isAllOption } = require('./util')
+const readline = require('readline')
 
 const DATFILES = `${process.cwd()}/datfiles`
 
@@ -37,12 +38,35 @@ function getTotal ($) {
 // consume list by substance and page fetched
 const reportListConsumer = (function () {
   // consume body of page
-  function consumeList ($) {
-    const rows = $('#results-form').find('a')
-    return rows.map((i, elem) => {
-      const [id] = Object.values(qs.parse(elem.attribs.href))
-      return id
+  function consumeList ($, substance) {
+    const rows = $('#results-form').find('tr:has(a)')
+    const reportList = rows.map((i, elem) => {
+      const title = $(elem).find('a')
+        .text()
+        .trim()
+        .replace('"', "'")
+
+      const substanceList = $(elem).find('td:nth-child(4)')
+        .text()
+        .trim()
+        .replace('"', "'")
+        .replace('[', '(')
+        .replace(']', ')')
+
+      const [id] = Object.values(qs.parse($(elem).find('a').attr('href')))
+      if (i !== 0) {
+        readline.cursorTo(process.stdout, 0)
+      }
+      process.stdout.write(chalk`{bold.green Consuming} #${id}: ${title} [${substanceList}]`)
+
+      if (i === rows.length - 1) {
+        readline.cursorTo(process.stdout, 0)
+        process.stdout.write(chalk`{bold.bgBlack.white ${substance}} {bold.green Wrote} ${rows.length} rows`)
+        process.stdout.write('\n')
+      }
+      return `${id},"${title}","${substanceList}"`
     }).get().join('\n')
+    return reportList
   }
   function ListConsumer ({ substance, pageInfo }) {
     // determine whether to append or write new file
@@ -57,8 +81,8 @@ const reportListConsumer = (function () {
           done()
         })
       }
-      const data = consumeList($)
       log(chalk`{bold.bgBlack.white ${substance}} Collecting experiences... {yellow ${pageInfo.start}} to {yellow ${pageInfo.max}}`)
+      const data = consumeList($, substance)
       write(`${data}\n`, () => {
         if (isFinalPage) {
           log(chalk`{bold.bgBlack.white ${substance}} Appending final page of experiences...`)
@@ -73,18 +97,18 @@ const reportListConsumer = (function () {
   return ListConsumer
 })()
 
-function experienceConsumer (substance) {
-  log(chalk`{bold.bgBlack.white ${substance}} Initializing experience consumer`)
+function experienceConsumer ({ id, title, substanceList }) {
+  log(chalk`{bold.bgBlack.white #${id}} Initializing experience consumer`)
   // this will happen async
+  // TODO deal with pulled quotes
   return ($) => {
-    // TODO deal with pulled quotes
-    const title = $('.title').text().trim()
-    const datfile = `${DATFILES}/reports/${substance}/${title}`
-    log(chalk`{bold.bgBlack.white ${substance}} {bold.blue Scraping} ${substance}/${title}`)
+    const fn = `#${id}: [${substanceList}] ${title}`
+    const datfile = `${DATFILES}/${fn}`
+    // log(chalk`{bold.bgBlack.white ${substance}} {bold.blue Scraping} ${substance}/${title}`)
     $('.report-text-surround').find('table').remove()
     const data = $('.report-text-surround').text().trim()
     fs.writeFile(datfile, data, (err) => {
-      log(chalk`{bold.bgBlack.white ${substance}} {bold.green Scraped} ${substance}/${title}`)
+    // log(chalk`{bold.bgBlack.white ${substance}} {bold.green Scraped} ${substance}/${title}`)
       handleError(err)
     })
   }
