@@ -25,7 +25,8 @@
   "scripts": {
     "test": "jest --silent",
     "testy": "jest --watch --verbose",
-    "hello": "node index.js"
+    "scrape": "node index.js",
+    "scrape-hard": "SCRAPE=hard node index.js"
   },
   "repository": {
     "type": "git",
