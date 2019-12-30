@@ -22,7 +22,7 @@ module.exports = (function scraper () {
   const foresight = require('./foresight')
 
   function fromWisdom ({ key: oKey, sval: oSval, keys }) {
-    const collectBySubstance = ({ key, sval }) => {
+    const collectBySubstance = ({ key, sval } = { key: oKey, sval: oSval }) => {
       // construct the url
       const url = ({ start, max }) => `${BASE_URL}/${XP_BASE_PATH}/${XP_VAULT_PATH}?S1=${sval}&Max=${max}&Start=${start}`
 
@@ -54,9 +54,7 @@ module.exports = (function scraper () {
     if (isAllOption(oSval)) {
       const bySubstance = keys.filter(({ sval }) => !isAllOption(sval))
       return () => {
-        bySubstance.forEach((substance) => {
-          collectBySubstance(substance)
-        })
+        bySubstance.forEach(collectBySubstance)
       }
     }
     return collectBySubstance

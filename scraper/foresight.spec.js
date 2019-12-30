@@ -147,8 +147,8 @@ describe('foresight.experiences', () => {
     readThenScrape()
     expect(readdirSync).toHaveBeenCalledWith(`${process.cwd()}/datfiles/reports/`)
 
-    expect(log.mock.calls[1][0]).toContain('123')
-    expect(log.mock.calls[1][0]).toContain('#123: a real test')
+    expect(log.mock.calls[2][0]).toContain('123')
+    expect(log.mock.calls[2][0]).toContain('#123: a real test')
 
     expect(foresight.settings).toEqual({
       '/substances': '0',

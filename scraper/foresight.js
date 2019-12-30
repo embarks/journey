@@ -29,7 +29,7 @@ module.exports = (function () {
           try {
             // if it is a hard scrape, scrape everything regardless
             if (!config.hard) {
-              log('Doing pre-scrape check...')
+              log('🔭 Doing pre-scrape check...')
               const reports = fs.readdirSync(reportsDir)
               reports.forEach(filename => {
                 const idPtrn = /^#(\d*?):/
@@ -42,7 +42,7 @@ module.exports = (function () {
                   .shift()
                 id = id.substring(1, id.length - 1)
                 list = list.substring(1, list.length - 1)
-                log(chalk`{blue (skipped)} {bgBlack.bold.white #${id}} ${filename}`)
+                log(chalk`🔭 {blue (skipped)} {bgBlack.bold.white #${id}} ${filename}`)
                 wisdom.has[id] = list
               })
             }
@@ -82,6 +82,7 @@ module.exports = (function () {
 
   function substances () {
     try {
+      log('🚬 Checking the inventory...')
       const optionList =
       fs.readFileSync(`${process.cwd()}/datfiles/substances`)
         .toString()
@@ -134,7 +135,7 @@ foresight(arg) must be one of foresight(${Object.keys(foresight).join(' | ')})`)
       wisdom[path] = makePath({ key, sval, keys })
       if (isAllOption(sval)) { wisdom[`/${prefix}`] = makePath({ key, sval, keys }) }
     })
-    return wisdom
+    return foresight.settings
   }
 
   return foresight

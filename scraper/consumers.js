@@ -23,7 +23,7 @@ function listSubstances ($) {
   })
   data.push('%')
   fs.writeFileSync(`${DATFILES}/substances`, data.join('\n'))
-  log(chalk`{bold.green Success} Listed substances`)
+  log(chalk`📝 {bold.green Success} Listed substances`)
 }
 
 function getTotal ($) {
@@ -53,15 +53,10 @@ const reportListConsumer = (function () {
         .replace(']', ')')
 
       const [id] = Object.values(qs.parse($(elem).find('a').attr('href')))
-      if (i !== 0) {
-        readline.cursorTo(process.stdout, 0)
-      }
-      process.stdout.write(chalk`{bold.green Consuming} #${id}: ${title} [${substanceList}]`)
+      log(chalk`📝 {bold.green Setting} #${id}: ${title} [${substanceList}]`)
 
       if (i === rows.length - 1) {
-        readline.cursorTo(process.stdout, 0)
-        process.stdout.write(chalk`{bold.bgBlack.white ${substance}} {bold.green Wrote} ${rows.length} rows`)
-        process.stdout.write('\n')
+        log(chalk`📝 {bold.bgBlack.white ${substance}} {bold.green Wrote} ${rows.length} rows`)
       }
       return `${id},"${title}","${substanceList}"`
     }).get().join('\n')
@@ -80,11 +75,11 @@ const reportListConsumer = (function () {
           done()
         })
       }
-      log(chalk`{bold.bgBlack.white ${substance}} Collecting experiences... {yellow ${pageInfo.start}} to {yellow ${pageInfo.max}}`)
+      log(chalk`📝 {bold.bgBlack.white ${substance}} Collecting experiences... {yellow ${pageInfo.start}} to {yellow ${pageInfo.max}}`)
       const data = consumeList($, substance)
       write(`${data}\n`, () => {
         if (isFinalPage) {
-          log(chalk`{bold.bgBlack.white ${substance}} Appending final page of experiences...`)
+          log(chalk`📝 {bold.bgBlack.white ${substance}} Appending final page of experiences...`)
           fs.appendFile(SF, '%', handleError)
         }
       })
@@ -97,17 +92,17 @@ const reportListConsumer = (function () {
 })()
 
 function experienceConsumer ({ id, title, substanceList }) {
-  log(chalk`{bold.bgBlack.white #${id}} Initializing experience consumer`)
+  log(chalk`👄 {bold.bgBlack.white #${id}} Initializing experience consumer`)
   // this will happen async
   // TODO deal with pulled quotes
   return ($) => {
     const fn = `#${id}: [${substanceList}] ${title}`
     const datfile = `${DATFILES}/reports/${fn}`
-    log(chalk`{bold.bgBlack.white #${id}} {bold.blue Scraping} ${fn}`)
+    log(chalk`👄 {bold.bgBlack.white #${id}} {bold.blue Scraping} ${fn}`)
     $('.report-text-surround').find('table').remove()
     const data = $('.report-text-surround').text().trim()
     fs.writeFile(datfile, data, (err) => {
-      log(chalk`{bold.bgBlack.white #${id}} {bold.green Scraped} ${fn}`)
+      log(chalk`👄 {bold.bgBlack.white #${id}} {bold.green Scraped} ${fn}`)
       handleError(err)
     })
   }
