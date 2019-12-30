@@ -9,12 +9,11 @@ const readline = require('readline')
 const DATFILES = `${process.cwd()}/datfiles`
 
 function sayHello ($) {
-  log(chalk.bold.blue('Knock knock...\n'))
-  log(chalk`Hello, {blue ${$('title').text()}}`)
+  log(chalk`👋 Hello, {blue ${$('title').text()}}`)
 }
 
 function listSubstances ($) {
-  log('Listing substances...')
+  log('📝 Listing substances...')
   const substances = $('select[name="S1"]').children('option')
   const data = []
   substances.each(function (i, e) {
@@ -24,7 +23,7 @@ function listSubstances ($) {
   })
   data.push('%')
   fs.writeFileSync(`${DATFILES}/substances`, data.join('\n'))
-  log(chalk`{bold.green Success}`)
+  log(chalk`{bold.green Success} Listed substances`)
 }
 
 function getTotal ($) {
@@ -103,12 +102,12 @@ function experienceConsumer ({ id, title, substanceList }) {
   // TODO deal with pulled quotes
   return ($) => {
     const fn = `#${id}: [${substanceList}] ${title}`
-    const datfile = `${DATFILES}/${fn}`
-    // log(chalk`{bold.bgBlack.white ${substance}} {bold.blue Scraping} ${substance}/${title}`)
+    const datfile = `${DATFILES}/reports/${fn}`
+    log(chalk`{bold.bgBlack.white #${id}} {bold.blue Scraping} ${fn}`)
     $('.report-text-surround').find('table').remove()
     const data = $('.report-text-surround').text().trim()
     fs.writeFile(datfile, data, (err) => {
-    // log(chalk`{bold.bgBlack.white ${substance}} {bold.green Scraped} ${substance}/${title}`)
+      log(chalk`{bold.bgBlack.white #${id}} {bold.green Scraped} ${fn}`)
       handleError(err)
     })
   }

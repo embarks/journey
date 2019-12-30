@@ -44,6 +44,6 @@ function scrapeToadVenomExperiences () {
   toadVenomExps()
 }
 
-// initScraper()
-helloScraper()
-// scrapeToadVenomExperiences()
+initScraper()
+// helloScraper()
+scrapeToadVenomExperiences()

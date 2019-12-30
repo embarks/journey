@@ -2,7 +2,7 @@
 'use strict'
 // var qs = require('qs')
 const { URL } = require('url')
-const { BASE_URL, XP_BASE_PATH, XP_VAULT_PATH, REPORT_PATH, hard } = require('./config')
+const { BASE_URL, XP_BASE_PATH, XP_VAULT_PATH, REPORT_PATH } = require('./config')
 const { oaty, init, isAllOption } = require('./util')
 const {
   sayHello,
@@ -52,8 +52,9 @@ module.exports = (function scraper () {
     }
 
     if (isAllOption(oSval)) {
+      const bySubstance = keys.filter(({ sval }) => !isAllOption(sval))
       return () => {
-        keys.filter(({ sval }) => !isAllOption(sval)).forEach((substance) => {
+        bySubstance.forEach((substance) => {
           collectBySubstance(substance)
         })
       }
@@ -133,9 +134,7 @@ module.exports = (function scraper () {
           adultResolver = Object.assign(adultResolver,
             {
               // provide that experience as a route
-              [`/experiences/${substance}`]: setting(recordExperiences, {
-                isHardScrape: hard
-              })
+              [`/experiences/${substance}`]: setting(recordExperiences)
             }
           )
         }

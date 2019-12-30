@@ -1,6 +1,6 @@
-
 beforeEach(() => {
   jest.resetModules()
+  jest.unmock('fs')
 })
 
 test('foresight.wisdom', () => {
@@ -8,6 +8,7 @@ test('foresight.wisdom', () => {
     const fs = jest.requireActual('fs')
     return {
       ...fs,
+      readdirSync: jest.fn(),
       mkdirSync: jest.fn(),
       readFileSync: () => {
         return {
@@ -25,6 +26,7 @@ test('foresight.wisdom', () => {
   const foresight = require('./foresight')
 
   expect(foresight.wisdom()).toEqual({})
+  expect(foresight.settings).toEqual({})
   foresight('substances')
   expect(foresight.wisdom(
     ({ sval }) => sval
@@ -38,6 +40,14 @@ test('foresight.wisdom', () => {
       '/substances/1-,-3-,-or-4-drugs': 'TEST'
     }
   )
+  expect(foresight.settings).toEqual({
+    '/substances': '0',
+    '/substances/-all-': '0',
+    '/substances/lsd': 'Yes.',
+    '/substances/cannabis': 'Yes!',
+    '/substances/opioids': 'YES!',
+    '/substances/1-,-3-,-or-4-drugs': 'TEST'
+  })
 })
 
 describe('foresight.experiences', () => {
@@ -46,6 +56,7 @@ describe('foresight.experiences', () => {
       const fs = jest.requireActual('fs')
       return {
         ...fs,
+        readdirSync: jest.fn(),
         mkdirSync: jest.fn(),
         accessSync: () => {
         }
@@ -53,27 +64,113 @@ describe('foresight.experiences', () => {
     })
     const foresight = require('./foresight')
     expect(foresight.experiences()).toBeInstanceOf(Function)
+    expect(foresight.settings).toEqual({})
   })
-  test('reads a file', (done) => {
+  test('reads files ahead of time', (done) => {
     jest.doMock('fs', () => {
       const fs = jest.requireActual('fs')
       return {
         ...fs,
-        accessSync: () => {
-        },
+        accessSync: jest.fn(() => {
+        }),
+        readdirSync: jest.fn(() => {
+          return ['#123: [#123: a real test] pdeafe[][] #234: !!![][#2:]fds',
+            '#102840: [LSD] Colors of an LSD Sunrise']
+        }),
         readFile: jest.fn((url, cb) => {
           cb(undefined, '109504,"Before and After","LSD & Escitalopram (Lexapro)"\n106589,"Insight","LSD"\n108950,"Anxiety Nothingness and the Logic-Machine","LSD"\n108676,"Tripp on the Hill","MDMA, 1P-LSD & LSD"\n102840,"Colors of an LSD Sunrise","LSD"\n89368,"Kundalini and the Power of Love","LSD & Cannabis"\n103265,"A Very Psychedelic Vacation","LSD, Nitrous Oxide, 4-HO-DiPT & Cannabis"\n69875,"Tripping on the Paradisiac Brazilian Coast","LSD"\n107585,"At Last A Psychedelic Hike and More","LSD"\n98139,"Self-Deception Induced Nightmare","Suspected DOB (sold as LSD), Cannabis & Synthetic Cannabinoids"')
-        })
+        }),
+        mkdirSync: jest.fn(),
+        readFileSync: () => {
+          return {
+            toString: () => {
+              return '0,-all-\n' +
+            'Yes.,LSD\n' +
+            'Yes!,Cannabis\n' +
+            'YES!,Opioids\n' +
+            'TEST,1-, 3-, or 4-Drugs\n' + '%'
+            }
+          }
+        }
       }
     })
+    const logs = require('../logs')
+    const log = jest.spyOn(logs, 'log')
     const foresight = require('./foresight')
     const fs = require('fs')
+    const readdirSync = jest.spyOn(fs, 'readdirSync')
     const consumer = jest.fn((data) => {
       done()
     })
+    expect(foresight.settings).toEqual({})
+
+    const substancePrescrape = foresight('substances')
+    const applyWisdom = foresight.wisdom
+
+    expect(foresight.settings).toEqual({
+      '/substances': null,
+      '/substances/-all-': null,
+      '/substances/lsd': null,
+      '/substances/cannabis': null,
+      '/substances/opioids': null,
+      '/substances/1-,-3-,-or-4-drugs': null
+    })
+
+    applyWisdom(({ sval }) => sval)
+
+    expect(foresight.settings).toEqual({
+      '/substances': '0',
+      '/substances/-all-': '0',
+      '/substances/lsd': 'Yes.',
+      '/substances/cannabis': 'Yes!',
+      '/substances/opioids': 'YES!',
+      '/substances/1-,-3-,-or-4-drugs': 'TEST'
+    })
+
+    expect(substancePrescrape).toBeInstanceOf(Function)
+    expect(substancePrescrape('cannabis')).toBeInstanceOf(Function)
+
     const readThenScrape = foresight('experiences', 'cannabis')(consumer)
+
+    expect(readdirSync).not.toHaveBeenCalled()
     expect(fs.readFile).not.toHaveBeenCalled()
+
+    expect(foresight.settings).toEqual({
+      '/substances': '0',
+      '/substances/-all-': '0',
+      '/substances/lsd': 'Yes.',
+      '/substances/cannabis': 'Yes!',
+      '/substances/opioids': 'YES!',
+      '/substances/1-,-3-,-or-4-drugs': 'TEST'
+    })
+
     readThenScrape()
+    expect(readdirSync).toHaveBeenCalledWith(`${process.cwd()}/datfiles/reports/`)
+
+    expect(log.mock.calls[1][0]).toContain('123')
+    expect(log.mock.calls[1][0]).toContain('#123: a real test')
+
+    expect(foresight.settings).toEqual({
+      '/substances': '0',
+      '/substances/-all-': '0',
+      '/substances/lsd': 'Yes.',
+      '/substances/cannabis': 'Yes!',
+      '/substances/opioids': 'YES!',
+      '/substances/1-,-3-,-or-4-drugs': 'TEST',
+      has: {
+        102840: 'LSD',
+        103265: 'LSD, Nitrous Oxide, 4-HO-DiPT & Cannabis',
+        106589: 'LSD',
+        107585: 'LSD',
+        108676: 'MDMA, 1P-LSD & LSD',
+        108950: 'LSD',
+        109504: 'LSD & Escitalopram (Lexapro)',
+        123: '#123: a real test',
+        69875: 'LSD',
+        89368: 'LSD & Cannabis'
+      }
+    })
+
     expect(fs.readFile).toHaveBeenCalled()
     expect(consumer).toHaveBeenCalledWith([{
       id: '109504',
@@ -94,11 +191,6 @@ describe('foresight.experiences', () => {
       id: '108676',
       substanceList: 'MDMA, 1P-LSD & LSD',
       title: 'Tripp on the Hill'
-    },
-    {
-      id: '102840',
-      substanceList: 'LSD',
-      title: 'Colors of an LSD Sunrise'
     },
     {
       id: '89368',

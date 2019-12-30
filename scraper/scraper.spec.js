@@ -40,7 +40,7 @@ describe('scraper', () => {
     const ping = scraper('/ping')
     ping()
     expect(oaty.get.mock.calls[0][0]).toEqual(BASE_URL)
-    expect(log).toHaveBeenCalledTimes(2)
+    expect(log).toHaveBeenCalledTimes(1)
   })
 
   test('initialize', () => {
@@ -144,6 +144,7 @@ describe('scraper', () => {
       const rest = jest.requireActual('fs')
       return {
         ...rest,
+        readdirSync: jest.fn(() => []),
         readFile: jest.fn((url, cb) => {
           cb(undefined, Buffer.from('109504,"Before and After","LSD & Escitalopram (Lexapro)"\n106589,"Insight","LSD"\n108950,"Anxiety Nothingness and the Logic-Machine","LSD"\n108676,"Tripp on the Hill","MDMA, 1P-LSD & LSD"\n102840,"Colors of an LSD Sunrise","LSD"\n89368,"Kundalini and the Power of Love","LSD & Cannabis"\n103265,"A Very Psychedelic Vacation","LSD, Nitrous Oxide, 4-HO-DiPT & Cannabis"\n69875,"Tripping on the Paradisiac Brazilian Coast","LSD"\n107585,"At Last A Psychedelic Hike and More","LSD"\n98139,"Self-Deception Induced Nightmare","Suspected DOB (sold as LSD), Cannabis & Synthetic Cannabinoids"'))
         }),
