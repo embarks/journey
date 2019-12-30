@@ -10,14 +10,15 @@ module.exports = (function () {
   const wisdom = {}
 
   function experiences (substance) {
+    const substanceFile = `${process.cwd()}/datfiles/${substance}`
     try {
       // if you try to get an experience that hasn't been scraped
       // foresight will just skip this substance
-      fs.accessSync(`${process.cwd()}/datfiles/${substance}`, fs.constants.R_OK)
+      fs.accessSync(substanceFile, fs.constants.R_OK)
       // return a function to take in the scraper function
       return function setting (scrape) {
         return function parseRowsThenScrape () {
-          fs.readFile(`${process.cwd()}/datfiles/${substance}`, (err, data) => {
+          fs.readFile(substanceFile, (err, data) => {
             handleError(err)
             const rows = data
               .toString()
@@ -35,7 +36,7 @@ module.exports = (function () {
         }
       }
     } catch (e) {
-      error(`ERR! Do not call on foresight("experiences", ${substance}) unless the report locations for that substance have been scraped (/substances/${substance})`)
+      error(`ERR! There was a problem accessing ${substanceFile}\nDo not call on foresight("experiences", ${substance}) unless the report locations for that substance have been scraped (/substances/${substance})`)
       error(e)
     }
   }

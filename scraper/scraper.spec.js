@@ -105,7 +105,7 @@ describe('scraper', () => {
     expect(func).toBeInstanceOf(Function)
     expect(func420).toBeInstanceOf(Function)
   })
-  test('substance', () => {
+  test('get substance list', () => {
     jest.doMock('fs', () => ({
       readFileSync: jest.fn(() => {
         return '0,--nonce--\n1,Cannabis\n2,LSD\n%'
@@ -121,7 +121,7 @@ describe('scraper', () => {
     expect(func420).toBeInstanceOf(Function)
     expect(spy).toHaveBeenCalledTimes(1)
   })
-  test('experience', (done) => {
+  test('get experience settings from substance list', (done) => {
     jest.doMock('./util', () => {
       const util = jest.requireActual('./util')
       return {

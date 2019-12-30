@@ -2,7 +2,7 @@
 'use strict'
 // var qs = require('qs')
 const { URL } = require('url')
-const { BASE_URL, XP_BASE_PATH, XP_VAULT_PATH, REPORT_PATH } = require('./config')
+const { BASE_URL, XP_BASE_PATH, XP_VAULT_PATH, REPORT_PATH, hard } = require('./config')
 const { oaty, init, isAllOption } = require('./util')
 const {
   sayHello,
@@ -12,6 +12,7 @@ const {
   experienceConsumer
 } = require('./consumers')
 
+// BE NICE
 var http = require('http')
 var https = require('https')
 http.globalAgent.maxSockets = 3
@@ -22,7 +23,7 @@ module.exports = (function scraper () {
 
   function fromWisdom ({ key: oKey, sval: oSval, keys }) {
     const collectBySubstance = ({ key, sval }) => {
-      // constrcut the url
+      // construct the url
       const url = ({ start, max }) => `${BASE_URL}/${XP_BASE_PATH}/${XP_VAULT_PATH}?S1=${sval}&Max=${max}&Start=${start}`
 
       let start = 0
@@ -132,7 +133,9 @@ module.exports = (function scraper () {
           adultResolver = Object.assign(adultResolver,
             {
               // provide that experience as a route
-              [`/experiences/${substance}`]: setting(recordExperiences)
+              [`/experiences/${substance}`]: setting(recordExperiences, {
+                isHardScrape: hard
+              })
             }
           )
         }
