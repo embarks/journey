@@ -20,20 +20,20 @@
 - [ ] inc 3.5: refactor for efficiency and consumption
   - [x] questions: are experiences that had multiple substances repeated? **yes**
     - [ ] implications: folder structure
-      - ~storing experiences twice? ~
-      - ~group by all substances for the experience~
+      - ~~storing experiences twice?~~
+      - ~~group by all substances for the experience`~~
         - this makes analysis BY substance less efficient
         - *can detect if experiences are shared by the ID list?
         - negligible to store the ID list for each substance
         - only have to hit the domain once to get all the subtances
         - the number of times hitting the domain is known when the substance list is scraped, where it is unknown for ALL substances
       - [x] folder structure is bad for **consuming** the scrape
-        - [ ] name the file after all the substances with the delimiter, don't use a file structure
+        - [x] name the file after all the substances with the delimiter, don't use a file structure
         *(note) on erowid the substance names have commas specifically to GROUP related substances, but the substance column is [,&] delimited*
-          - e.g. #2 [cannabis & nitrous-oxide]: Just Relax
-          - e.g. `#<id> <substance-1> & <substance-2> & ... <substance-n>: <report title>`
+          - [x] e.g. #2 [cannabis & nitrous-oxide]: Just Relax
+          - [x] e.g. `#<id> <substance-1> & <substance-2> & ... <substance-n>: <report title>`
   - [ ] scraping ALL experiences should be handled as efficiently as possible 
-    - [ ] 2 api hits at most to get all the urls
+    - [x] 2 api hits at most to get all the urls
   - [ ] tell the consumer ahead of time not to re-scrape experiences
 - [x] inc 4: (admin) scrape command to update datfiles
 - [ ] inc 5: distribute *
