@@ -78,7 +78,17 @@ describe('foresight.experiences', () => {
             '#102840 [LSD] Colors of an LSD Sunrise']
         }),
         readFile: jest.fn((url, cb) => {
-          cb(undefined, '109504,"Before and After","LSD & Escitalopram (Lexapro)"\n106589,"Insight","LSD"\n108950,"Anxiety Nothingness and the Logic-Machine","LSD"\n108676,"Tripp on the Hill","MDMA, 1P-LSD & LSD"\n102840,"Colors of an LSD Sunrise","LSD"\n89368,"Kundalini and the Power of Love","LSD & Cannabis"\n103265,"A Very Psychedelic Vacation","LSD, Nitrous Oxide, 4-HO-DiPT & Cannabis"\n69875,"Tripping on the Paradisiac Brazilian Coast","LSD"\n107585,"At Last A Psychedelic Hike and More","LSD"\n98139,"Self-Deception Induced Nightmare","Suspected DOB (sold as LSD), Cannabis & Synthetic Cannabinoids"')
+          cb(undefined, '\
+109504,"Before and After","LSD & Escitalopram (Lexapro)"\n\
+106589,"Insight","LSD"\n\
+108950,"Anxiety Nothingness and the Logic-Machine","LSD"\n\
+108676,"Tripp on the Hill","MDMA, 1P-LSD & LSD"\n\
+102840,"Colors of an LSD Sunrise","LSD"\n\
+89368,"Kundalini and the Power of Love","LSD & Cannabis"\n\
+103265,"A Very Psychedelic Vacation","LSD, Nitrous Oxide, 4-HO-DiPT & Cannabis"\n\
+69875,"Tripping on the Paradisiac Brazilian Coast","LSD"\n\
+107585,"At Last A Psychedelic Hike and More","LSD"\n\
+98139,"Self-Deception Induced Nightmare","Suspected DOB (sold as LSD), Cannabis & Synthetic Cannabinoids"')
         }),
         mkdirSync: jest.fn(),
         readFileSync: () => {
@@ -153,16 +163,17 @@ describe('foresight.experiences', () => {
       '/substances/opioids': 'YES!',
       '/substances/1-,-3-,-or-4-drugs': 'TEST',
       has: {
-        102840: 'LSD',
-        103265: 'LSD, Nitrous Oxide, 4-HO-DiPT & Cannabis',
-        106589: 'LSD',
-        107585: 'LSD',
-        108676: 'MDMA, 1P-LSD & LSD',
-        108950: 'LSD',
-        109504: 'LSD & Escitalopram (Lexapro)',
+        102840: 'Colors of an LSD Sunrise',
+        103265: 'A Very Psychedelic Vacation',
+        106589: 'Insight',
+        107585: 'At Last A Psychedelic Hike and More',
+        108676: 'Tripp on the Hill',
+        108950: 'Anxiety Nothingness and the Logic-Machine',
+        109504: 'Before and After',
         123: '#123 : a real test',
-        69875: 'LSD',
-        89368: 'LSD & Cannabis'
+        69875: 'Tripping on the Paradisiac Brazilian Coast',
+        89368: 'Kundalini and the Power of Love'
+
       }
     })
 

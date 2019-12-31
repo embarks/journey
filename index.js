@@ -10,8 +10,12 @@ process.on('exit', function (code) {
 })
 
 function update () {
-  const initList = sx('/cat')
-  initList()
+  // const initList = sx('/cat')
+  // initList()
+  // const allSettings = sx('/substances')
+  // allSettings()
+  const caffeineSettings = sx('/substances/caffeine')
+  caffeineSettings()
 }
 
 function scrapeToadVenomExperiences () {
@@ -28,9 +32,16 @@ function scrapeCannabisExperiences () {
   cannabisExperiences()
 }
 
-scrapeToadVenomExperiences()
+function scrapeLSDExperiences () {
+  const lsdSettings = sx('/substances/lsd')
+  lsdSettings()
+  const lsdExperiences = sx('/experiences/lsd')
+  lsdExperiences()
+}
+update()
+// scrapeToadVenomExperiences()
 // scrapeCannabisExperiences()
-
+// scrapeLSDExperiences()
 // function testEncodingProblems () {
 //   const fs = require('fs')
 //   const { oaty } = require('./scraper/util')

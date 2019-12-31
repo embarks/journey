@@ -34,6 +34,10 @@ function getTotal ($) {
   return parseInt(totalText.substring(1, totalText.length - 1))
 }
 
+function decode (data) {
+  return ic.decode(Buffer.from(data, 'latin1'), 'windows1252')
+}
+
 // consume list by substance and page fetched
 const reportListConsumer = (function () {
   // consume body of page
@@ -53,10 +57,10 @@ const reportListConsumer = (function () {
         .replace(']', ')')
 
       const [id] = Object.values(qs.parse($(elem).find('a').attr('href')))
-      log(chalk`📝 {bold.green Setting} #${id}: ${title} [${substanceList}]`)
+      log(chalk`📝 {bold.green Setting} {bold.white #${id}}: ${title} [${substanceList}]`)
 
       if (i === rows.length - 1) {
-        log(chalk`📝 {bold.bgBlack.white ${substance}} {bold.green Wrote} ${rows.length} rows`)
+        log(chalk`📝 {bold.bgBlack.white ${substance}} {bold.green Wrote} ${rows.length} settings`)
       }
       return `${id},"${title}","${substanceList}"`
     })
@@ -73,7 +77,7 @@ const reportListConsumer = (function () {
     const SF = `${DATFILES}/${substance}`
     return ($) => {
       function write (data, done) {
-        fs[OP](SF, data, (err) => {
+        fs[OP](SF, decode(data), (err) => {
           handleError(err)
           done()
         })
@@ -107,7 +111,7 @@ function experienceConsumer ({ id, title, substanceList }) {
     } else {
       fs.writeFile(
         datfile,
-        ic.decode(Buffer.from(data, 'latin1'), 'windows1252'),
+        decode(data),
         (err) => {
           log(chalk`👄 {bold.bgBlack.white #${id}} {bold.green Scraped} ${fn}`)
           handleError(err)

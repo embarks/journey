@@ -66,9 +66,9 @@ module.exports = (function () {
               return Object.freeze({ id, title, substanceList })
             })
 
-            scrape(experiences.filter(({ id, title }) => {
+            scrape(experiences.filter(({ id, substanceList, title }) => {
               const notYetScraped = typeof wisdom.has[id] === 'undefined'
-              log(chalk`🔭 {blue (skipped)} {bgBlack.bold.white #${id}} ${title}`)
+              log(chalk`🔭 {blue (skipped)} {bold.white #${id}} [${substanceList}] ${title}`)
               if (!config.hard) wisdom.has[id] = title
               return notYetScraped
             }))
