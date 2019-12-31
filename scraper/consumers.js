@@ -79,10 +79,9 @@ const reportListConsumer = (function () {
         })
       }
       const { data, rows } = consumeList($, substance)
-      log(chalk`📝 {bold.bgBlack.white ${substance}} Collecting experiences... {yellow ${isFirstPage ? '1' : pageInfo.start}} to {yellow ${rows.length}}`)
       write(`${data}\n`, () => {
+        log(chalk`📝 {bold.bgBlack.white ${substance}} Collecting experiences... {yellow ${isFirstPage ? '1' : pageInfo.start}} to {yellow ${rows.length}}`)
         if (isFinalPage) {
-          log(chalk`📝 {bold.bgBlack.white ${substance}} Collecting experiences {yellow ${isFirstPage ? '1' : pageInfo.start}} to {yellow ${rows.length}}...`)
           fs.appendFile(SF, '%', handleError)
         }
       })

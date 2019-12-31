@@ -61,7 +61,7 @@ module.exports = (function scraper () {
   }
 
   function scrapeFromExperience (ids) {
-    const consumeExperience = function (experience) {
+    const consume = function (experience) {
       const { id } = experience
       const url = `${BASE_URL}/${XP_BASE_PATH}/${REPORT_PATH}?id=${id}`
       oaty.get(url, experienceConsumer(experience))
@@ -69,7 +69,7 @@ module.exports = (function scraper () {
 
     ids.forEach((id, i) => {
       setTimeout(() => {
-        consumeExperience(id)
+        consume(id)
       }, i * 500)
     })
   }
