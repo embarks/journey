@@ -43,7 +43,6 @@ module.exports = (function () {
                   .match(lstPtrn)
                   .shift()
                 list = list.substring(1, list.length - 1)
-                log(chalk`🔭 {blue (skipped)} {bgBlack.bold.white ${id}} ${filename}`)
                 wisdom.has[id] = list
               })
             }
@@ -67,9 +66,10 @@ module.exports = (function () {
               return Object.freeze({ id, title, substanceList })
             })
 
-            scrape(experiences.filter(({ id, substanceList }) => {
+            scrape(experiences.filter(({ id, title }) => {
               const notYetScraped = typeof wisdom.has[id] === 'undefined'
-              if (!config.hard) wisdom.has[id] = substanceList
+              log(chalk`🔭 {blue (skipped)} {bgBlack.bold.white #${id}} ${title}`)
+              if (!config.hard) wisdom.has[id] = title
               return notYetScraped
             }))
           })

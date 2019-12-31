@@ -28,8 +28,8 @@ function scrapeCannabisExperiences () {
   cannabisExperiences()
 }
 
-// scrapeToadVenomExperiences()
-scrapeCannabisExperiences()
+scrapeToadVenomExperiences()
+// scrapeCannabisExperiences()
 
 // function testEncodingProblems () {
 //   const fs = require('fs')
