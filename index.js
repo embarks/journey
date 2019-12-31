@@ -9,32 +9,9 @@ process.on('exit', function (code) {
   return log(`exiting with code ${code}`)
 })
 
-function initScraper (hello) {
-  // const init = sx('/initialize')
+function update () {
   const initList = sx('/cat')
-  // init(hello)
   initList()
-  const ping = sx('/ping')
-  ping()
-}
-
-function helloScraper () {
-  // list report urls
-  // and calculate report stats
-  let substance = 'cannabis'
-  const cannabisSettings = sx(`/substances/${substance}`)
-  // substance = 'lsd'
-  // const lsdSettings = sx(`/substances/${substance}`)
-  substance = 'toad-venom'
-  const toadVenomSettings = sx(`/substances/${substance}`)
-  // substance = 'bad-test'
-  // const badSettings = sx(`/substances/${substance}`)
-  // const allSettings = sx('/substances')
-  cannabisSettings()
-  // lsdSettings()
-  toadVenomSettings()
-  // allSettings()
-  // allSettingsNu()
 }
 
 function scrapeToadVenomExperiences () {
@@ -44,6 +21,23 @@ function scrapeToadVenomExperiences () {
   toadVenomExps()
 }
 
-// initScraper()
-helloScraper()
-scrapeToadVenomExperiences()
+function scrapeCannabisExperiences () {
+  // const cannabisSettings = sx('/substances/cannabis')
+  // cannabisSettings()
+  const cannabisExperiences = sx('/experiences/cannabis')
+  cannabisExperiences()
+}
+
+// scrapeToadVenomExperiences()
+scrapeCannabisExperiences()
+
+// function testEncodingProblems () {
+//   const fs = require('fs')
+//   const { oaty } = require('./scraper/util')
+//   oaty.get('https://erowid.org/experiences/exp.php?ID=14584', ($) => {
+//     const data = iconv.decode(Buffer.from($('.report-text-surround').text(), 'latin1'), 'windows1252')
+//     console.log(data)
+//     fs.writeFileSync('./test_iso-8859-1', data)
+//   })
+// }
+// testEncodingProblems()

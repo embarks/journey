@@ -2,10 +2,10 @@
 const qs = require('qs')
 const fs = require('fs')
 const chalk = require('chalk')
-const { log } = require('../logs')
+const sanitize = require('sanitize-filename')
+const ic = require('iconv-lite')
+const { log, error } = require('../logs')
 const { handleError, isAllOption } = require('./util')
-const readline = require('readline')
-
 const DATFILES = `${process.cwd()}/datfiles`
 
 function sayHello ($) {
@@ -59,8 +59,11 @@ const reportListConsumer = (function () {
         log(chalk`📝 {bold.bgBlack.white ${substance}} {bold.green Wrote} ${rows.length} rows`)
       }
       return `${id},"${title}","${substanceList}"`
-    }).get().join('\n')
-    return reportList
+    })
+    return {
+      data: reportList.get().join('\n'),
+      rows: reportList.toArray()
+    }
   }
   function ListConsumer ({ substance, pageInfo }) {
     // determine whether to append or write new file
@@ -75,11 +78,11 @@ const reportListConsumer = (function () {
           done()
         })
       }
-      log(chalk`📝 {bold.bgBlack.white ${substance}} Collecting experiences... {yellow ${pageInfo.start}} to {yellow ${pageInfo.max}}`)
-      const data = consumeList($, substance)
+      const { data, rows } = consumeList($, substance)
+      log(chalk`📝 {bold.bgBlack.white ${substance}} Collecting experiences... {yellow ${isFirstPage ? '1' : pageInfo.start}} to {yellow ${rows.length}}`)
       write(`${data}\n`, () => {
         if (isFinalPage) {
-          log(chalk`📝 {bold.bgBlack.white ${substance}} Appending final page of experiences...`)
+          log(chalk`📝 {bold.bgBlack.white ${substance}} Collecting experiences {yellow ${isFirstPage ? '1' : pageInfo.start}} to {yellow ${rows.length}}...`)
           fs.appendFile(SF, '%', handleError)
         }
       })
@@ -92,19 +95,26 @@ const reportListConsumer = (function () {
 })()
 
 function experienceConsumer ({ id, title, substanceList }) {
-  log(chalk`👄 {bold.bgBlack.white #${id}} Initializing experience consumer`)
   // this will happen async
   // TODO deal with pulled quotes
   return ($) => {
-    const fn = `#${id}: [${substanceList}] ${title}`
-    const datfile = `${DATFILES}/reports/${fn}`
-    log(chalk`👄 {bold.bgBlack.white #${id}} {bold.blue Scraping} ${fn}`)
+    const fn = `#${id} [${substanceList}] ${title}`
+    const datfile = `${DATFILES}/reports/${sanitize(fn)}`
     $('.report-text-surround').find('table').remove()
-    const data = $('.report-text-surround').text().trim()
-    fs.writeFile(datfile, data, (err) => {
-      log(chalk`👄 {bold.bgBlack.white #${id}} {bold.green Scraped} ${fn}`)
-      handleError(err)
-    })
+    const data = $('.report-text-surround').text().trim() ||
+      $('body').text().trim()
+    if (!data) {
+      error(`ERR! No data found for #${id} [${substanceList}] ${title}`)
+    } else {
+      fs.writeFile(
+        datfile,
+        ic.decode(Buffer.from(data, 'latin1'), 'windows1252'),
+        (err) => {
+          log(chalk`👄 {bold.bgBlack.white #${id}} {bold.green Scraped} ${fn}`)
+          handleError(err)
+        }
+      )
+    }
   }
 }
 

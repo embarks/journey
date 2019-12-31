@@ -74,8 +74,8 @@ describe('foresight.experiences', () => {
         accessSync: jest.fn(() => {
         }),
         readdirSync: jest.fn(() => {
-          return ['#123: [#123: a real test] pdeafe[][] #234: !!![][#2:]fds',
-            '#102840: [LSD] Colors of an LSD Sunrise']
+          return ['#123 [#123 : a real test] pdeafe[][] #234: !!![][#2:]fds',
+            '#102840 [LSD] Colors of an LSD Sunrise']
         }),
         readFile: jest.fn((url, cb) => {
           cb(undefined, '109504,"Before and After","LSD & Escitalopram (Lexapro)"\n106589,"Insight","LSD"\n108950,"Anxiety Nothingness and the Logic-Machine","LSD"\n108676,"Tripp on the Hill","MDMA, 1P-LSD & LSD"\n102840,"Colors of an LSD Sunrise","LSD"\n89368,"Kundalini and the Power of Love","LSD & Cannabis"\n103265,"A Very Psychedelic Vacation","LSD, Nitrous Oxide, 4-HO-DiPT & Cannabis"\n69875,"Tripping on the Paradisiac Brazilian Coast","LSD"\n107585,"At Last A Psychedelic Hike and More","LSD"\n98139,"Self-Deception Induced Nightmare","Suspected DOB (sold as LSD), Cannabis & Synthetic Cannabinoids"')
@@ -94,8 +94,6 @@ describe('foresight.experiences', () => {
         }
       }
     })
-    const logs = require('../logs')
-    const log = jest.spyOn(logs, 'log')
     const foresight = require('./foresight')
     const fs = require('fs')
     const readdirSync = jest.spyOn(fs, 'readdirSync')
@@ -147,9 +145,6 @@ describe('foresight.experiences', () => {
     readThenScrape()
     expect(readdirSync).toHaveBeenCalledWith(`${process.cwd()}/datfiles/reports/`)
 
-    expect(log.mock.calls[2][0]).toContain('123')
-    expect(log.mock.calls[2][0]).toContain('#123: a real test')
-
     expect(foresight.settings).toEqual({
       '/substances': '0',
       '/substances/-all-': '0',
@@ -165,7 +160,7 @@ describe('foresight.experiences', () => {
         108676: 'MDMA, 1P-LSD & LSD',
         108950: 'LSD',
         109504: 'LSD & Escitalopram (Lexapro)',
-        123: '#123: a real test',
+        123: '#123 : a real test',
         69875: 'LSD',
         89368: 'LSD & Cannabis'
       }

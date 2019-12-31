@@ -32,17 +32,18 @@ module.exports = (function () {
               log('🔭 Doing pre-scrape check...')
               const reports = fs.readdirSync(reportsDir)
               reports.forEach(filename => {
-                const idPtrn = /^#(\d*?):/
+                const idPtrn = /^#(\d*?) \[/
                 const lstPtrn = /^\[(.*?)\]/
-                let id = filename.match(idPtrn).shift()
+                const id = filename
+                  .match(idPtrn).shift()
+                  .match(/(\d+)/).shift()
                 let list = filename
                   .substring(id.length + 1, filename.length)
                   .trim()
                   .match(lstPtrn)
                   .shift()
-                id = id.substring(1, id.length - 1)
                 list = list.substring(1, list.length - 1)
-                log(chalk`🔭 {blue (skipped)} {bgBlack.bold.white #${id}} ${filename}`)
+                log(chalk`🔭 {blue (skipped)} {bgBlack.bold.white ${id}} ${filename}`)
                 wisdom.has[id] = list
               })
             }

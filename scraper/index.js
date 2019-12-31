@@ -15,14 +15,14 @@ const {
 // BE NICE
 var http = require('http')
 var https = require('https')
-http.globalAgent.maxSockets = 3
-https.globalAgent.maxSockets = 3
+http.globalAgent.maxSockets = 1
+https.globalAgent.maxSockets = 1
 
 module.exports = (function scraper () {
   const foresight = require('./foresight')
 
   function fromWisdom ({ key: oKey, sval: oSval, keys }) {
-    const collectBySubstance = ({ key, sval } = { key: oKey, sval: oSval }) => {
+    function collectBySubstance ({ key, sval } = { key: oKey, sval: oSval }) {
       // construct the url
       const url = ({ start, max }) => `${BASE_URL}/${XP_BASE_PATH}/${XP_VAULT_PATH}?S1=${sval}&Max=${max}&Start=${start}`
 
@@ -60,15 +60,22 @@ module.exports = (function scraper () {
     return collectBySubstance
   }
 
-  function recordExperiences (ids) {
-    const consumeSubstance = function (id) {
-      oaty.get(`${BASE_URL}/${XP_BASE_PATH}/${REPORT_PATH}?id=${id}`, experienceConsumer(id))
+  function scrapeFromExperience (ids) {
+    const consumeExperience = function (experience) {
+      const { id } = experience
+      const url = `${BASE_URL}/${XP_BASE_PATH}/${REPORT_PATH}?id=${id}`
+      oaty.get(url, experienceConsumer(experience))
     }
-    ids.forEach(consumeSubstance)
+
+    ids.forEach((id, i) => {
+      setTimeout(() => {
+        consumeExperience(id)
+      }, i * 500)
+    })
   }
 
   scraper.getResolveFromWisdom = fromWisdom
-  scraper.scrapeFromExperience = recordExperiences
+  scraper.scrapeFromExperience = scrapeFromExperience
 
   const resolver = {
     '/initialize': (next) => {
@@ -132,7 +139,7 @@ module.exports = (function scraper () {
           adultResolver = Object.assign(adultResolver,
             {
               // provide that experience as a route
-              [`/experiences/${substance}`]: setting(recordExperiences)
+              [`/experiences/${substance}`]: setting(scrapeFromExperience)
             }
           )
         }

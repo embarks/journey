@@ -59,7 +59,10 @@ const oaty = (function () {
         isInitialized('/datfiles/substances') &&
         isInitialized('/datfiles/reports')
       ) {
-        rn.get(url, cheerioify(consumer))
+        rn.get({
+          url,
+          encoding: 'latin1'
+        }, cheerioify(consumer))
       }
     }
   }

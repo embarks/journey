@@ -136,7 +136,9 @@ describe('scraper', () => {
     jest.doMock('./consumers', () => {
       return {
         experienceConsumer: jest.fn(() => {
-          return () => done()
+          return () => {
+            done()
+          }
         })
       }
     })
@@ -152,6 +154,8 @@ describe('scraper', () => {
         })
       }
     })
+
+    jest.useFakeTimers()
     const fs = require('fs')
     const consumers = require('./consumers')
     const sx = require('.')
@@ -160,6 +164,7 @@ describe('scraper', () => {
     expect(fs.readFile).not.toHaveBeenCalled()
     doScrape()
     expect(fs.readFile).toHaveBeenCalled()
+    jest.runAllTimers()
     expect(consumers.experienceConsumer).toHaveBeenCalled()
   })
 })

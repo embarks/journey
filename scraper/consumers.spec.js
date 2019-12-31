@@ -61,5 +61,5 @@ test('consume an experience report', (done) => {
     substanceList: 'Ecstacy',
     title: 'An Unforgettable Ride!'
   })($)
-  expect(fs.writeFile.mock.calls[0][0]).toEqual(`${process.cwd()}/datfiles/reports/#1: [Ecstacy] An Unforgettable Ride!`)
+  expect(fs.writeFile.mock.calls[0][0]).toEqual(`${process.cwd()}/datfiles/reports/#1 [Ecstacy] An Unforgettable Ride!`)
 })
