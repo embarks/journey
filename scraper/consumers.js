@@ -8,6 +8,10 @@ const { log, error } = require('../logs')
 const { handleError, isAllOption } = require('./util')
 const DATFILES = `${process.cwd()}/datfiles`
 
+function decode (data) {
+  return ic.decode(Buffer.from(data, 'latin1'), 'windows1252')
+}
+
 function sayHello ($) {
   log(chalk`👋 Hello, {blue ${$('title').text()}}`)
 }
@@ -22,7 +26,7 @@ function listSubstances ($) {
     data.push(`${sval},${name}`)
   })
   data.push('%')
-  fs.writeFileSync(`${DATFILES}/substances`, data.join('\n'))
+  fs.writeFileSync(`${DATFILES}/substances`, decode(data).join('\n'))
   log(chalk`📝 {bold.green Success} Listed substances`)
 }
 
@@ -37,10 +41,6 @@ function getTotal ($) {
   }
 
   return totalInt
-}
-
-function decode (data) {
-  return ic.decode(Buffer.from(data, 'latin1'), 'windows1252')
 }
 
 // consume list by substance and page fetched
@@ -82,7 +82,7 @@ const reportListConsumer = (function () {
     const SF = `${DATFILES}/${substance}`
     return ($) => {
       const { data, rows } = consumeList($, substance)
-      fs[OP](`${data}\n`)
+      fs[OP](SF, `${decode(data)}\n`)
       if (isFinalPage) {
         fs.appendFileSync(SF, '%', handleError)
       }
