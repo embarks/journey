@@ -78,22 +78,15 @@ const reportListConsumer = (function () {
     // determine whether to append or write new file
     const isFirstPage = pageInfo.start === 0
     const isFinalPage = !pageInfo.hasNext
-    const OP = isFirstPage ? 'writeFile' : 'appendFile'
+    const OP = isFirstPage ? 'writeFileSync' : 'appendFileSync'
     const SF = `${DATFILES}/${substance}`
     return ($) => {
-      function write (data, done) {
-        fs[OP](SF, decode(data), (err) => {
-          handleError(err)
-          done()
-        })
-      }
       const { data, rows } = consumeList($, substance)
-      write(`${data}\n`, () => {
-        log(chalk`📝 {bold.bgBlack.white ${substance}} Collected experiences... {yellow ${isFirstPage ? '1' : pageInfo.start}} to {yellow ${rows.length}}`)
-        if (isFinalPage) {
-          fs.appendFile(SF, '%', handleError)
-        }
-      })
+      fs[OP](`${data}\n`)
+      if (isFinalPage) {
+        fs.appendFileSync(SF, '%', handleError)
+      }
+      log(chalk`📝 {bold.bgBlack.white ${substance}} Collected experiences... {yellow ${isFirstPage ? '1' : pageInfo.start}} to {yellow ${rows.length}}`)
     }
   }
 
@@ -114,14 +107,15 @@ function experienceConsumer ({ id, title, substanceList }) {
     if (!data) {
       error(`ERR! No data found for #${id} [${substanceList}] ${title}`)
     } else {
-      fs.writeFile(
-        datfile,
-        decode(data),
-        (err) => {
-          log(chalk`👄 {bold.bgBlack.white #${id}} {bold.green Scraped} ${fn}`)
-          handleError(err)
-        }
-      )
+      try {
+        fs.writeFileSync(
+          datfile,
+          decode(data)
+        )
+        log(chalk`👄 {bold.bgBlack.white #${id}} {bold.green Scraped} ${fn}`)
+      } catch (e) {
+        handleError(e)
+      }
     }
   }
 }

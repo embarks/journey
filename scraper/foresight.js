@@ -51,28 +51,27 @@ module.exports = (function () {
             error(e)
           }
 
-          fs.readFile(substanceFile, (err, data) => {
-            handleError(err)
-            const rows = data
-              .toString()
-              .split('%')[0]
-              .split(/\r?\n/)
-            rows.pop()
+          const data = fs.readFileSync(substanceFile)
 
-            const experiences = rows.map((experience) => {
-              const [id, oTitle, oSubstanceList] = experience.split(',"')
-              const title = oTitle.replace('"', '')
-              const substanceList = oSubstanceList.replace(/("|\[|\])/, '')
-              return Object.freeze({ id, title, substanceList })
-            })
+          const rows = data
+            .toString()
+            .split('%')[0]
+            .split(/\r?\n/)
+          rows.pop()
 
-            scrape(experiences.filter(({ id, substanceList, title }) => {
-              const notYetScraped = typeof wisdom.has[id] === 'undefined'
-              log(chalk`🔭 {blue (skipped)} {bold.white #${id}} [${substanceList}] ${title}`)
-              if (!config.hard) wisdom.has[id] = title
-              return notYetScraped
-            }))
+          const experiences = rows.map((experience) => {
+            const [id, oTitle, oSubstanceList] = experience.split(',"')
+            const title = oTitle.replace('"', '')
+            const substanceList = oSubstanceList.replace(/("|\[|\])/, '')
+            return Object.freeze({ id, title, substanceList })
           })
+
+          scrape(experiences.filter(({ id, substanceList, title }) => {
+            const notYetScraped = typeof wisdom.has[id] === 'undefined'
+            log(chalk`🔭 {blue (skipped)} {bold.white #${id}} [${substanceList}] ${title}`)
+            if (!config.hard) wisdom.has[id] = title
+            return notYetScraped
+          }))
         }
       }
     } catch (e) {

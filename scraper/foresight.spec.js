@@ -66,30 +66,11 @@ describe('foresight.experiences', () => {
     expect(foresight.experiences()).toBeInstanceOf(Function)
     expect(foresight.settings).toEqual({})
   })
-  test('reads files ahead of time', (done) => {
+  test('(/substances) reads files ahead of time', () => {
     jest.doMock('fs', () => {
       const fs = jest.requireActual('fs')
       return {
         ...fs,
-        accessSync: jest.fn(() => {
-        }),
-        readdirSync: jest.fn(() => {
-          return ['#123 [#123 : a real test] pdeafe[][] #234: !!![][#2:]fds',
-            '#102840 [LSD] Colors of an LSD Sunrise']
-        }),
-        readFile: jest.fn((url, cb) => {
-          cb(undefined, '\
-109504,"Before and After","LSD & Escitalopram (Lexapro)"\n\
-106589,"Insight","LSD"\n\
-108950,"Anxiety Nothingness and the Logic-Machine","LSD"\n\
-108676,"Tripp on the Hill","MDMA, 1P-LSD & LSD"\n\
-102840,"Colors of an LSD Sunrise","LSD"\n\
-89368,"Kundalini and the Power of Love","LSD & Cannabis"\n\
-103265,"A Very Psychedelic Vacation","LSD, Nitrous Oxide, 4-HO-DiPT & Cannabis"\n\
-69875,"Tripping on the Paradisiac Brazilian Coast","LSD"\n\
-107585,"At Last A Psychedelic Hike and More","LSD"\n\
-98139,"Self-Deception Induced Nightmare","Suspected DOB (sold as LSD), Cannabis & Synthetic Cannabinoids"')
-        }),
         mkdirSync: jest.fn(),
         readFileSync: () => {
           return {
@@ -105,11 +86,6 @@ describe('foresight.experiences', () => {
       }
     })
     const foresight = require('./foresight')
-    const fs = require('fs')
-    const readdirSync = jest.spyOn(fs, 'readdirSync')
-    const consumer = jest.fn((data) => {
-      done()
-    })
     expect(foresight.settings).toEqual({})
 
     const substancePrescrape = foresight('substances')
@@ -137,31 +113,46 @@ describe('foresight.experiences', () => {
 
     expect(substancePrescrape).toBeInstanceOf(Function)
     expect(substancePrescrape('cannabis')).toBeInstanceOf(Function)
+  })
+
+  test('(/experiences) reads files ahead of time', () => {
+    jest.doMock('fs', () => {
+      const fs = jest.requireActual('fs')
+      return {
+        ...fs,
+        accessSync: jest.fn(() => {
+        }),
+        readdirSync: jest.fn(() => {
+          return ['#123 [#123 : a real test] pdeafe[][] #234: !!![][#2:]fds',
+            '#102840 [LSD] Colors of an LSD Sunrise']
+        }),
+        readFileSync: jest.fn(() => {
+          return '109504,"Before and After","LSD & Escitalopram (Lexapro)"\n' +
+          '106589,"Insight","LSD"\n' +
+          '108950,"Anxiety Nothingness and the Logic-Machine","LSD"\n' +
+          '108676,"Tripp on the Hill","MDMA, 1P-LSD & LSD"\n' +
+          '102840,"Colors of an LSD Sunrise","LSD"\n' +
+          '89368,"Kundalini and the Power of Love","LSD & Cannabis"\n' +
+          '103265,"A Very Psychedelic Vacation","LSD, Nitrous Oxide, 4-HO-DiPT & Cannabis"\n' +
+          '69875,"Tripping on the Paradisiac Brazilian Coast","LSD"\n' +
+          '107585,"At Last A Psychedelic Hike and More","LSD"\n' +
+          '98139,"Self-Deception Induced Nightmare","Suspected DOB (sold as LSD), Cannabis & Synthetic Cannabinoids"'
+        }),
+        mkdirSync: jest.fn()
+      }
+    })
+    const foresight = require('./foresight')
+    expect(foresight.settings).toEqual({})
+    const fs = require('fs')
+    const readdirSync = jest.spyOn(fs, 'readdirSync')
+    const consumer = jest.fn()
 
     const readThenScrape = foresight('experiences', 'cannabis')(consumer)
-
     expect(readdirSync).not.toHaveBeenCalled()
-    expect(fs.readFile).not.toHaveBeenCalled()
-
-    expect(foresight.settings).toEqual({
-      '/substances': '0',
-      '/substances/-all-': '0',
-      '/substances/lsd': 'Yes.',
-      '/substances/cannabis': 'Yes!',
-      '/substances/opioids': 'YES!',
-      '/substances/1-,-3-,-or-4-drugs': 'TEST'
-    })
-
     readThenScrape()
     expect(readdirSync).toHaveBeenCalledWith(`${process.cwd()}/datfiles/reports/`)
 
     expect(foresight.settings).toEqual({
-      '/substances': '0',
-      '/substances/-all-': '0',
-      '/substances/lsd': 'Yes.',
-      '/substances/cannabis': 'Yes!',
-      '/substances/opioids': 'YES!',
-      '/substances/1-,-3-,-or-4-drugs': 'TEST',
       has: {
         102840: 'Colors of an LSD Sunrise',
         103265: 'A Very Psychedelic Vacation',
@@ -173,11 +164,10 @@ describe('foresight.experiences', () => {
         123: '#123 : a real test',
         69875: 'Tripping on the Paradisiac Brazilian Coast',
         89368: 'Kundalini and the Power of Love'
-
       }
     })
 
-    expect(fs.readFile).toHaveBeenCalled()
+    expect(fs.readFileSync).toHaveBeenCalled()
     expect(consumer).toHaveBeenCalledWith([{
       id: '109504',
       substanceList: 'LSD & Escitalopram (Lexapro)',

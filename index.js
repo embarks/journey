@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 'use strict'
 
-// const args = require('yargs').argv
+const yar = require('yargs')
+
 const sx = require('./scraper')
 const { log } = require('./logs')
 

@@ -19,19 +19,17 @@ test('get total number of reports', () => {
   expect(data).toBe(2445)
 })
 
-test('consume a page of urls', (done) => {
+test('consume a page of urls', () => {
   jest.doMock('fs', () => ({
-    writeFile: jest.fn((file, data, uDone) => {
-      console.log(`[test] writeFile(${[file, '{data}', 'fn done()'].join(', ')})`)
-      uDone()
-      done()
+    writeFileSync: jest.fn((file, data) => {
+      console.log(`[test] writeFileSync(${[file, '{data}', 'fn done()'].join(', ')})`)
     }),
-    appendFile: jest.fn()
+    appendFileSync: jest.fn()
   }))
 
   const { reportListConsumer } = require('./consumers')
   const { ReportListBody100, ReportListBody100Result } = require('./test-util')
-  const { writeFile, appendFile } = require('fs')
+  const { writeFileSync, appendFileSync } = require('fs')
   const consume = reportListConsumer({
     substance: 'lsd',
     pageInfo: { total: 100, start: 0, max: 100, hasNext: false }
@@ -39,18 +37,16 @@ test('consume a page of urls', (done) => {
 
   const $ = cheerio.load(ReportListBody100)
   consume($)
-  expect(writeFile.mock.calls[0][1]).toEqual(ReportListBody100Result)
-  expect(typeof writeFile.mock.calls[0][1]).toBe('string')
-  expect(appendFile.mock.calls[0][1]).toBe('%')
+  expect(writeFileSync.mock.calls[0][0]).toEqual(ReportListBody100Result)
+  expect(typeof writeFileSync.mock.calls[0][0]).toBe('string')
+  expect(appendFileSync.mock.calls[0][1]).toBe('%')
 })
 
-test('consume an experience report', (done) => {
+test('consume an experience report', () => {
   const { ReportBody } = require('./test-util')
   jest.doMock('fs', () => ({
-    writeFile: jest.fn((file, data, callback) => {
-      console.log(`[test] writeFile(${[file, '{data}', 'fn done()'].join(', ')})`)
-      callback(undefined)
-      done()
+    writeFileSync: jest.fn((file, data, callback) => {
+      console.log(`[test] writeFileSync(${[file, '{data}', 'fn done()'].join(', ')})`)
     })
   }))
   const { experienceConsumer } = require('./consumers')
@@ -61,5 +57,5 @@ test('consume an experience report', (done) => {
     substanceList: 'Ecstacy',
     title: 'An Unforgettable Ride!'
   })($)
-  expect(fs.writeFile.mock.calls[0][0]).toEqual(`${process.cwd()}/datfiles/reports/#1 [Ecstacy] An Unforgettable Ride!`)
+  expect(fs.writeFileSync.mock.calls[0][0]).toEqual(`${process.cwd()}/datfiles/reports/#1 [Ecstacy] An Unforgettable Ride!`)
 })
