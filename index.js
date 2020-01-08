@@ -10,5 +10,15 @@ process.on('exit', function (code) {
   return log(`exiting with code ${code}`)
 })
 
-const cannabisSettings = sx('/substances/cannabis')
-cannabisSettings()
+async function caffeine () {
+  const caffeineSettings = sx('/substances/caffeine')
+  await caffeineSettings()
+
+  const caffeineExperiences = sx('/experiences/caffeine')
+  await caffeineExperiences()
+
+  const toadVenomSettings = sx('/substances/toad-venom')
+  await toadVenomSettings()
+}
+
+caffeine()

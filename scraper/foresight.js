@@ -23,7 +23,7 @@ module.exports = (function () {
       // return a function to take in the scraper function
       return function setting (scrape) {
         // the callback that makes the scrape happen
-        return function parseRowsThenScrape () {
+        return async function parseRowsThenScrape () {
           const hasExists = typeof wisdom.has !== 'undefined'
           if (!hasExists) wisdom.has = {}
           try {
@@ -66,7 +66,7 @@ module.exports = (function () {
             return Object.freeze({ id, title, substanceList })
           })
 
-          scrape(experiences.filter(({ id, substanceList, title }) => {
+          await scrape(experiences.filter(({ id, substanceList, title }) => {
             const notYetScraped = typeof wisdom.has[id] === 'undefined'
             log(chalk`🔭 {blue (skipped)} {bold.white #${id}} [${substanceList}] ${title}`)
             if (!config.hard) wisdom.has[id] = title

@@ -3,7 +3,7 @@
 // var qs = require('qs')
 const { URL } = require('url')
 const { BASE_URL, XP_BASE_PATH, XP_VAULT_PATH, REPORT_PATH } = require('./config')
-const { oaty, init, isAllOption } = require('./util')
+const { delay, oaty, init, isAllOption } = require('./util')
 const {
   sayHello,
   listSubstances,
@@ -22,14 +22,14 @@ module.exports = (function scraper () {
   const foresight = require('./foresight')
 
   function fromWisdom ({ key: oKey, sval: oSval, keys }) {
-    function collectBySubstance ({ key, sval } = { key: oKey, sval: oSval }) {
+    async function collectBySubstance ({ key, sval } = { key: oKey, sval: oSval }) {
       // construct the url
       const url = ({ start, max }) => `${BASE_URL}/${XP_BASE_PATH}/${XP_VAULT_PATH}?S1=${sval}&Max=${max}&Start=${start}`
 
       let start = 0
       let max = 100
 
-      oaty.get(url({ start, max }), $ => {
+      await oaty.get(url({ start, max }), async $ => {
         const total = getTotal($)
         const hasNext = total > (start + max)
         let pageInfo = { total, start, max, hasNext }
@@ -46,7 +46,7 @@ module.exports = (function scraper () {
             substance: key,
             pageInfo
           })
-          oaty.get(url({ start, max }), consume)
+          await oaty.get(url({ start, max }), consume)
         }
       })
     }
@@ -60,18 +60,20 @@ module.exports = (function scraper () {
     return collectBySubstance
   }
 
-  function scrapeFromExperience (ids) {
-    const consume = function (experience) {
+  async function scrapeFromExperience (ids) {
+    const consume = async function (experience) {
       const { id } = experience
       const url = `${BASE_URL}/${XP_BASE_PATH}/${REPORT_PATH}?id=${id}`
-      oaty.get(url, experienceConsumer(experience))
+      await oaty.get(url, experienceConsumer(experience))
     }
 
-    ids.forEach((id, i) => {
-      setTimeout(() => {
-        consume(id)
-      }, i * 500)
-    })
+    for (var i in ids) {
+      const id = ids[i]
+      if (i !== 0) {
+        await delay(500)
+      }
+      await consume(id)
+    }
   }
 
   scraper.getResolveFromWisdom = fromWisdom

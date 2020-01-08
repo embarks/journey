@@ -5,6 +5,7 @@
     "iconv-lite": "^0.5.0",
     "qs": "^6.9.1",
     "request": "^2.88.0",
+    "request-promise": "^4.2.5",
     "sanitize-filename": "^1.6.3",
     "yargs": "^15.0.2"
   },
