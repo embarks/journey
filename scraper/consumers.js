@@ -31,7 +31,12 @@ function getTotal ($) {
     .first()
     .children('font').children('b')
     .text()
-  return parseInt(totalText.substring(1, totalText.length - 1))
+  const totalInt = parseInt(totalText.substring(1, totalText.length - 1))
+  if (Number.isNaN(totalInt) || totalInt < 0) {
+    throw Error('Couldn\'t find the total number of posts for that experience!')
+  }
+
+  return totalInt
 }
 
 function decode (data) {
@@ -84,7 +89,7 @@ const reportListConsumer = (function () {
       }
       const { data, rows } = consumeList($, substance)
       write(`${data}\n`, () => {
-        log(chalk`📝 {bold.bgBlack.white ${substance}} Collecting experiences... {yellow ${isFirstPage ? '1' : pageInfo.start}} to {yellow ${rows.length}}`)
+        log(chalk`📝 {bold.bgBlack.white ${substance}} Collected experiences... {yellow ${isFirstPage ? '1' : pageInfo.start}} to {yellow ${rows.length}}`)
         if (isFinalPage) {
           fs.appendFile(SF, '%', handleError)
         }
