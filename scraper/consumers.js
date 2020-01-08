@@ -26,7 +26,7 @@ function listSubstances ($) {
     data.push(`${sval},${name}`)
   })
   data.push('%')
-  fs.writeFileSync(`${DATFILES}/substances`, decode(data).join('\n'))
+  fs.writeFileSync(`${DATFILES}/substances`, decode(data.join('\n')))
   log(chalk`📝 {bold.green Success} Listed substances`)
 }
 
@@ -96,7 +96,6 @@ const reportListConsumer = (function () {
 })()
 
 function experienceConsumer ({ id, title, substanceList }) {
-  // this will happen async
   // TODO deal with pulled quotes
   return ($) => {
     const fn = `#${id} [${substanceList}] ${title}`
