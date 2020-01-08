@@ -39,7 +39,7 @@
       - [x] log when an id is encountered that has already been scraped
   - [ ] `// TODO` scraping ALL substances should be handled as efficiently as possible
     - Do not support (yet) in order to be nice to erowid
-- [ ] inc 3.6: do a manual scrape of the most curious substances and observe reports for tidiness
+- [x] inc 3.6: do a manual scrape of the most curious substances and observe reports for tidiness
 - [ ] inc 4: (admin) scrape command to update datfiles
 - [ ] inc 4.5: (admin) scrape command to get experiences by substance
 - [ ] inc 5: distribute *
