@@ -80,18 +80,15 @@ module.exports = (function scraper () {
   scraper.scrapeFromExperience = scrapeFromExperience
 
   const resolver = {
-    '/initialize': (next) => {
+    '/initialize': async () => {
       init()
-      oaty.get(`${BASE_URL}/${XP_BASE_PATH}`, (...res) => {
-        listSubstances(...res)
-        if (next) next()
-      })
+      await oaty.get(`${BASE_URL}/${XP_BASE_PATH}`, listSubstances)
     },
-    '/cat': () => {
-      oaty.get(`${BASE_URL}/${XP_BASE_PATH}`, listSubstances)
+    '/cat': async () => {
+      await oaty.get(`${BASE_URL}/${XP_BASE_PATH}`, listSubstances)
     },
-    '/ping': () => {
-      oaty.get(BASE_URL, sayHello)
+    '/ping': async () => {
+      await oaty.get(BASE_URL, sayHello)
     }
   }
 

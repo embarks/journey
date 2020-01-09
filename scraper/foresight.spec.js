@@ -71,6 +71,7 @@ describe('foresight.experiences', () => {
       const fs = jest.requireActual('fs')
       return {
         ...fs,
+        accessSync: jest.fn(),
         mkdirSync: jest.fn(),
         readFileSync: () => {
           return {

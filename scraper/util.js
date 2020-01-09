@@ -10,7 +10,18 @@ const initCache = {}
 
 function isInitialized (key) {
   try {
-    if (!initCache[key]) {
+    if (!key) {
+      const isInitialized = fs.existsSync(`${process.cwd()}/datfiles`) &&
+        fs.existsSync(`${process.cwd()}/datfiles/reports`) &&
+        fs.existsSync(`${process.cwd()}/datfiles/substances`)
+      if (isInitialized) {
+        initCache['/datfiles/substances'] = true
+        initCache['/datfiles/reports'] = true
+        initCache['/datfiles'] = true
+        return true
+      }
+      return false
+    } else if (!initCache[key]) {
       fs.accessSync(
           `${process.cwd()}${key}`,
           fs.constants.R_OK | fs.constants.W_OK
@@ -25,7 +36,6 @@ function isInitialized (key) {
 }
 
 function init () {
-  // TODO existsSync
   if (!fs.existsSync(`${process.cwd()}/datfiles`)) {
     fs.mkdirSync(`${process.cwd()}/datfiles`)
   } else log(chalk`{bold.yellow WARN!} DATFILES already initialized`)
@@ -90,6 +100,7 @@ function delay (ms) {
 };
 
 module.exports = {
+  isInitialized,
   isAllOption,
   handleError,
   oaty,

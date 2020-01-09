@@ -121,7 +121,7 @@ describe('scraper', () => {
     expect(func420).toBeInstanceOf(Function)
     expect(spy).toHaveBeenCalledTimes(1)
   })
-  test('get experience settings from substance list', (done) => {
+  test('get experience settings from substance list', async done => {
     jest.doMock('./util', () => {
       const util = jest.requireActual('./util')
       return {
@@ -155,16 +155,14 @@ describe('scraper', () => {
       }
     })
 
-    jest.useFakeTimers()
     const fs = require('fs')
     const consumers = require('./consumers')
     const sx = require('.')
     const doScrape = sx('/experiences/lsd')
     expect(doScrape).toBeInstanceOf(Function)
     expect(fs.readFileSync).not.toHaveBeenCalled()
-    doScrape()
+    await doScrape()
     expect(fs.readFileSync).toHaveBeenCalled()
-    jest.runAllTimers()
     expect(consumers.experienceConsumer).toHaveBeenCalled()
   })
 })
