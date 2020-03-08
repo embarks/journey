@@ -54,7 +54,7 @@ require('yargs') // eslint-disable-line
           choices: sx('/substances').all
         }
       ]).then(async ({ substance }) => {
-        await sx(substance)()
+        await scrape(substance)
       })
     }
   )

@@ -114,7 +114,7 @@ module.exports = (function scraper () {
             // provide all the substance route resolvers to collect report urls
             scrapeSettings
           )
-          adultResolver[route].all = Object.keys(foresight.settings)
+          adultResolver[route].all = foresight.settings.substanceList
         } else console.warn(`You can't smokem ${route}!`)
       }
 

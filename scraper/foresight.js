@@ -133,6 +133,10 @@ foresight(arg) must be one of foresight(${Object.keys(foresight).join(' | ')})`)
       const { key, sval } = pair
       const path = `/${prefix}/${key}`
       wisdom[path] = makePath({ key, sval, keys })
+      if (typeof wisdom.substanceList === 'undefined') wisdom.substanceList = []
+      if (wisdom.substanceList.indexOf(key) === -1) {
+        wisdom.substanceList.push(key)
+      }
       if (isAllOption(sval)) { wisdom[`/${prefix}`] = makePath({ key, sval, keys }) }
     })
     return foresight.settings
