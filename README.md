@@ -45,7 +45,7 @@
 - [ ] inc 5: distribute *
   - [ ] inc 5.0: (admin) get cli to work with basic commands
     - [x] `smokem up` - initialize!
-    - [ ] `smokem ?` - show available substances
+    - [x] `smokem ?` - show available substances
     - [x] `smokem SUBSTANCE` - get substance settings and prompt for report download
     - [ ] `smokem SUBSTANCE browse`
   - [ ] inc 5.1: (admin) publish command to update npm package
