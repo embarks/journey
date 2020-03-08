@@ -1,25 +1,10 @@
 #!/usr/bin/env node
 'use strict'
 const chalk = require('chalk')
+const inquirer = require('inquirer')
 const sx = require('./scraper')
 const { log, error } = require('./logs')
 const { isInitialized } = require('./scraper/util')
-
-const inquirer = require('inquirer')
-
-const parser = () => {
-  return inquirer.prompt([
-    {
-      type: 'list',
-      name: 'prize',
-      message: 'For leaving a comment, you get a freebie',
-      choices: ['cake', 'fries'],
-      when: function (answers) {
-        return answers.comments !== 'Nope, all good!'
-      }
-    }
-  ])
-}
 
 async function scrape (substance) {
   const settings = sx(`/substances/${substance}`)
@@ -62,13 +47,15 @@ require('yargs') // eslint-disable-line
     'list all the substances',
     {},
     argv => {
-      log('substances', argv)
-      async function getSubstanceFromPrompt () {
-        const answers = await parser()
-        log('answers', answers)
-      }
-      // getSubstanceFromPrompt()
-      console.log('substances', sx('/substances')())
+      inquirer.prompt([
+        {
+          type: 'list',
+          name: 'substance',
+          choices: sx('/substances').all
+        }
+      ]).then(async ({ substance }) => {
+        await sx(substance)()
+      })
     }
   )
   .demandCommand()

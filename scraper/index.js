@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 'use strict'
-// var qs = require('qs')
-const { URL } = require('url')
 const { BASE_URL, XP_BASE_PATH, XP_VAULT_PATH, REPORT_PATH } = require('./config')
 const { delay, oaty, init, isAllOption } = require('./util')
 const {
@@ -95,10 +93,8 @@ module.exports = (function scraper () {
   let adultResolver = { ...resolver }
   let sitter // the experience report scraper prepper!
 
-  return (path) => {
-    if (!path) throw Error('You must provide a path to the scraper')
-    const url = new URL(path, 'foo://emwaves.org')
-    const route = url.pathname
+  return (route) => {
+    if (!route) throw Error('You must provide a path to the scraper')
     const routeExists = typeof adultResolver[route] === 'function'
     if (!routeExists) {
       if (route.startsWith('/substances')) {
@@ -118,6 +114,7 @@ module.exports = (function scraper () {
             // provide all the substance route resolvers to collect report urls
             scrapeSettings
           )
+          adultResolver[route].all = Object.keys(foresight.settings)
         } else console.warn(`You can't smokem ${route}!`)
       }
 
@@ -144,7 +141,6 @@ module.exports = (function scraper () {
         }
       }
     }
-
     return adultResolver[route]
   }
 })()
