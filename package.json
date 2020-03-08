@@ -11,7 +11,7 @@
   },
   "name": "@mindshaft/smokem",
   "description": "experiences from the vault",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
     "eslint": "^6.7.1",

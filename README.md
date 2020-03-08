@@ -40,17 +40,18 @@
   - [ ] `// TODO` scraping ALL substances should be handled as efficiently as possible
     - Do not support (yet) in order to be nice to erowid
 - [x] inc 3.6: do a manual scrape of the most curious substances and observe reports for tidiness
-- [ ] inc 4: (admin) scrape command to update datfiles
-- [ ] inc 4.5: (admin) scrape command to get experiences by substance
+- [x] inc 4: (admin) scrape command to update datfiles
+- [x] inc 4.5: (admin) scrape command to get experiences by substance
 - [ ] inc 5: distribute *
   - [ ] inc 5.0: (admin) get cli to work with basic commands
-    - [ ] `smokem up` - initialize!
+    - [x] `smokem up` - initialize!
     - [ ] `smokem ?` - show available substances
-    - [ ] `smokem SUBSTANCE` - get substance settings and prompt for report download
+    - [x] `smokem SUBSTANCE` - get substance settings and prompt for report download
     - [ ] `smokem SUBSTANCE browse`
   - [ ] inc 5.1: (admin) publish command to update npm package
-  - [ ] inc 5.2: (cli) make browsable
 - [ ] inc 6: word frequency by substance analysis
+  - [ ] generate word frequency JSON for one substance
+  - [ ] cli command to generate word frequency for 
 
 \* _storage size must not be unreasonable (e.g. `fortune` brew package is 3.6MB)_
 

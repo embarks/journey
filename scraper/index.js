@@ -111,7 +111,7 @@ module.exports = (function scraper () {
           sitter = foresight('substances') // -> experiences
         }
         // only have to call on wisdom once because all the substances are
-        // scraped at the same time
+        // scraped during the same run
         if (typeof foresight.settings[route] !== 'undefined') {
           const scrapeSettings = foresight.wisdom(fromWisdom)
           adultResolver = Object.assign(adultResolver,

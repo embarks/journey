@@ -17,7 +17,7 @@ function sayHello ($) {
 }
 
 function listSubstances ($) {
-  log('📝 Listing substances...')
+  log('Listing substances...')
   const substances = $('select[name="S1"]').children('option')
   const data = []
   substances.each(function (i, e) {
@@ -27,7 +27,7 @@ function listSubstances ($) {
   })
   data.push('%')
   fs.writeFileSync(`${DATFILES}/substances`, decode(data.join('\n')))
-  log(chalk`📝 {bold.green Success} Listed substances`)
+  log(chalk`{bold.green Success} Listed substances`)
 }
 
 function getTotal ($) {
@@ -62,10 +62,10 @@ const reportListConsumer = (function () {
         .replace(']', ')')
 
       const [id] = Object.values(qs.parse($(elem).find('a').attr('href')))
-      log(chalk`📝 {bold.green Setting} {bold.white #${id}}: ${title} [${substanceList}]`)
+      log(chalk`{bold.green Setting} {bold.white #${id}}: ${title} [${substanceList}]`)
 
       if (i === rows.length - 1) {
-        log(chalk`📝 {bold.bgBlack.white ${substance}} {bold.green Wrote} ${rows.length} settings`)
+        log(chalk`{bold.bgBlack.white ${substance}} {bold.green Wrote} ${rows.length} settings`)
       }
       return `${id},"${title}","${substanceList}"`
     })
@@ -86,7 +86,7 @@ const reportListConsumer = (function () {
       if (isFinalPage) {
         fs.appendFileSync(SF, '%', handleError)
       }
-      log(chalk`📝 {bold.bgBlack.white ${substance}} Collected experiences... {yellow ${isFirstPage ? '1' : pageInfo.start}} to {yellow ${rows.length}}`)
+      log(chalk`{bold.bgBlack.white ${substance}} Collected experiences {yellow ${isFirstPage ? '1' : pageInfo.start}} to {yellow ${rows.length}}`)
     }
   }
 
@@ -111,7 +111,7 @@ function experienceConsumer ({ id, title, substanceList }) {
           datfile,
           decode(data)
         )
-        log(chalk`👄 {bold.bgBlack.white #${id}} {bold.green Scraped} ${fn}`)
+        log(chalk`{bold.green Scraped} {bold.white #${id}} ${title} [${substanceList}] `)
       } catch (e) {
         handleError(e)
       }

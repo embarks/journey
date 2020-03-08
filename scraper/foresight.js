@@ -29,7 +29,7 @@ module.exports = (function () {
           try {
             // if it is a hard scrape, scrape everything regardless
             if (!config.hard) {
-              log('🔭 Doing pre-scrape check...')
+              log('Doing pre-scrape check... 🔭')
               const reports = fs.readdirSync(reportsDir)
               reports.forEach(filename => {
                 const idPtrn = /^#(\d*?) \[/
@@ -68,7 +68,7 @@ module.exports = (function () {
 
           await scrape(experiences.filter(({ id, substanceList, title }) => {
             const notYetScraped = typeof wisdom.has[id] === 'undefined'
-            log(chalk`🔭 {blue (skipped)} {bold.white #${id}} [${substanceList}] ${title}`)
+            if (!notYetScraped) log(chalk`{blue (skipped)} {bold.white #${id}} [${substanceList}] ${title}`)
             if (!config.hard) wisdom.has[id] = title
             return notYetScraped
           }))
