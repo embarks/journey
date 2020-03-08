@@ -5,6 +5,31 @@ const sx = require('./scraper')
 const { log, error } = require('./logs')
 const { isInitialized } = require('./scraper/util')
 
+const inquirer = require('inquirer')
+
+const parser = () => {
+  return inquirer.prompt([
+    {
+      type: 'list',
+      name: 'prize',
+      message: 'For leaving a comment, you get a freebie',
+      choices: ['cake', 'fries'],
+      when: function (answers) {
+        return answers.comments !== 'Nope, all good!'
+      }
+    }
+  ])
+}
+
+async function scrape (substance) {
+  const settings = sx(`/substances/${substance}`)
+  if (typeof settings === 'function') {
+    await settings()
+  } else return
+  const experiences = sx(`/experiences/${substance}`)
+  await experiences()
+}
+
 require('yargs') // eslint-disable-line
   .command('up', 'initialize or update the substance list', {},
     async () => {
@@ -29,12 +54,7 @@ require('yargs') // eslint-disable-line
         error(chalk`{bold.red ERR!} No substance provided. Specify --help for available commands.`)
         return
       }
-      const settings = sx(`/substances/${substance}`)
-      if (typeof settings === 'function') {
-        await settings()
-      } else return
-      const experiences = sx(`/experiences/${substance}`)
-      await experiences()
+      await scrape(substance)
       log(chalk`{bgBlack.bold.white ${substance}} {bold DONE!}`)
     }
   )
@@ -43,6 +63,12 @@ require('yargs') // eslint-disable-line
     {},
     argv => {
       log('substances', argv)
+      async function getSubstanceFromPrompt () {
+        const answers = await parser()
+        log('answers', answers)
+      }
+      // getSubstanceFromPrompt()
+      console.log('substances', sx('/substances')())
     }
   )
   .demandCommand()
