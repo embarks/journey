@@ -1,16 +1,9 @@
 'use strict'
 const qs = require('qs')
-const fs = require('fs')
 const chalk = require('chalk')
-const sanitize = require('sanitize-filename')
-const ic = require('iconv-lite')
+const fileAPI = require('../fileAPI')
 const { log, error } = require('../logs')
-const { handleError, isAllOption } = require('./util')
-const DATFILES = `${process.cwd()}/datfiles`
-
-function decode (data) {
-  return ic.decode(Buffer.from(data, 'latin1'), 'windows1252')
-}
+const { isAllOption } = require('./util')
 
 function sayHello ($) {
   log(chalk`👋 Hello, {blue ${$('title').text()}}`)
@@ -23,10 +16,9 @@ function listSubstances ($) {
   substances.each(function (i, e) {
     const sval = $(e).val()
     const name = isAllOption(sval) ? 'all' : $(e).text()
-    data.push(`${sval},${name}`)
+    return data.push({ sval, name })
   })
-  data.push('%')
-  fs.writeFileSync(`${DATFILES}/substances`, decode(data.join('\n')))
+  fileAPI.substances.write(data)
   log(chalk`{bold.green Success} Listed substances`)
 }
 
@@ -39,7 +31,6 @@ function getTotal ($) {
   if (Number.isNaN(totalInt) || totalInt < 0) {
     throw Error('Couldn\'t find the total number of posts for that experience!')
   }
-
   return totalInt
 }
 
@@ -67,25 +58,20 @@ const reportListConsumer = (function () {
       if (i === rows.length - 1) {
         log(chalk`{bold.bgBlack.white ${substance}} {bold.green Wrote} ${rows.length} settings`)
       }
-      return `${id},"${title}","${substanceList}"`
+      return { id, title, substanceList }
     })
-    return {
-      data: reportList.get().join('\n'),
-      rows: reportList.toArray()
-    }
+    return reportList.toArray()
   }
   function ListConsumer ({ substance, pageInfo }) {
     // determine whether to append or write new file
     const isFirstPage = pageInfo.start === 0
     const isFinalPage = !pageInfo.hasNext
-    const OP = isFirstPage ? 'writeFileSync' : 'appendFileSync'
-    const SF = `${DATFILES}/${substance}`
+
     return ($) => {
-      const { data, rows } = consumeList($, substance)
-      fs[OP](SF, `${decode(data)}\n`)
-      if (isFinalPage) {
-        fs.appendFileSync(SF, '%', handleError)
-      }
+      const rows = consumeList($, substance)
+      fileAPI.reports.write(substance,
+        rows, { isFirstPage, isFinalPage }
+      )
       log(chalk`{bold.bgBlack.white ${substance}} Collected experiences {yellow ${isFirstPage ? '1' : pageInfo.start}} to {yellow ${rows.length}}`)
     }
   }
@@ -98,23 +84,17 @@ const reportListConsumer = (function () {
 function experienceConsumer ({ id, title, substanceList }) {
   // TODO deal with pulled quotes
   return ($) => {
-    const fn = `#${id} [${substanceList}] ${title}`
-    const datfile = `${DATFILES}/reports/${sanitize(fn)}`
     $('.report-text-surround').find('table').remove()
-    const data = $('.report-text-surround').text().trim() ||
+    const reportText = $('.report-text-surround').text().trim() ||
       $('body').text().trim()
-    if (!data) {
+
+    const experience = { id, title, substanceList }
+    fileAPI.experiences.write(experience, reportText)
+    log(chalk`{bold.green Scraped} {bold.white #${id}} ${title} [${substanceList}] `)
+    if (!reportText) {
       error(`ERR! No data found for #${id} [${substanceList}] ${title}`)
     } else {
-      try {
-        fs.writeFileSync(
-          datfile,
-          decode(data)
-        )
-        log(chalk`{bold.green Scraped} {bold.white #${id}} ${title} [${substanceList}] `)
-      } catch (e) {
-        handleError(e)
-      }
+
     }
   }
 }

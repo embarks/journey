@@ -37,7 +37,13 @@ test('foresight.wisdom', () => {
       '/substances/lsd': 'Yes.',
       '/substances/cannabis': 'Yes!',
       '/substances/opioids': 'YES!',
-      '/substances/1-,-3-,-or-4-drugs': 'TEST'
+      '/substances/1-,-3-,-or-4-drugs': 'TEST',
+      substanceList: [
+        'lsd',
+        'cannabis',
+        'opioids',
+        '1-,-3-,-or-4-drugs'
+      ]
     }
   )
   expect(foresight.settings).toEqual({
@@ -46,7 +52,13 @@ test('foresight.wisdom', () => {
     '/substances/lsd': 'Yes.',
     '/substances/cannabis': 'Yes!',
     '/substances/opioids': 'YES!',
-    '/substances/1-,-3-,-or-4-drugs': 'TEST'
+    '/substances/1-,-3-,-or-4-drugs': 'TEST',
+    substanceList: [
+      'lsd',
+      'cannabis',
+      'opioids',
+      '1-,-3-,-or-4-drugs'
+    ]
   })
 })
 
@@ -56,7 +68,7 @@ describe('foresight.experiences', () => {
       const fs = jest.requireActual('fs')
       return {
         ...fs,
-        readdirSync: jest.fn(),
+        readdirSync: jest.fn(() => []),
         mkdirSync: jest.fn(),
         accessSync: () => {
         }
@@ -109,7 +121,13 @@ describe('foresight.experiences', () => {
       '/substances/lsd': 'Yes.',
       '/substances/cannabis': 'Yes!',
       '/substances/opioids': 'YES!',
-      '/substances/1-,-3-,-or-4-drugs': 'TEST'
+      '/substances/1-,-3-,-or-4-drugs': 'TEST',
+      substanceList: [
+        'lsd',
+        'cannabis',
+        'opioids',
+        '1-,-3-,-or-4-drugs'
+      ]
     })
 
     expect(substancePrescrape).toBeInstanceOf(Function)
@@ -149,10 +167,9 @@ describe('foresight.experiences', () => {
     const consumer = jest.fn()
 
     const readThenScrape = foresight('experiences', 'cannabis')(consumer)
-    expect(readdirSync).not.toHaveBeenCalled()
-    readThenScrape()
-    expect(readdirSync).toHaveBeenCalledWith(`${process.cwd()}/datfiles/reports/`)
 
+    expect(readdirSync).toHaveBeenCalledWith(`${process.cwd()}/datfiles/reports/`)
+    readThenScrape()
     expect(foresight.settings).toEqual({
       has: {
         102840: 'Colors of an LSD Sunrise',

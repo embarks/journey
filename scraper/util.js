@@ -5,19 +5,20 @@ const rp = require('request-promise')
 const cheerio = require('cheerio')
 const chalk = require('chalk')
 const { error, log } = require('../logs')
+const { DATFILES, reportsDir, substanceFile } = require('../fileAPI')
 
 const initCache = {}
 
 function isInitialized (key) {
   try {
     if (!key) {
-      const isInitialized = fs.existsSync(`${process.cwd()}/datfiles`) &&
-        fs.existsSync(`${process.cwd()}/datfiles/reports`) &&
-        fs.existsSync(`${process.cwd()}/datfiles/substances`)
+      const isInitialized = fs.existsSync(DATFILES) &&
+        fs.existsSync(reportsDir) &&
+        fs.existsSync(substanceFile)
       if (isInitialized) {
-        initCache['/datfiles/substances'] = true
-        initCache['/datfiles/reports'] = true
-        initCache['/datfiles'] = true
+        initCache[substanceFile] = true
+        initCache[reportsDir] = true
+        initCache[DATFILES] = true
         return true
       }
       return false
@@ -36,18 +37,18 @@ function isInitialized (key) {
 }
 
 function init () {
-  if (!fs.existsSync(`${process.cwd()}/datfiles`)) {
-    fs.mkdirSync(`${process.cwd()}/datfiles`)
+  if (!fs.existsSync(DATFILES)) {
+    fs.mkdirSync(DATFILES)
   } else log(chalk`{bold.yellow WARN!} DATFILES already initialized`)
-  if (!fs.existsSync(`${process.cwd()}/datfiles/reports`)) {
-    fs.mkdirSync(`${process.cwd()}/datfiles/reports`)
+  if (!fs.existsSync(reportsDir)) {
+    fs.mkdirSync(reportsDir)
   } else log(chalk`{bold.yellow WARN!} REPORTS already initialized`)
-  if (!fs.existsSync(`${process.cwd()}/datfiles/substances`)) {
-    fs.closeSync(fs.openSync(`${process.cwd()}/datfiles/substances`, 'w'))
+  if (!fs.existsSync(substanceFile)) {
+    fs.closeSync(fs.openSync(substanceFile, 'w'))
   } else log(chalk`{bold.yellow WARN!} substances file already initialized`)
-  initCache['/datfiles/substances'] = true
-  initCache['/datfiles/reports'] = true
-  initCache['/datfiles'] = true
+  initCache[substanceFile] = true
+  initCache[reportsDir] = true
+  initCache[DATFILES] = true
 }
 
 const oaty = (function () {
@@ -65,8 +66,8 @@ const oaty = (function () {
   return {
     get: async function (uri, consume) {
       if (
-        isInitialized('/datfiles/substances') &&
-        isInitialized('/datfiles/reports')
+        isInitialized(substanceFile) &&
+        isInitialized(reportsDir)
       ) {
         try {
           const body = await rp({

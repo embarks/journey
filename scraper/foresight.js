@@ -2,6 +2,7 @@
 // it should try to read the lists and create routes
 const fs = require('fs')
 const chalk = require('chalk')
+const fileAPI = require('../fileAPI')
 const { error, log } = require('../logs')
 const { handleError, isAllOption } = require('./util')
 const config = require('./config')
@@ -12,59 +13,33 @@ module.exports = (function () {
   const wisdom = {}
 
   function experiences (substance) {
-    const cwd = `${process.cwd()}/datfiles`
-    const reportsDir = `${cwd}/reports/`
-    const substanceFile = `${cwd}/${substance}`
-
     try {
       // if you try to get an experience that hasn't been scraped
       // foresight will just skip this substance
-      fs.accessSync(substanceFile, fs.constants.R_OK)
       // return a function to take in the scraper function
+      const reports = fileAPI.reports.read()
+
       return function setting (scrape) {
         // the callback that makes the scrape happen
+
         return async function parseRowsThenScrape () {
           const hasExists = typeof wisdom.has !== 'undefined'
           if (!hasExists) wisdom.has = {}
+
+          // if it is a hard scrape, scrape everything regardless
+          if (!config.hard) {
+            log('Doing pre-scrape check... 🔭')
+            reports.forEach(({ id, list }) => {
+              wisdom.has[id] = list
+            })
+          }
+          let experiences = []
           try {
-            // if it is a hard scrape, scrape everything regardless
-            if (!config.hard) {
-              log('Doing pre-scrape check... 🔭')
-              const reports = fs.readdirSync(reportsDir)
-              reports.forEach(filename => {
-                const idPtrn = /^#(\d*?) \[/
-                const lstPtrn = /^\[(.*?)\]/
-                const id = filename
-                  .match(idPtrn).shift()
-                  .match(/(\d+)/).shift()
-                let list = filename
-                  .substring(id.length + 1, filename.length)
-                  .trim()
-                  .match(lstPtrn)
-                  .shift()
-                list = list.substring(1, list.length - 1)
-                wisdom.has[id] = list
-              })
-            }
+            experiences = fileAPI.experiences.read(substance)
           } catch (e) {
-            error(`ERR! There was a problem accessing ${reportsDir}\nDo not call on foresight("experiences", ${substance}) unless the scraper has been initialized`)
+            error(`ERR! There was a problem accessing the reports directory.\nDo not call on foresight("experiences", ${substance}) unless that substance's settings report has been generated.`)
             error(e)
           }
-
-          const data = fs.readFileSync(substanceFile)
-
-          const rows = data
-            .toString()
-            .split('%')[0]
-            .split(/\r?\n/)
-          rows.pop()
-
-          const experiences = rows.map((experience) => {
-            const [id, oTitle, oSubstanceList] = experience.split(',"')
-            const title = oTitle.replace('"', '')
-            const substanceList = oSubstanceList.replace(/("|\[|\])/, '')
-            return Object.freeze({ id, title, substanceList })
-          })
 
           await scrape(experiences.filter(({ id, substanceList, title }) => {
             const notYetScraped = typeof wisdom.has[id] === 'undefined'
@@ -75,7 +50,7 @@ module.exports = (function () {
         }
       }
     } catch (e) {
-      error(`ERR! There was a problem accessing ${substanceFile}\nDo not call on foresight("experiences", ${substance}) unless the report locations for that substance have been scraped (/substances/${substance})`)
+      error('ERR! There was a problem accessing the settings reports for the reports directory. Do not run foresight("experiences") unless the scraper has been initialized\n')
       error(e)
     }
   }
@@ -83,18 +58,8 @@ module.exports = (function () {
   function substances () {
     try {
       log('🚬 Checking the inventory...')
-      const optionList =
-      fs.readFileSync(`${process.cwd()}/datfiles/substances`)
-        .toString()
-        .split('%')[0]
-        .split(/\r?\n/)
-      optionList.pop()
-      keys = optionList.map(option => {
-        const [sval, ...rest] = option.split(/,(.+)/)
-        const key = rest.join('')
-          .toLowerCase().trim()
-          .replace(/-|\s-\s/g, ' ')
-          .replace(/(\s|\/)/g, '-')
+
+      keys = fileAPI.substances.read().map(([key, sval]) => {
         let path = `/${prefix}/${key}`
         if (isAllOption(sval)) {
           wisdom[path] = null
@@ -103,6 +68,7 @@ module.exports = (function () {
         wisdom[path] = null
         return { key, sval }
       })
+
       return experiences
     } catch (e) {
       error('ERR! Do not call on foresight("substances") unless scraper is initialized')
@@ -134,10 +100,11 @@ foresight(arg) must be one of foresight(${Object.keys(foresight).join(' | ')})`)
       const path = `/${prefix}/${key}`
       wisdom[path] = makePath({ key, sval, keys })
       if (typeof wisdom.substanceList === 'undefined') wisdom.substanceList = []
-      if (wisdom.substanceList.indexOf(key) === -1) {
+      if (isAllOption(sval)) {
+        wisdom[`/${prefix}`] = makePath({ key, sval, keys })
+      } else if (wisdom.substanceList.indexOf(key) === -1) {
         wisdom.substanceList.push(key)
       }
-      if (isAllOption(sval)) { wisdom[`/${prefix}`] = makePath({ key, sval, keys }) }
     })
     return foresight.settings
   }

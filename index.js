@@ -3,6 +3,7 @@
 const chalk = require('chalk')
 const inquirer = require('inquirer')
 const sx = require('./scraper')
+const { countWords } = require('./parser')
 const { log, error } = require('./logs')
 const { isInitialized } = require('./scraper/util')
 
@@ -32,11 +33,19 @@ require('yargs') // eslint-disable-line
     })
   .command(['$0', '<SUBSTANCE> [options]'],
     'scrape experiences for the specified substance',
-    {},
-    async ({ _ }) => {
+    (y) => {
+      return y.option('c', {
+        description: 'parse and count'
+      })
+    },
+    async ({ _, c: count }) => {
       const [substance] = _
       if (!substance) {
         error(chalk`{bold.red ERR!} No substance provided. Specify --help for available commands.`)
+        return
+      }
+      if (count) {
+        await countWords(substance)
         return
       }
       await scrape(substance)

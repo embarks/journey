@@ -51,7 +51,7 @@
   - [ ] inc 5.1: (admin) publish command to update npm package
 - [ ] inc 6: word frequency by substance analysis
   - [ ] generate word frequency JSON for one substance
-  - [ ] cli command to generate word frequency for 
+  - [ ] cli command to generate word frequency for substance
 
 \* _storage size must not be unreasonable (e.g. `fortune` brew package is 3.6MB)_
 
