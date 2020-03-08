@@ -18,7 +18,7 @@ function listSubstances ($) {
     const name = isAllOption(sval) ? 'all' : $(e).text()
     return data.push({ sval, name })
   })
-  fileAPI.substances.write(data)
+  fileAPI.write.substances({ rows: data })
   log(chalk`{bold.green Success} Listed substances`)
 }
 
@@ -69,9 +69,12 @@ const reportListConsumer = (function () {
 
     return ($) => {
       const rows = consumeList($, substance)
-      fileAPI.reports.write(substance,
-        rows, { isFirstPage, isFinalPage }
-      )
+      fileAPI.write.reports({
+        substance,
+        rows,
+        isFirstPage,
+        isFinalPage
+      })
       log(chalk`{bold.bgBlack.white ${substance}} Collected experiences {yellow ${isFirstPage ? '1' : pageInfo.start}} to {yellow ${rows.length}}`)
     }
   }
@@ -85,16 +88,14 @@ function experienceConsumer ({ id, title, substanceList }) {
   // TODO deal with pulled quotes
   return ($) => {
     $('.report-text-surround').find('table').remove()
-    const reportText = $('.report-text-surround').text().trim() ||
+    const report = $('.report-text-surround').text().trim() ||
       $('body').text().trim()
-
-    const experience = { id, title, substanceList }
-    fileAPI.experiences.write(experience, reportText)
-    log(chalk`{bold.green Scraped} {bold.white #${id}} ${title} [${substanceList}] `)
-    if (!reportText) {
+    const experience = { id, title, substanceList, report }
+    if (!report) {
       error(`ERR! No data found for #${id} [${substanceList}] ${title}`)
     } else {
-
+      log(chalk`{bold.green Scraped} {bold.white #${id}} ${title} [${substanceList}] `)
+      fileAPI.write.experiences({ experience })
     }
   }
 }

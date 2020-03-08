@@ -17,7 +17,7 @@ module.exports = (function () {
       // if you try to get an experience that hasn't been scraped
       // foresight will just skip this substance
       // return a function to take in the scraper function
-      const reports = fileAPI.reports.read()
+      const reports = fileAPI.read.reports()
 
       return function setting (scrape) {
         // the callback that makes the scrape happen
@@ -35,7 +35,7 @@ module.exports = (function () {
           }
           let experiences = []
           try {
-            experiences = fileAPI.experiences.read(substance)
+            experiences = fileAPI.read.experiences({ substance })
           } catch (e) {
             error(`ERR! There was a problem accessing the reports directory.\nDo not call on foresight("experiences", ${substance}) unless that substance's settings report has been generated.`)
             error(e)
@@ -59,7 +59,7 @@ module.exports = (function () {
     try {
       log('🚬 Checking the inventory...')
 
-      keys = fileAPI.substances.read().map(([key, sval]) => {
+      keys = fileAPI.read.substances().map(([key, sval]) => {
         let path = `/${prefix}/${key}`
         if (isAllOption(sval)) {
           wisdom[path] = null
