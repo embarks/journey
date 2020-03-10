@@ -1,6 +1,5 @@
 // foresight is called when updates to scraped data happen
 // it should try to read the lists and create routes
-const fs = require('fs')
 const chalk = require('chalk')
 const fileAPI = require('../fileAPI')
 const { error, log } = require('../logs')

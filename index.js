@@ -3,7 +3,7 @@
 const chalk = require('chalk')
 const inquirer = require('inquirer')
 const sx = require('./scraper')
-const { countWords } = require('./parser')
+const parser = require('./parser')
 const { log, error } = require('./logs')
 const { isInitialized } = require('./scraper/util')
 
@@ -45,7 +45,8 @@ require('yargs') // eslint-disable-line
         return
       }
       if (count) {
-        await countWords(substance)
+        const parse = parser({ substance })
+        await parse.countWords()
         return
       }
       await scrape(substance)

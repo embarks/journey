@@ -6,6 +6,43 @@ const DATFILES = `${process.cwd()}/datfiles`
 const reportsDir = `${DATFILES}/reports/`
 const substanceFile = `${DATFILES}/substances`
 
+const fn = (function () {
+  let filename
+  const lstPtrn = /^\[(.*?)\]/
+  const idPtrn = /^#(\d*?) \[/
+
+  function filenames (fn) {
+    filename = fn
+    return filenames
+  }
+
+  const id = () => {
+    return filename
+      .match(idPtrn).shift()
+      .match(/(\d+)/).shift()
+  }
+  const list = () => {
+    const id = filenames.id()
+    const list = filename
+      .substring(id.length + 1, filename.length)
+      .trim()
+      .match(lstPtrn)
+      .shift()
+
+    return list.substring(1, list.length - 1)
+  }
+
+  const format = ({ id, substanceList, title }) => {
+    return `#${id} [${substanceList}] ${title}`
+  }
+
+  filenames.id = id
+  filenames.list = list
+  filenames.format = format
+
+  return filenames
+})()
+
 function decode (data) {
   return ic.decode(Buffer.from(data, 'latin1'), 'windows1252')
 }
@@ -36,14 +73,19 @@ module.exports = {
     },
     experiences: ({ experience }) => {
       const { id, title, substanceList, report } = experience
-      const fn = `#${id} [${substanceList}] ${title}`
-      const datfile = `${reportsDir}${sanitize(fn)}`
+      const filename = fn.format({ id, title, substanceList })
+      const datfile = `${reportsDir}${sanitize(filename)}`
       fs.writeFileSync(
         datfile,
         decode(report)
       )
+    },
+    stats: ({ stat, substance, content }) => {
+      fs.writeFileSync(
+        `${DATFILES}/${substance}.${sanitize(stat)}.stat`,
+        content
+      )
     }
-
   },
   read: {
     substances: () => {
@@ -66,20 +108,16 @@ module.exports = {
     },
     reports: () => {
       const reports = fs.readdirSync(reportsDir)
-      return reports.map((filename) => {
-        const idPtrn = /^#(\d*?) \[/
-        const lstPtrn = /^\[(.*?)\]/
-        const id = filename
-          .match(idPtrn).shift()
-          .match(/(\d+)/).shift()
-        let list = filename
-          .substring(id.length + 1, filename.length)
-          .trim()
-          .match(lstPtrn)
-          .shift()
-        list = list.substring(1, list.length - 1)
-        return { id, list }
+      const values = reports.map((filename) => {
+        const file = fn(filename)
+        const id = file.id()
+        const list = file.list()
+        return { id, list, raw: filename }
       })
+      return values
+    },
+    report: (id) => {
+      return fs.readFileSync(`${reportsDir}${id}`).toString()
     },
     experiences: ({ substance }) => {
       const substanceFile = `${DATFILES}/${substance}`
@@ -89,12 +127,13 @@ module.exports = {
         .split('%')[0]
         .split(/\r?\n/)
       rows.pop()
-      return rows.map((experience) => {
+      const values = rows.map((experience) => {
         const [id, oTitle, oSubstanceList] = experience.split(',"')
         const title = oTitle.replace('"', '')
         const substanceList = oSubstanceList.replace(/("|\[|\])/, '')
         return Object.freeze({ id, title, substanceList })
       })
+      return values
     }
   }
 }

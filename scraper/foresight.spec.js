@@ -5,9 +5,7 @@ beforeEach(() => {
 
 test('foresight.wisdom', () => {
   jest.doMock('fs', () => {
-    const fs = jest.requireActual('fs')
     return {
-      ...fs,
       readdirSync: jest.fn(),
       mkdirSync: jest.fn(),
       readFileSync: () => {
@@ -65,9 +63,7 @@ test('foresight.wisdom', () => {
 describe('foresight.experiences', () => {
   test('returns a function', () => {
     jest.doMock('fs', () => {
-      const fs = jest.requireActual('fs')
       return {
-        ...fs,
         readdirSync: jest.fn(() => []),
         mkdirSync: jest.fn(),
         accessSync: () => {
@@ -80,9 +76,8 @@ describe('foresight.experiences', () => {
   })
   test('(/substances) reads files ahead of time', () => {
     jest.doMock('fs', () => {
-      const fs = jest.requireActual('fs')
       return {
-        ...fs,
+        readdirSync: jest.fn(() => []),
         accessSync: jest.fn(),
         mkdirSync: jest.fn(),
         readFileSync: () => {
@@ -136,9 +131,7 @@ describe('foresight.experiences', () => {
 
   test('(/experiences) reads files ahead of time', () => {
     jest.doMock('fs', () => {
-      const fs = jest.requireActual('fs')
       return {
-        ...fs,
         accessSync: jest.fn(() => {
         }),
         readdirSync: jest.fn(() => {

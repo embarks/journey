@@ -1,34 +1,62 @@
-function countWords (substance) {
-  /* Below is a regular expression that finds alphanumeric characters
-       Next is a string that could easily be replaced with a reference to a form control
-       Lastly, we have an array that will hold any words matching our pattern */
-  var pattern = /\w+/g
-  var string = 'I I am am am yes yes.'
-  var matchedWords = string.match(pattern)
+const fileAPI = require('./fileAPI')
 
-  /* The Array.prototype.reduce method assists us in producing a single value from an
-      array. In this case, we're going to use it to output an object with results. */
-  var counts = matchedWords.reduce(function (stats, word) {
-    /* `stats` is the object that we'll be building up over time.
-          `word` is each individual entry in the `matchedWords` array */
-    if (typeof (stats[word]) !== 'undefined') {
-      /* `stats` already has an entry for the current `word`.
-              As a result, let's increment the count for that `word`. */
-      stats[word] = stats[word] + 1
+module.exports = (function () {
+  let substance
+  const dict = {}
+  const keys = []
+
+  function validate (token) {
+    return /\w{2,}/.test(token)
+  }
+
+  function increment (word) {
+    if (!dict[word]) {
+      dict[word] = 1
+      keys.push(word)
+      // Otherwise just increment its count
     } else {
-      /* `stats` does not yet have an entry for the current `word`.
-              As a result, let's add a new entry, and set count to 1. */
-      stats[word] = 1
+      dict[word]++
     }
+  }
 
-    /* Because we are building up `stats` over numerous iterations,
-          we need to return it for the next pass to modify it. */
-    return stats
-  }, {})
-  console.log(counts)
-}
+  function countWords () {
+    const files = fileAPI.read.reports()
+      .reduce((acc, curr) => {
+        const { id, raw } = curr
+        return { ...acc, [id]: raw }
+      }, {})
+    const experiences = fileAPI.read.experiences({ substance })
 
-module.exports = {
-  countWords
+    experiences.forEach(({ id }) => {
+      const file = files[id]
+      if (typeof file === 'undefined') {
+        throw new Error(`scrape ${substance} data before attempting to parse`)
+      } else {
+        const data = fileAPI.read.report(file)
+        const tokens = data.split(/\W+/)
+        for (var i = 0; i < tokens.length; i++) {
+          // Lowercase everything to ignore case
+          var token = tokens[i].toLowerCase()
+          if (validate(token)) {
+            // Increase the count for the token
+            increment(token)
+          }
+        }
+      }
+    })
+    fileAPI.write.stats(
+      {
+        stat: 'words',
+        substance,
+        content: JSON.stringify(dict, null, 2)
+      })
+  }
 
-}
+  const parser = (vars) => {
+    substance = vars.substance
+    return {
+      countWords
+    }
+  }
+  return parser
+})()
